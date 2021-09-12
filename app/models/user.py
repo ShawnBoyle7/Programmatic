@@ -15,6 +15,8 @@ class User(db.Model, UserMixin):
     img_url = db.Column(db.String(255), nullable=True)
 
     comments = db.relationship("Comment", back_populates = "user", cascade="all, delete-orphan")
+    votes = db.relationship("Vote", back_populates = "user", cascade="all, delete-orphan")
+    aspirations = db.relationship("Aspiration", back_populates = "user", cascade="all, delete-orphan")
 
     @property
     def password(self):

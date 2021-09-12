@@ -12,3 +12,5 @@ class Lesson(db.Model):
 
     course = db.relationship("Course", back_populates = "lessons")
     comments = db.relationship("Comment", back_populates = "lesson", cascade="all, delete-orphan")
+    votes = db.relationship("Vote", back_populates = "lesson", cascade="all, delete-orphan")
+    aspirations = db.relationship("Aspiration", back_populates = "lesson", cascade="all, delete-orphan")
