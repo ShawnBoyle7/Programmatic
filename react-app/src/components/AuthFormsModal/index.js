@@ -4,11 +4,11 @@ import LoginForm from '../auth/LoginForm';
 import SignUpForm from '../auth/SignUpForm';
 
 function AuthFormsModal() {
-    const [showModal, setShowModal] = useState(false);
+    const [showModal, setShowModal] = useState(true);
 
     return (
     <>
-        <button onClick={() => setShowModal(true)}>All The Auth!</button>
+        {/* <button onClick={() => setShowModal(true)}>All The Auth!</button> */}
         {showModal && (
         <Modal onClose={() => setShowModal(false)}>
             <p>You need to be logged in to access that!</p>
