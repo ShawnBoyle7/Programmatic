@@ -1,11 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from './auth/LogoutButton';
-import AuthFormsModal from './AuthFormsModal';
 import LoginFormModal from './LoginFormModal';
 import SignUpFormModal from './SignUpFormModal';
 
 const NavBar = () => {
+    let sessionUser = useSelector(state => state.session.user)
+    let authenticated = sessionUser !== null
+    console.log("Authenticated ----->", authenticated)
+
     return (
         <nav>
         <ul>
@@ -15,28 +19,34 @@ const NavBar = () => {
                 </NavLink>
             </li>
             <li>
-                <AuthFormsModal/>
-            </li>
-            <li>
-                <LoginFormModal/>
-                {/* <NavLink to='/login' exact={true} activeClassName='active'>
-                    Login
-                </NavLink> */}
-            </li>
-            <li>
-            <SignUpFormModal />
-                {/* <NavLink to='/sign-up' exact={true} activeClassName='active'>
-                    Sign Up
-                </NavLink> */}
-            </li>
-            <li>
-                <NavLink to='/users' exact={true} activeClassName='active'>
-                    Users
+                <NavLink to='/courses' exact={true} activeClassName='active'>
+                    Courses
                 </NavLink>
             </li>
-            <li>
-                <LogoutButton />
-            </li>
+            { !authenticated ? 
+                <>
+                    <li>
+                        <LoginFormModal/>
+                    </li>
+                    <li>
+                        <SignUpFormModal />
+                    </li>
+                </>
+                :
+                <>
+                    <li>
+                        Welcome, {sessionUser?.firstName}
+                    </li>
+                    <li>
+                        <NavLink to='/profile' exact={true} activeClassName='active'>
+                            Profile
+                        </NavLink>
+                    </li>
+                    <li>
+                        <LogoutButton />
+                    </li>
+                </>
+            }
         </ul>
         </nav>
     );
