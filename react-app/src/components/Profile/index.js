@@ -4,7 +4,7 @@ function Profile({ sessionUser }) {
     return (
             sessionUser && 
             <>
-                {sessionUser.username}
+                <h1>{sessionUser.username}'s Profile</h1>
             </>
     )
 }
