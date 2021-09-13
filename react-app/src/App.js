@@ -32,7 +32,7 @@ function App() {
         <BrowserRouter>
         <NavBar sessionUser={sessionUser} authenticated={authenticated}/>
         <Switch>
-            <Route path='/' exact={true} >
+            <Route exact path='/' >
                 <Home authenticated={authenticated}/>
             </Route>
             <Route path='/courses'>
