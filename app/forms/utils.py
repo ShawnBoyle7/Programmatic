@@ -16,9 +16,9 @@ from wtforms.validators import ValidationError
 #     if user:
 #         raise ValidationError('Username is already in use.')
 
-def user_validation(user_id=0):
+def user_validation():
     def user_exists(form, field):
-        print("ID FIELD", user_id)
+        user_id = form.user_id.data
     # Checking if user exists
         email = field.data
         user = User.query.filter(User.email == email).first()
@@ -26,9 +26,9 @@ def user_validation(user_id=0):
             raise ValidationError('Email address is already in use.')
     return user_exists
 
-def username_validation(user_id=0):
+def username_validation():
     def username_exists(form, field):
-        print("FORM PRINT ASDLF;PK,ASDPLOF,KASDEPOFKZSDPFKASDPOFK,SDAPOF", form.user_id())
+        user_id = form.user_id.data
     # Checking if user exists
         username = field.data
         user = User.query.filter(User.username == username).first()
