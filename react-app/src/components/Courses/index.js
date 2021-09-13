@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import ProtectedRoute from '../auth/ProtectedRoute';
 import CourseLessons from '../CourseLessons';
 
@@ -9,6 +9,7 @@ function Courses() {
     <>
         <Route exact path='/courses'>
             <h1>Courses</h1>
+            <Link to='/courses/1'>Course 1 (example)</Link>
         </Route>
         <ProtectedRoute path='/courses/:courseId'>
             <CourseLessons />
