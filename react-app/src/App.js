@@ -10,8 +10,9 @@ import Lesson from './components/Lesson';
 import Profile from './components/Profile';
 import PageNotFound from './components/PageNotFound';
 import { authenticate } from './store/session';
+import { getCurriculum } from './store/curriculum';
 
-function App() {    
+function App() {
     const [loaded, setLoaded] = useState(false);
     const dispatch = useDispatch();
     const sessionUser = useSelector(state => state.session?.user)
@@ -20,6 +21,7 @@ function App() {
     useEffect(() => {
         (async() => {
         await dispatch(authenticate());
+        await dispatch(getCurriculum());
         setLoaded(true);
         })();
     }, [dispatch]);

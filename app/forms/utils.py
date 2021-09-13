@@ -18,7 +18,10 @@ from wtforms.validators import ValidationError
 
 def user_validation():
     def user_exists(form, field):
-        user_id = form.user_id.data
+        #conditional that checks for userid if the user is logged in, if registering a new user, use 0 as a placeholder
+        user_id = 0
+        if hasattr(form, 'user_id'):
+            user_id = form.user_id.data
     # Checking if user exists
         email = field.data
         user = User.query.filter(User.email == email).first()
@@ -28,7 +31,9 @@ def user_validation():
 
 def username_validation():
     def username_exists(form, field):
-        user_id = form.user_id.data
+        user_id = 0
+        if hasattr(form, 'user_id'):
+            user_id = form.user_id.data
     # Checking if user exists
         username = field.data
         user = User.query.filter(User.username == username).first()

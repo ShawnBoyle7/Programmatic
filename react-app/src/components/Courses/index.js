@@ -8,7 +8,7 @@ function Courses() {
     return (
     <>
         <Route exact path='/courses'>
-            <h1>Courses</h1>
+            <h1>course here</h1>
             <Link to='/courses/1'>Course 1 (example)</Link>
         </Route>
         <ProtectedRoute path='/courses/:courseId'>
