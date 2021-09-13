@@ -1,14 +1,10 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import LogoutButton from './auth/LogoutButton';
 import LoginFormModal from './LoginFormModal';
 import SignUpFormModal from './SignUpFormModal';
 
-const NavBar = () => {
-    let sessionUser = useSelector(state => state.session.user)
-    let authenticated = sessionUser !== null
-    console.log("Authenticated ----->", authenticated)
+const NavBar = ({sessionUser, authenticated}) => {
 
     return (
         <nav>
