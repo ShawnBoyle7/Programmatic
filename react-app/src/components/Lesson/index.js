@@ -14,7 +14,7 @@ function Lesson() {
             <h1>Lesson {lessonId}</h1>
             <CommentForm lessonId={lessonId} userId={userId} />
             <Comments lessonId={lessonId} userId={userId}/>
-            <LessonVote lessonId={lessonId}/>
+            <LessonVote lessonId={lessonId} userId={userId}/>
         </>
     )
 }

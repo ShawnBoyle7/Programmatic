@@ -1,16 +1,25 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
+import './LessonVote.css'
 
-function LessonVote({ lessonId }) {
+function LessonVote({ lessonId, userId }) {
+    const lesson = useSelector(state => state.curriculum.lessons[lessonId])
+    const userVote = lesson?.votes.find(vote => vote.userId === +userId)
+    console.log("user vote -------------->", userVote)
 
     const handleVote = e => {
         console.log("Voting!")
     }
 
+    const setClassName = bool => {
+        return 1
+    }
+
     return (
         <>
         Did you find this lesson helpful?
-        <button onClick={handleVote}>Yes</button>
-        <button onClick={handleVote}>No</button>
+        <button className={setClassName(true)} onClick={handleVote}>Yes</button>
+        <button className={setClassName(false)} onClick={handleVote}>No</button>
         </>
     )
 }
