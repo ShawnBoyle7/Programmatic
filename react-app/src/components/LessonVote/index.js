@@ -12,14 +12,17 @@ function LessonVote({ lessonId, userId }) {
     }
 
     const setClassName = bool => {
-        return 1
+        if (!userVote) return ''
+        if (userVote.liked === bool)
+            return 'vote'
+        return ''
     }
 
     return (
         <>
         Did you find this lesson helpful?
-        <button className={setClassName(true)} onClick={handleVote}>Yes</button>
-        <button className={setClassName(false)} onClick={handleVote}>No</button>
+        <button className={setClassName('true')} onClick={handleVote}>Yes</button>
+        <button className={setClassName('false')} onClick={handleVote}>No</button>
         </>
     )
 }
