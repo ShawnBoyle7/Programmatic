@@ -1,5 +1,8 @@
+import { useDebugValue } from "react";
+
 // Action type string literal
 const LOAD_CURRICULUM = "curriculum/LOAD_CURRICULUM";
+const UPDATE_LESSON = "curriculum/UPDATE_LESSON";
 
 // Action creator
 const loadCurriculum = (data) => ({
@@ -9,7 +12,10 @@ const loadCurriculum = (data) => ({
     data
 });
 
-const initialState = {courses: {}, lessons: {}}
+const updateLesson = (lesson) => ({
+    type: UPDATE_LESSON,
+    lesson
+})
 
 //thunk
 export const getCurriculum = () => async (dispatch) => {
@@ -24,6 +30,50 @@ export const getCurriculum = () => async (dispatch) => {
         dispatch(loadCurriculum(data));
     }
 }
+
+export const addVote = (lessonId, userId, liked) => async (dispatch) => {
+    console.log('Thunk ------->', liked)
+    const response = await fetch('/api/votes/', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            lesson_id: lessonId,
+            user_id: userId,
+            liked
+        })
+    })
+    
+    if (response.ok){
+        const res = await response.json();
+        dispatch(updateLesson(res))
+    }
+}
+
+export const updateVote = (voteId, liked) => async (dispatch) => {
+    const response = await fetch(`/api/votes/${voteId}`, {
+        method: "PUT"
+    })
+    
+    if (response.ok){
+        const res = await response.json();
+        dispatch(updateLesson(res))
+    }
+}
+
+export const deleteVote = (voteId) => async (dispatch) => {
+    const response = await fetch(`/api/votes/${voteId}`, {
+        method: "DELETE"
+    })
+    
+    if (response.ok){
+        const res = await response.json();
+        dispatch(updateLesson(res))
+    }
+}
+
+const initialState = {courses: {}, lessons: {}}
 
 // Reducer taking in an initial state and action
 export default function reducer(state = initialState, action) {
@@ -45,8 +95,14 @@ export default function reducer(state = initialState, action) {
                 courses: {...allCourses},
                 lessons: {...allLessons}
             }
-            // stateCopy.courses = action.data
-            // return stateCopy
+        case UPDATE_LESSON:
+            let stateCopy = {
+                ...state,
+                courses: {...state.courses},
+                lessons: {...state.lessons}
+            }
+            stateCopy.lessons[action.lesson.id] = action.lesson
+            return stateCopy
         default:
             return state
     }

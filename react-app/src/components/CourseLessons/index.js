@@ -10,16 +10,21 @@ function CourseLessons() {
     const allLessons = Object.values(useSelector(state => state.curriculum.lessons))
     let courseLessons = allLessons.filter(lesson => lesson.courseId === +courseId)
     console.log(allLessons)
-    
+
     const addToLearningPath = (e) => {
         dispatch(addToPath(e.target.id, userId));
     }
-    
-    courseLessons = courseLessons.map((lesson) => {
+
+    const userAspirations = useSelector(state => state.session.user.aspirations)
+
+    const courseLessonsMap = courseLessons.map((lesson) => {
+        const lessonAspiration = userAspirations.find(asp => asp.lessonId === lesson.id)
         return (
             <li key={lesson.id}>
                 <Link to={`/lessons/${lesson.id}`}>{lesson.name}</Link>
-                <button id={lesson.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                { !lessonAspiration &&
+                    <button id={lesson.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                }
             </li>
         );
     });
@@ -27,7 +32,7 @@ function CourseLessons() {
         <>
             <h1>Specific Course {courseId}</h1>
             <ul>
-                {courseLessons}
+                {courseLessonsMap}
             </ul>
         </>
     )
