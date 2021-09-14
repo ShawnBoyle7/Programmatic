@@ -1,3 +1,7 @@
-.vote {
+.liked {
     background-color: lightgreen;
+}
+
+.not-liked {
+    background-color: red;
 }
