@@ -1,20 +1,22 @@
 import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteComment } from "../../store/comments";
-import EditCommentForm from "../EditCommentForm";
+import EditCommentFormModal from "../EditCommentFormModal";
 
 const Comments = ({ lessonId }) => {
-    const comments = useSelector(state => state.comments)
-    const commentsArray = Object.values(comments).filter(comment => comment.lessonId === +lessonId)
-    const [commentIdEdit, setCommentIdEdit] = useState("")
-    const [commentIdDelete, setCommentIdDelete] = useState("")
-    const [showEditForm, setShowEditForm] = useState(false)
-    const [showDeleteForm, setShowDeleteForm] = useState(false)
     const dispatch = useDispatch();
 
-    const renderEdit = (e) => {
+    const user = useSelector(state => state.session.user)
+    const comments = Object.values(useSelector(state => state.comments)).filter(comment => comment.lessonId === +lessonId)
+
+    const [commentIdEdit, setCommentIdEdit] = useState("")
+    const [commentIdDelete, setCommentIdDelete] = useState("")
+    const [showModal, setShowModal] = useState(false);
+    const [showDeleteForm, setShowDeleteForm] = useState(false)
+
+    const renderEditModal = (e) => {
         setCommentIdEdit(e.target.id)
-        setShowEditForm(true)
+        setShowModal(true)
     }
 
     const getDeleteConfirmation = (e) => {
@@ -29,22 +31,23 @@ const Comments = ({ lessonId }) => {
 
     return (
         <>
-            <div>
-                {commentsArray.map(comment =>
-                    <div key={comment.id}>
-                        <p>{comment.content}</p>
-                        <button id={comment.id} onClick={renderEdit}>Edit Comment</button>
-                        <button id={comment.id} onClick={getDeleteConfirmation}>Delete Comment</button>
+            <div className="comments">
+                {comments.map(comment =>
+                    <div className="comment" key={comment.id}>
+                        <p className="comment-content">{comment.content}</p>
+                        {user.id === comment.userId &&
+                            <button classname="comment-button" id={comment.id} onClick={renderEditModal}>Render Edit Modal</button>}
+                        {user.id === comment.userId &&
+                            <button classname="comment-button" id={comment.id} onClick={getDeleteConfirmation}>Delete Comment</button>}
                     </div>)}
             </div>
 
-            {showEditForm &&
-            <EditCommentForm commentId={commentIdEdit} setShowEditForm={setShowEditForm}/>}
+            <EditCommentFormModal setShowModal={setShowModal} showModal={showModal} commentId={commentIdEdit}/>
 
             {showDeleteForm && 
             <>
-                <button type="button" onClick={handleDelete}>Confirm Delete</button>
-                <button onClick={() => setShowDeleteForm(false)}>Cancel Delete</button>
+                <button classname="comment-button" onClick={handleDelete}>Confirm Delete</button>
+                <button classname="comment-button" onClick={() => setShowDeleteForm(false)}>Cancel Delete</button>
             </>
             }
         </>
