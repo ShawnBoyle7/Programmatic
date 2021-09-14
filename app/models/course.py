@@ -10,8 +10,11 @@ class Course(db.Model):
     lessons = db.relationship("Lesson", back_populates = "course", cascade="all, delete-orphan")
 
     def to_dict(self):
+        lessons = [lesson.id for lesson in self.lessons]
+
         return {
             'id': self.id,
             'name': self.name,
-            'description': self.description
+            'description': self.description,
+            'lessons': lessons
         }

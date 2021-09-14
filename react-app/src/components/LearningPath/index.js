@@ -1,12 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux'
 
-function AspirationList() {
+function LearningPath() {
   const sessionUser = useSelector(state => state.session?.user)
+  const lessons = Object.values(useSelector(state => state.curriculum.lessons))
   const aspirations = sessionUser?.aspirations
+
   const aspirationComponents = aspirations.map((aspiration) => {
     return (
       <li key={aspiration.id}>
-        <p>{aspiration.id}</p>
+        <p>{lessons.find(lesson => lesson.id === aspiration.lessonId).name}</p>
       </li>
     );
   });
@@ -19,4 +22,4 @@ function AspirationList() {
   );
 }
 
-export default AspirationList;
+export default LearningPath;
