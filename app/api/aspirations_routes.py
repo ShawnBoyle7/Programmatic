@@ -23,20 +23,15 @@ def add_aspiration():
         return user.to_dict()
     return {"Bad Data"}
 
-# @aspirations_routes.route("/<int:id>", methods=["PUT"])
-# @login_required
-# def edit_aspiration(id):
-#     aspiration = Aspiration.query.get(id)
+@aspirations_routes.route("/<int:id>", methods=["PUT"])
+@login_required
+def edit_aspiration(id):
+    aspiration = Aspiration.query.get(id)
+    aspiration.completed= True if aspiration.complete is False else False
+    db.session.commit()
+    user = User.query.get(aspiration["user_id"])
+    return user.to_dict()
 
-#     form = EditAspirationForm()
-#     form["csrf_token"].data = request.cookies["csrf_token"]
-
-#     if form.validate_on_submit():
-#         aspiration.completed=form.data["completed"]
-#         db.session.commit()
-#         user = User.query.get(form.data["user_id"])
-#         return user.to_dict()
-#     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 # @aspirations_routes.route("/<int:id>", methods=["DELETE"])
 # @login_required
