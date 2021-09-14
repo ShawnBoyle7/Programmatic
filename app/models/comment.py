@@ -16,6 +16,6 @@ class Comment(db.Model):
         return {
             "id": self.id,
             "content": self.content,
-            "user_id": self.user_id,
-            "lesson_id": self.lesson_id
+            "userId": self.user_id,
+            "lessonId": self.lesson_id
         }
