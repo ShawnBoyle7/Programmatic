@@ -16,7 +16,7 @@ function LearningPath() {
     e.preventDefault()
     dispatch(deleteAspiration(e.target.id))
   }
-  const aspirationComponents = aspirations.map((aspiration) => {
+  const aspirationComponents = aspirations?.map((aspiration) => {
     return (
       <li key={aspiration.id}>
         <p>{lessons.find(lesson => lesson.id === aspiration.lessonId).name}</p>

@@ -37,6 +37,8 @@ def edit_aspiration(id):
 @login_required
 def delete_aspiration(id):
     aspiration = Aspiration.query.get(id)
+    user_id = aspiration.user_id
     db.session.delete(aspiration)
     db.session.commit()
-    return {"message": "Removed from Learning Path"}
+    user = User.query.get(user_id)
+    return user.to_dict()
