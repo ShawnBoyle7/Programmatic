@@ -3,10 +3,11 @@ import EditUserFormModal from "../EditUserFormModal";
 
 function Profile({ sessionUser }) {
     return (
-            sessionUser && 
+            sessionUser &&
             <>
                 <h1>{sessionUser.username}'s Profile</h1>
                 <EditUserFormModal/>
+                
             </>
     )
 }
