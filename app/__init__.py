@@ -12,6 +12,8 @@ from .api.courses_routes import courses_routes
 from .api.lessons_routes import lessons_routes
 from .api.comment_routes import comment_routes
 
+from .api.aspirations_routes import aspirations_routes
+
 from .seeds import seed_commands
 
 from .config import Config
