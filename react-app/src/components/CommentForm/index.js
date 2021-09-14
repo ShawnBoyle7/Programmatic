@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { newComment } from '../../store/comments'
 
 const CommentForm = ({ userId, lessonId }) => {
@@ -35,6 +34,7 @@ const CommentForm = ({ userId, lessonId }) => {
                     name="content"
                     onChange={updateContent}
                     value={content}
+                    required={true}
                 />
             </div>
             <button type="submit">Submit Comment</button>

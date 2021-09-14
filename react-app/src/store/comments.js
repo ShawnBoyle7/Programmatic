@@ -1,5 +1,6 @@
 const ADD_COMMENT = "comment/ADD_COMMENT";
 const LOAD_COMMENTS = "comment/LOAD_COMMENTS"
+const DELETE_COMMENT = "comments/DELETE_COMMENT"
 
 const addComment = (data) => ({
     type: ADD_COMMENT,
@@ -9,6 +10,11 @@ const addComment = (data) => ({
 const loadComments = (data) => ({
     type: LOAD_COMMENTS,
     data
+});
+
+const removeComment = (commentId) => ({
+    type: DELETE_COMMENT,
+    commentId
 });
 
 export const getComments = () => async (dispatch) => {
@@ -73,6 +79,18 @@ export const editComment = (content, commentId) => async (dispatch) => {
     }
 };
 
+export const deleteComment = (commentId) => async (dispatch) => {
+    const response = await fetch(`/api/comments/${commentId}`, {
+        method: "DELETE",
+    })
+
+    if (response.ok) {
+        dispatch(removeComment(commentId))
+        return null;
+    } else {
+        return "Uh oh could not delete :/"
+    }
+};
 
 
 const initialState = {}
@@ -88,7 +106,10 @@ export default function reducer(state = initialState, action ) {
                 stateCopy[comment.id] = comment
             });
             return stateCopy
+        case DELETE_COMMENT:
+            delete stateCopy[+action.commentId]
+            return stateCopy;
         default:
             return state;
-    }
-}
+    };
+};
