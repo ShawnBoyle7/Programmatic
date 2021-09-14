@@ -132,8 +132,8 @@ export const updateUser = (firstName, lastName, username, email, password, imgUr
     }
 };
 
-export const addToPath = (lessonId, userId, completed) => async (dispatch) => {
-    const response = await fetch('/api/aspirations',{
+export const addToPath = (lessonId, userId) => async (dispatch) => {
+    const response = await fetch('/api/aspirations/',{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -141,7 +141,6 @@ export const addToPath = (lessonId, userId, completed) => async (dispatch) => {
         body: JSON.stringify({
             lesson_id: lessonId,
             user_id: userId,
-            completed,
         }),
     });
     if (response.ok) {

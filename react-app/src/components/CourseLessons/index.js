@@ -1,20 +1,25 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { Link, useParams, useHistory } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { Link, useParams } from "react-router-dom";
+import { addToPath } from "../../store/session"
 
 function CourseLessons() {
     let { courseId } = useParams()
+    const dispatch = useDispatch()
+    const userId = useSelector(state => state.session.user?.id)
     const allLessons = Object.values(useSelector(state => state.curriculum.lessons))
-    const history = useHistory();
+    let courseLessons = allLessons.filter(lesson => lesson.courseId === +courseId)
+    console.log(allLessons)
     
-    const addToLearningPath = (_e) => {
-        dispatch(addToPath(lesson.id));
+    const addToLearningPath = (e) => {
+        dispatch(addToPath(e.target.id, userId));
     }
-    const courseLessons = allLessons.map((lesson) => {
+    
+    courseLessons = courseLessons.map((lesson) => {
         return (
             <li key={lesson.id}>
-                <Link to={`/lessons/${lesson.id}`}>{allLessons.find(lesson => lesson.courseId === courseId).name}</Link>
-                <button onClick={addToLearningPath}>Add to Learning Path</button>
+                <Link to={`/lessons/${lesson.id}`}>{lesson.name}</Link>
+                <button id={lesson.id} onClick={addToLearningPath}>Add to Learning Path</button>
             </li>
         );
     });
