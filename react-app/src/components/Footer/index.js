@@ -3,7 +3,9 @@ import React from "react";
 function Footer() {
     return (
         <footer>
-            <h1>Footer??!!</h1>
+            <div><i className="fab fa-github-square"></i></div>
+            <div></div>
+            <div></div>
         </footer>
     )
 }
