@@ -178,7 +178,7 @@ export const editAspiration = (aspirationId) => async(dispatch) => {
 
 export const deleteAspiration = (aspirationId) => async (dispatch) => {
     const response = await fetch(`/api/aspirations/${aspirationId}`, {
-        method: 'PUT'
+        method: 'DELETE'
     });
     if (response.ok) {
         const data = await response.json();
