@@ -7,15 +7,25 @@ import LessonVote from "../LessonVote";
 
 function Lesson() {
     let { lessonId } = useParams()
+    const lesson = useSelector(state => state.curriculum.lessons[+lessonId])
     const userId = useSelector(state => state.session.user.id)
 
-    return (
-        <>
-            <h1>Lesson {lessonId}</h1>
-            <CommentForm lessonId={lessonId} userId={userId} />
-            <Comments lessonId={lessonId} userId={userId}/>
-            <LessonVote lessonId={lessonId} userId={userId}/>
-        </>
+    return ( lesson && 
+        <div className='lesson-page'>
+            <div className='lesson-div'>
+                <h1>{lesson.name}</h1>
+                <p>{lesson.description}</p>
+                <p>{lesson.content}</p>
+            </div>
+            <div className='lesson-comment-div'>
+                <h3>Discussion:</h3>
+                <CommentForm lessonId={lessonId} userId={userId}/>
+                <Comments lessonId={lessonId} userId={userId}/>
+            </div>
+            <div className='lesson-vote-div'>
+                <LessonVote lessonId={lessonId} userId={userId}/>
+            </div>
+        </div>
     )
 }
 
