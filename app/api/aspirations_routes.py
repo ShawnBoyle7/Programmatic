@@ -1,6 +1,6 @@
 from flask import Blueprint
 from flask_login import login_required
-from app.models import db, Aspiration
+from app.models import db, Aspiration, User
 from app.forms import AspirationForm
 
 aspirations_routes = Blueprint("aspirations", __name__)
@@ -17,5 +17,6 @@ def add_aspiration():
         )
         db.session.add(aspiration)
         db.session.commit()
-        return aspiration.to_dict()
+        user = User.query.get(form.data["user_id"])
+        return user.to_dict()
     return {"Bad Data"}
