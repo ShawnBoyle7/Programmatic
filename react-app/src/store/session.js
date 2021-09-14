@@ -132,6 +132,19 @@ export const updateUser = (firstName, lastName, username, email, password, imgUr
     }
 };
 
+export const deleteUser = (userId) => async (dispatch) => {
+    const response = await fetch(`/api/auth/${userId}`, {
+        method: 'DELETE'
+    });
+
+    if (response.ok) {
+        dispatch(removeUser())
+        return null;
+    } else {
+        return "Uh oh, guess you're stuck with us, haha!"
+    }
+};
+
 export const addToPath = (lessonId, userId) => async (dispatch) => {
     const response = await fetch('/api/aspirations/',{
         method: 'POST',
@@ -158,11 +171,14 @@ export const addToPath = (lessonId, userId) => async (dispatch) => {
 }
 
 export default function reducer(state = initialState, action) {
+    const stateCopy = {...state}
     switch (action.type) {
         case SET_USER:
             return { user: action.payload }
         case REMOVE_USER:
             return { user: null }
+            // delete stateCopy.user;
+            // return stateCopy;
         default:
             return state;
     }

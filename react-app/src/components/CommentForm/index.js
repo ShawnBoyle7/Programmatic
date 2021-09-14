@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { newComment } from '../../store/comments'
 
 const CommentForm = ({ userId, lessonId }) => {
+    const dispatch = useDispatch();
+
+    const user = useSelector(state => state.session.user)
 
     const [errors, setErrors] = useState([])
     const [content, setContent] = useState("")
-    const dispatch = useDispatch();
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -23,19 +25,16 @@ const CommentForm = ({ userId, lessonId }) => {
 
     return (
         <form onSubmit={onSubmit}>
-            <div>
-                {errors.map((error, idx) => (
-                    <div key={idx}>{error}</div>
-                ))}
+            <div className="comment-errors">
+                {errors.map((error, idx) => <div className="comment-error" key={idx}>{error}</div>)}
             </div>
             <div>
-                <label>Comment as Username</label>
+                <label>Comment as {user.firstName}</label>
                 <textarea
                     name="content"
                     onChange={updateContent}
                     value={content}
-                    required={true}
-                />
+                    required={true}/>
             </div>
             <button type="submit">Submit Comment</button>
         </form>
