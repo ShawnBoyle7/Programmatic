@@ -2,6 +2,7 @@ from flask import Blueprint, request
 from flask_login import login_required
 from app.models import db, Comment
 from app.forms import CommentForm, EditCommentForm
+from .utils import validation_errors_to_error_messages
 
 comment_routes = Blueprint("comments", __name__)
 
@@ -29,7 +30,7 @@ def new_comment():
         db.session.commit()
         return comment.to_dict()
     # Placeholder Errors
-    return "Bad Data"
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 @comment_routes.route("/<int:id>", methods=["PUT"])
 @login_required
@@ -44,4 +45,16 @@ def edit_comment(id):
         db.session.commit()
         return comment.to_dict()
     # Placeholder Errors
-    return "Bad Data"
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+
+@comment_routes.route("/<int:id>", methods=["DELETE"])
+@login_required
+def delete_comment(id):
+    comment = Comment.query.get(id)
+    db.session.delete(comment)
+    db.session.commit()
+
+    return {"message": "Successfully Deleted"}
+
+
+    

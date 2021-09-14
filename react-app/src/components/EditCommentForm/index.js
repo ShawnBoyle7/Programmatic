@@ -15,6 +15,7 @@ const EditCommentForm = ({ commentId, setShowEditForm }) => {
             setErrors(data)
         }
         setContent("")
+        setShowEditForm(false)
     }
 
     const updateContent = (e) => {
