@@ -1,5 +1,6 @@
 import React from 'react';
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { editAspiration } from '../../store/session'
 
 function LearningPath() {
   const dispatch = useDispatch();
@@ -7,14 +8,14 @@ function LearningPath() {
   const lessons = Object.values(useSelector(state => state.curriculum.lessons))
   const aspirations = sessionUser?.aspirations
 
-  const editAspiration = (e) => {
-    dispatch(editAspiration(e.target.id, userId))
+  const toggleAspiration = (e) => {
+    dispatch(editAspiration(e.target.id))
   }
   const aspirationComponents = aspirations.map((aspiration) => {
     return (
       <li key={aspiration.id}>
         <p>{lessons.find(lesson => lesson.id === aspiration.lessonId).name}</p>
-        <input onClick={editAspiration} type="checkbox">Mark as Complete</input>
+        <input id={aspiration.id} checked={aspiration.completed} onChange={toggleAspiration} type="checkbox"/>
       </li>
     );
   });

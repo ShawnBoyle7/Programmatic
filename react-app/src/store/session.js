@@ -157,15 +157,9 @@ export const addToPath = (lessonId, userId) => async (dispatch) => {
     }
 }
 
-export const editAspiration = (asprirationId, userId) => async(dispatch) => {
+export const editAspiration = (aspirationId) => async(dispatch) => {
     const response = await fetch(`/api/aspirations/${aspirationId}`, {
-        method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            completed,
-        }),
+        method: 'PUT'
     });
 
     if (response.ok) {

@@ -27,9 +27,9 @@ def add_aspiration():
 @login_required
 def edit_aspiration(id):
     aspiration = Aspiration.query.get(id)
-    aspiration.completed= True if aspiration.complete is False else False
+    aspiration.completed= True if aspiration.completed is False else False
     db.session.commit()
-    user = User.query.get(aspiration["user_id"])
+    user = User.query.get(aspiration.user_id)
     return user.to_dict()
 
 
