@@ -1,1 +1,26 @@
 /* TODO Add site wide styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    position: absolute;
+    top: 50px;
+    width: 100vw;
+    padding: 0 25%;
+    height: calc(100vh - 50px - 20%);
+    overflow-y: auto;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 20%;
+    width: 100vw;
+    border-top: 1px solid black;
+}
