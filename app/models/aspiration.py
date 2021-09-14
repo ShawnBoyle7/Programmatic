@@ -11,3 +11,11 @@ class Aspiration(db.Model):
 
     user = db.relationship("User", back_populates = "aspirations")
     lesson = db.relationship("Lesson", back_populates = "aspirations")
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "lesson_id": self.lesson_id,
+            "completed": self.completed
+        }
