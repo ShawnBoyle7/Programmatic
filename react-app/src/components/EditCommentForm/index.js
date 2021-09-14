@@ -34,8 +34,8 @@ const EditCommentForm = ({ commentId, setShowModal }) => {
                     onChange={updateContent}
                     value={content}/>
             </div>
-            <button type="submit">Submit Comment</button>
-            <button onClick={() => setShowModal(false)}>Cancel Edit</button>
+            <button type="submit">Edit</button>
+            <button onClick={() => setShowModal(false)}>Cancel</button>
         </form>
     )
 }
