@@ -36,9 +36,9 @@ const Comments = ({ lessonId }) => {
                     <div className="comment" key={comment.id}>
                         <p className="comment-content">{comment.content}</p>
                         {user.id === comment.userId &&
-                            <button classname="comment-button" id={comment.id} onClick={renderEditModal}>Render Edit Modal</button>}
+                            <button className="comment-button" id={comment.id} onClick={renderEditModal}>Render Edit Modal</button>}
                         {user.id === comment.userId &&
-                            <button classname="comment-button" id={comment.id} onClick={getDeleteConfirmation}>Delete Comment</button>}
+                            <button className="comment-button" id={comment.id} onClick={getDeleteConfirmation}>Delete Comment</button>}
                     </div>)}
             </div>
 
@@ -46,8 +46,8 @@ const Comments = ({ lessonId }) => {
 
             {showDeleteForm && 
             <>
-                <button classname="comment-button" onClick={handleDelete}>Confirm Delete</button>
-                <button classname="comment-button" onClick={() => setShowDeleteForm(false)}>Cancel Delete</button>
+                <button className="comment-button" onClick={handleDelete}>Confirm Delete</button>
+                <button className="comment-button" onClick={() => setShowDeleteForm(false)}>Cancel Delete</button>
             </>
             }
         </>
