@@ -14,3 +14,18 @@ class Lesson(db.Model):
     comments = db.relationship("Comment", back_populates = "lesson", cascade="all, delete-orphan")
     votes = db.relationship("Vote", back_populates = "lesson", cascade="all, delete-orphan")
     aspirations = db.relationship("Aspiration", back_populates = "lesson", cascade="all, delete-orphan")
+
+    def to_dict(self):
+        comment_id_list = [comment.id for comment in self.comments]
+        votes = [{'id': vote.id, 'liked': vote.liked, 'userId':vote.user_id} for vote in self.votes]
+
+        return {
+            'id': self.id,
+            'name': self.name,
+            'description': self.description,
+            'content': self.content,
+            'imgUrl': self.img_url,
+            'courseId': self.course_id,
+            'comments': comment_id_list,
+            'votes': votes
+        }
