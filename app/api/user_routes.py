@@ -7,7 +7,6 @@ from ..forms import EditUserForm
 user_routes = Blueprint('users', __name__)
 
 @user_routes.route('/')
-@login_required
 def users():
     users = User.query.all()
     return {'users': [user.to_dict() for user in users]}
@@ -17,7 +16,7 @@ def users():
 @login_required
 def user(id):
     user = User.query.get(id)
-    return user.to_dict()
+    return user.to_session_dict()
 
 
 @user_routes.route("/<int:id>", methods=["PUT"])
@@ -39,5 +38,5 @@ def edit_user(id):
         db.session.commit()
 
         # Return the updated user to the thunk action creator so that we can update the redux store
-        return user.to_dict()
+        return user.to_session_dict()
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401

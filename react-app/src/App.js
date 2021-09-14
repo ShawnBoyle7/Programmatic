@@ -12,6 +12,7 @@ import PageNotFound from './components/PageNotFound';
 import { authenticate } from './store/session';
 import { getCurriculum } from './store/curriculum';
 import { getComments } from './store/comments';
+import { getUsers } from './store/users';
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -24,6 +25,7 @@ function App() {
         await dispatch(authenticate());
         await dispatch(getCurriculum());
         await dispatch(getComments());
+        await dispatch(getUsers());
         setLoaded(true);
         })();
     }, [dispatch]);
