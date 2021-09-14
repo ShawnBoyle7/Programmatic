@@ -176,6 +176,17 @@ export const editAspiration = (aspirationId) => async(dispatch) => {
     }
 }
 
+export const deleteAspiration = (aspirationId) => async (dispatch) => {
+    const response = await fetch(`/api/aspirations/${aspirationId}`, {
+        method: 'PUT'
+    });
+    if (response.ok) {
+        const data = await response.json();
+        dispatch(setUser(data))
+        return null;
+    }
+}
+
 export default function reducer(state = initialState, action) {
     switch (action.type) {
         case SET_USER:

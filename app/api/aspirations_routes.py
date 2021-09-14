@@ -33,10 +33,10 @@ def edit_aspiration(id):
     return user.to_dict()
 
 
-# @aspirations_routes.route("/<int:id>", methods=["DELETE"])
-# @login_required
-# def delete_aspiration(id):
-#     aspiration = Aspiration.query.get(id)
-#     db.session.delete(aspiration)
-#     db.session.commit()
-#     return {"message": "Removed from Learning Path"}
+@aspirations_routes.route("/<int:id>", methods=["DELETE"])
+@login_required
+def delete_aspiration(id):
+    aspiration = Aspiration.query.get(id)
+    db.session.delete(aspiration)
+    db.session.commit()
+    return {"message": "Removed from Learning Path"}
