@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
-import { newComment } from '../../store/comments'
+import { editComment } from '../../store/comments'
 
-const CommentForm = ({ userId, lessonId }) => {
+const EditCommentForm = ({ commentId, setShowEditForm }) => {
 
     const [errors, setErrors] = useState([])
     const [content, setContent] = useState("")
@@ -11,7 +10,7 @@ const CommentForm = ({ userId, lessonId }) => {
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        const data = await dispatch(newComment(content, userId, lessonId))
+        const data = await dispatch(editComment(content, commentId))
         if (data) {
             setErrors(data)
         }
@@ -30,7 +29,7 @@ const CommentForm = ({ userId, lessonId }) => {
                 ))}
             </div>
             <div>
-                <label>Comment as Username</label>
+                <label>Your Comment</label>
                 <textarea
                     name="content"
                     onChange={updateContent}
@@ -38,8 +37,9 @@ const CommentForm = ({ userId, lessonId }) => {
                 />
             </div>
             <button type="submit">Submit Comment</button>
+            <button onClick={e => setShowEditForm(false)}>Cancel Edit</button>
         </form>
     )
 }
 
-export default CommentForm;
+export default EditCommentForm;
