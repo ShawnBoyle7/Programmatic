@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, request
 from flask_login import login_required
 from app.models import db, Aspiration, User
 from app.forms import AspirationForm
@@ -9,6 +9,7 @@ aspirations_routes = Blueprint("aspirations", __name__)
 @login_required
 def add_aspiration():
     form = AspirationForm()
+    form["csrf_token"].data = request.cookies["csrf_token"]
     if form.validate_on_submit():
         aspiration = Aspiration(
             lesson_id=form.data["lesson_id"],

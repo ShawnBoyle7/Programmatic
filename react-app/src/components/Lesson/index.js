@@ -1,8 +1,9 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Comments from "../Comments";
 import CommentForm from "../CommentForm"
-import { useSelector } from "react-redux";
+import LessonVote from "../LessonVote";
 
 function Lesson() {
     let { lessonId } = useParams()
@@ -13,6 +14,7 @@ function Lesson() {
             <h1>Lesson {lessonId}</h1>
             <CommentForm lessonId={lessonId} userId={userId} />
             <Comments lessonId={lessonId} userId={userId}/>
+            <LessonVote lessonId={lessonId}/>
         </>
     )
 }
