@@ -35,23 +35,25 @@ function App() {
     return (
         <BrowserRouter>
         <NavBar sessionUser={sessionUser} authenticated={authenticated}/>
-        <Switch>
-            <Route exact path='/' >
-                <Home authenticated={authenticated}/>
-            </Route>
-            <Route path='/courses'>
-                <Courses />
-            </Route>
-            <ProtectedRoute path='/lessons/:lessonId'>
-                <Lesson />
-            </ProtectedRoute>
-            <ProtectedRoute path='/profile'>
-                <Profile sessionUser={sessionUser}/>
-            </ProtectedRoute>
-            <Route>
-                <PageNotFound />
-            </Route>
-        </Switch>
+        <div className='content'>
+            <Switch>
+                <Route exact path='/' >
+                    <Home authenticated={authenticated}/>
+                </Route>
+                <Route path='/courses'>
+                    <Courses />
+                </Route>
+                <ProtectedRoute path='/lessons/:lessonId'>
+                    <Lesson />
+                </ProtectedRoute>
+                <ProtectedRoute path='/profile'>
+                    <Profile sessionUser={sessionUser}/>
+                </ProtectedRoute>
+                <Route>
+                    <PageNotFound />
+                </Route>
+            </Switch>
+        </div>
         <Footer />
         </BrowserRouter>
     );

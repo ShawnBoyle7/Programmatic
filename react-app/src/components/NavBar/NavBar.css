@@ -1,0 +1,10 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100vw;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
