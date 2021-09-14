@@ -12,6 +12,7 @@ from .api.courses_routes import courses_routes
 from .api.lessons_routes import lessons_routes
 from .api.comment_routes import comment_routes
 from .api.aspirations_routes import aspirations_routes
+from .api.vote_routes import votes_routes
 
 from .seeds import seed_commands
 
@@ -39,6 +40,7 @@ app.register_blueprint(courses_routes, url_prefix='/api/courses')
 app.register_blueprint(lessons_routes, url_prefix='/api/lessons')
 app.register_blueprint(comment_routes, url_prefix='/api/comments')
 app.register_blueprint(aspirations_routes, url_prefix='/api/aspirations')
+app.register_blueprint(votes_routes, url_prefix='/api/votes')
 db.init_app(app)
 Migrate(app, db)
 
