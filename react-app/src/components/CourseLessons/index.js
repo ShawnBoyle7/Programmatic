@@ -7,8 +7,10 @@ function CourseLessons() {
     let { courseId } = useParams()
     const dispatch = useDispatch()
     const userId = useSelector(state => state.session.user?.id)
-    const allLessons = Object.values(useSelector(state => state.curriculum.lessons))
-    let courseLessons = allLessons.filter(lesson => lesson.courseId === +courseId)
+    const curriculum = useSelector(state => state.curriculum)
+    const course = curriculum?.courses[+courseId]
+    const allLessons = Object.values(curriculum?.lessons)
+    let courseLessons = allLessons.filter(lesson => lesson.courseId === course.id)
     console.log(allLessons)
 
     const addToLearningPath = (e) => {
@@ -30,7 +32,7 @@ function CourseLessons() {
     });
     return (
         <>
-            <h1>Specific Course {courseId}</h1>
+            <h1>{course.name}</h1>
             <ul>
                 {courseLessonsMap}
             </ul>
