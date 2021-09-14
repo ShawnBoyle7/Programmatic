@@ -9,7 +9,7 @@ const loadCurriculum = (data) => ({
     data
 });
 
-const initialState = {}
+const initialState = {courses: {}, lessons: {}}
 
 //thunk
 export const getCurriculum = () => async (dispatch) => {
@@ -23,10 +23,19 @@ export const getCurriculum = () => async (dispatch) => {
 // Reducer taking in an initial state and action
 export default function reducer(state = initialState, action) {
     // Check for case by action type
+    // let stateCopy = {...state}
     switch (action.type) {
         case LOAD_CURRICULUM:
-            return action.data
+            let allCourses = {}
+            action.data.courses.forEach(course => {
+                allCourses[course.id] = course
+            })
+            return {
+                ...state,
+                courses: {...allCourses}
+            }
+            // stateCopy.courses = action.data
+            // return stateCopy
         default:
             return state
     }
-}

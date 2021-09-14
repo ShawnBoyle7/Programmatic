@@ -2,6 +2,7 @@
 const SET_USER = 'session/SET_USER';
 const REMOVE_USER = 'session/REMOVE_USER';
 
+// action creators
 const setUser = (user) => ({
     type: SET_USER,
     payload: user
@@ -13,6 +14,7 @@ const removeUser = () => ({
 
 const initialState = { user: null };
 
+// thunk action creators
 export const authenticate = () => async (dispatch) => {
     const response = await fetch('/api/auth/', {
         headers: {
@@ -24,7 +26,7 @@ export const authenticate = () => async (dispatch) => {
         if (data.errors) {
         return;
         }
-    
+
         dispatch(setUser(data));
     }
 }
@@ -40,8 +42,8 @@ export const login = (email, password) => async (dispatch) => {
         password
         })
     });
-    
-    
+
+
     if (response.ok) {
         const data = await response.json();
         dispatch(setUser(data))
@@ -84,7 +86,7 @@ export const signUp = (firstName, lastName, username, email, password) => async 
             password,
         }),
     });
-    
+
     if (response.ok) {
         const data = await response.json();
         dispatch(setUser(data))
@@ -133,10 +135,10 @@ export const updateUser = (firstName, lastName, username, email, password, imgUr
 export default function reducer(state = initialState, action) {
     switch (action.type) {
         case SET_USER:
-        return { user: action.payload }
+            return { user: action.payload }
         case REMOVE_USER:
-        return { user: null }
+            return { user: null }
         default:
-        return state;
+            return state;
     }
 }
