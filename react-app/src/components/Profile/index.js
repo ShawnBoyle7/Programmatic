@@ -12,7 +12,7 @@ function Profile({ sessionUser }) {
                     <div className='profile-card'>
                         <img className='profile-image' src={sessionUser.imgUrl} alt={`${sessionUser.username}'s Avatar'`}/>
                         <EditUserFormModal/>
-                        <h3 className='username'>{sessionUser.username}</h3>
+                        <h1 className='username'>{sessionUser.username}</h1>
                     </div>
                     <div className='profile-details'>
                         <ul>
