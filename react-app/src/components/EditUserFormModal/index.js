@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 import EditUserForm from '../EditUserForm';
+import DeleteUserModal from '../DeleteUserModal';
 
 function EditUserFormModal() {
     const [showModal, setShowModal] = useState(false);
@@ -12,6 +13,7 @@ function EditUserFormModal() {
         {showModal && (
         <Modal onClose={() => setShowModal(false)}>
             <EditUserForm setShowModal={setShowModal}/>
+            <DeleteUserModal/>
         </Modal>
         )}
     </>
