@@ -2,7 +2,6 @@ import React from "react";
 import EditUserFormModal from "../EditUserFormModal";
 import LearningPath from "../LearningPath";
 import "./Profile.css"
-import DeleteUserModal from "../DeleteUserModal";
 
 function Profile({ sessionUser }) {
 
@@ -11,7 +10,7 @@ function Profile({ sessionUser }) {
             <>
                 <div className='profile-banner'>
                     <div className='profile-card'>
-                        <img className='profile-image' src={sessionUser.imgUrl}/>
+                        <img className='profile-image' src={sessionUser.imgUrl} alt={`${sessionUser.username}'s Avatar'`}/>
                         <EditUserFormModal/>
                         <h3 className='username'>{sessionUser.username}</h3>
                     </div>

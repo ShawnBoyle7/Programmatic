@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { deleteAspiration, editAspiration } from '../../store/session'
+import { editAspiration } from '../../store/session'
 import DeleteAspirationModal from '../DeleteAspirationModal';
 
 function LearningPath() {
@@ -17,29 +17,21 @@ function LearningPath() {
     dispatch(editAspiration(e.target.id))
   }
 
-  const removeAspiration = (e) => {
-    e.preventDefault()
-    dispatch(deleteAspiration(e.target.id))
-  }
-
   const renderDeleteModal = (e) => {
     setLessonIdDelete(e.target.id)
     setShowDeleteModal(true)
 }
 
-  const aspirationComponents = aspirations?.map((aspiration) => {
-    return (
-      <>
+  const aspirationComponents = aspirations?.map((aspiration) => 
         <div key={aspiration.id}>
           <p>{lessons.find(lesson => lesson.id === aspiration.lessonId).name}</p>
           <input id={aspiration.id} checked={aspiration.completed} onChange={toggleAspiration} type="checkbox"/>
           <button id={aspiration.id} onClick={renderDeleteModal}>Delete Aspiration</button>
-        </div>
 
-        <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal}/>
-      </>
-    );
-  });
+          <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal}/>
+
+        </div>
+  );
 
   return (
     <>
