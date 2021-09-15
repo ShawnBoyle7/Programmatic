@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { deleteComment } from "../../store/comments";
 import EditCommentFormModal from "../EditCommentFormModal";
+import "./Comments.css"
 
 const Comments = ({ lessonId }) => {
     const dispatch = useDispatch();
 
     const user = useSelector(state => state.session.user)
+    const users = useSelector(state => state.users)
     const comments = Object.values(useSelector(state => state.comments)).filter(comment => comment.lessonId === +lessonId)
 
     const [commentIdEdit, setCommentIdEdit] = useState("")
@@ -33,8 +35,14 @@ const Comments = ({ lessonId }) => {
         <>
             <div className="comments">
                 {comments.map(comment =>
-                    <div className="comment" key={comment.id}>
-                        <p className="comment-content">{comment.content}</p>
+                    <div className="comment-div" key={comment.id}>
+                        <div className="comment">
+                            <img className='comment-pic' src={users[comment.userId].imgUrl}/>
+                            <div>
+                                <p className='comment-author'>{users[comment.userId].username}</p>
+                                <p className="comment-content">{comment.content}</p>
+                            </div>
+                        </div>
                         {user.id === comment.userId &&
                             <button className="comment-button" id={comment.id} onClick={renderEditModal}>Render Edit Modal</button>}
                         {user.id === comment.userId &&

@@ -1,5 +1,3 @@
-import { useDebugValue } from "react";
-
 // Action type string literal
 const LOAD_CURRICULUM = "curriculum/LOAD_CURRICULUM";
 const UPDATE_LESSON = "curriculum/UPDATE_LESSON";
