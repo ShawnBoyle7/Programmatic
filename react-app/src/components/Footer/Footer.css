@@ -13,8 +13,10 @@ footer {
 }
 
 .footer-cards > div {
-    margin: 1em 10%;
+    margin: 1.5em 10%;
+    padding: 1.5em;
     border: 1px solid black;
+    border-radius: 50%;
 }
 
 .fab {
