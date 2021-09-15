@@ -1,3 +1,4 @@
+import { getUsers } from './users'
 // constants
 const SET_USER = 'session/SET_USER';
 const REMOVE_USER = 'session/REMOVE_USER';
@@ -90,6 +91,7 @@ export const signUp = (firstName, lastName, username, email, password) => async 
     if (response.ok) {
         const data = await response.json();
         dispatch(setUser(data))
+        dispatch(getUsers());
         return null;
     } else if (response.status < 500) {
         const data = await response.json();
@@ -121,6 +123,7 @@ export const updateUser = (firstName, lastName, username, email, password, imgUr
     if (response.ok) {
         const data = await response.json();
         dispatch(setUser(data))
+        dispatch(getUsers());
         return null;
     } else if (response.status < 500) {
         const data = await response.json();
@@ -138,7 +141,8 @@ export const deleteUser = (userId) => async (dispatch) => {
     });
 
     if (response.ok) {
-        dispatch(removeUser())
+        dispatch(removeUser());
+        dispatch(getUsers());
         return null;
     } else {
         return "Uh oh, guess you're stuck with us, haha!"
@@ -171,7 +175,6 @@ export const addToPath = (lessonId, userId) => async (dispatch) => {
 }
 
 export default function reducer(state = initialState, action) {
-    const stateCopy = {...state}
     switch (action.type) {
         case SET_USER:
             return { user: action.payload }
