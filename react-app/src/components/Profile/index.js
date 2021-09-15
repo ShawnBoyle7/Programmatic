@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import EditUserFormModal from "../EditUserFormModal";
 import LearningPath from "../LearningPath";
 import { deleteUser } from "../../store/session";
+import DeleteUserModal from "../DeleteUserModal";
 
 function Profile({ sessionUser }) {
     const dispatch = useDispatch()
@@ -24,8 +25,9 @@ function Profile({ sessionUser }) {
             sessionUser &&
             <>
                 <h1>{sessionUser.username}'s Profile</h1>
-                <EditUserFormModal/> 
                 <LearningPath />
+                <EditUserFormModal/> 
+                <DeleteUserModal/>
                 <button onClick={renderDelete}>Deactivate Account</button>
 
                 {showDelete &&
