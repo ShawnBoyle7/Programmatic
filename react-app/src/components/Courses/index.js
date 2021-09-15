@@ -27,15 +27,29 @@ function Courses() {
 
     const authenticated = userId !== undefined
 
+    const allLessonsAlreadyOnPath = (courseId) => {
+        const courseLessons = allLessons.filter(lesson => lesson.courseId === courseId)
+        //check if all lessons in course are already in asp
+        //if so, don't render button
+        for (let i = 0; i < courseLessons.length; i++) {
+            let lesson = courseLessons[i];
+            if(!userAspirations.find(asp => asp.lessonId === lesson.id)){
+                return false;
+            }
+        }
+        return true;
+    }
+
     return (
     <>
         <Route exact path='/courses'>
             <div>
                 {courses.map(course => {
+
                     return(
                         <div key={course.id}>
                             <Link to={`/courses/${course.id}`}>{course.name}</Link>
-                            {authenticated &&
+                            {authenticated && !allLessonsAlreadyOnPath(course.id) &&
                               <button id={course.id} onClick={addToLearningPath}>Add to Learning Path</button>
                             }
                         </div>
