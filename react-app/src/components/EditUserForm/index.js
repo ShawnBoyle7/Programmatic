@@ -108,7 +108,7 @@ const EditUserForm = ({ setShowModal }) => {
             ></input>
         </div>
         <div>
-            <label>Password</label>
+            <label>New Password</label>
             <input
             type='password'
             name='password'

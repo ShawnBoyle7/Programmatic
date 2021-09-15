@@ -20,7 +20,7 @@ def add_aspiration():
         db.session.add(aspiration)
         db.session.commit()
         user = User.query.get(form.data["user_id"])
-        return user.to_dict()
+        return user.to_session_dict()
     return {"Bad Data"}
 
 @aspirations_routes.route("/<int:id>", methods=["PUT"])

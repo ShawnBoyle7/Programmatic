@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { editComment } from '../../store/comments'
 
-const EditCommentForm = ({ commentId, setShowEditForm }) => {
+const EditCommentForm = ({ commentId, setShowModal }) => {
+    const dispatch = useDispatch();
 
     const [errors, setErrors] = useState([])
     const [content, setContent] = useState("")
-    const dispatch = useDispatch();
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -15,7 +15,7 @@ const EditCommentForm = ({ commentId, setShowEditForm }) => {
             setErrors(data)
         }
         setContent("")
-        setShowEditForm(false)
+        setShowModal(false)
     }
 
     const updateContent = (e) => {
@@ -24,21 +24,18 @@ const EditCommentForm = ({ commentId, setShowEditForm }) => {
 
     return (
         <form onSubmit={onSubmit}>
-            <div>
-                {errors.map((error, idx) => (
-                    <div key={idx}>{error}</div>
-                ))}
+            <div className="comment-errors">
+                {errors.map((error, idx) => <div className="comment-error" key={idx}>{error}</div>)}
             </div>
             <div>
                 <label>Your Comment</label>
                 <textarea
                     name="content"
                     onChange={updateContent}
-                    value={content}
-                />
+                    value={content}/>
             </div>
-            <button type="submit">Submit Comment</button>
-            <button onClick={e => setShowEditForm(false)}>Cancel Edit</button>
+            <button type="submit">Edit</button>
+            <button onClick={() => setShowModal(false)}>Cancel</button>
         </form>
     )
 }
