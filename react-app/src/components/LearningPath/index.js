@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { deleteAspiration, editAspiration } from '../../store/session'
+import DeleteAspirationModal from '../DeleteAspirationModal';
 
 function LearningPath() {
   const [lessonIdDelete, setLessonIdDelete] = useState("")
