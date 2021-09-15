@@ -32,7 +32,6 @@ export const getCurriculum = () => async (dispatch) => {
 }
 
 export const addVote = (lessonId, userId, liked) => async (dispatch) => {
-    console.log('Thunk ------->', liked)
     const response = await fetch('/api/votes/', {
         method: "POST",
         headers: {
@@ -83,7 +82,6 @@ export default function reducer(state = initialState, action) {
         case LOAD_CURRICULUM:
             let allCourses = {}
             let allLessons = {}
-            // console.log(action.data.courses)
             action.data.courses.forEach(course => {
                 allCourses[course.id] = course
             })
