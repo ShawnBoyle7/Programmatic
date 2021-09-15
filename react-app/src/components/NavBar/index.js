@@ -15,16 +15,21 @@ const NavBar = ({sessionUser, authenticated}) => {
 
     // Tracking user input from the state variable in a use effect because apparently you need it for real time updates
     useEffect(() => {
-
+        
         // If no user input, don't render search results
         if (!searchQuery.length) return setRenderSearchDropdown(false)
-
+        
         // If there is user input, we set this state variable to true so that we can render the dropdown results
         setRenderSearchDropdown(true)
-
-        console.log(searchQuery)
+        
     }, [searchQuery]);
-
+    
+    const handleClick = () => {
+        if (searchQuery.length) {
+            setRenderSearchDropdown(true)
+        }
+    }
+    
     return (
         <nav>
             <NavLink to='/' exact={true} activeClassName='active'>
@@ -35,9 +40,10 @@ const NavBar = ({sessionUser, authenticated}) => {
                 Courses
             </NavLink>
 
-            <div className="nav-search-div">
+            <div className="nav-search-div" onClick={e => e.stopPropagation()}>
                 <input 
                 placeholder='Search Here...'
+                onClick={handleClick}
                 // Comment this later
                 value={searchQuery}
                 // Listen to user input and update our state variable on change
@@ -46,7 +52,7 @@ const NavBar = ({sessionUser, authenticated}) => {
                 {/* If there is user input, render the dropdown results */}
                 {renderSearchDropdown && 
                     // Passing props for filtering our query and toggle the rendering of our dropdown results
-                    <SearchDropdown searchQuery={searchQuery} setRenderSearchDropdown={setRenderSearchDropdown}/>}
+                    <SearchDropdown searchQuery={searchQuery} setSearchQuery={setSearchQuery} setRenderSearchDropdown={setRenderSearchDropdown}/>}
             </div>
 
             { !authenticated ? 

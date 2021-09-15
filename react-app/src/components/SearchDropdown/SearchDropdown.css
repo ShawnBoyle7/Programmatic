@@ -4,5 +4,8 @@
     height: fit-content;
     background-color: white;
     border: 1px solid black;
-    z-index: 6;
+}
+
+.match {
+    font-weight: bold;
 }

@@ -23,20 +23,18 @@ function CourseLessons() {
     const courseLessonsMap = courseLessons.map((lesson) => {
         const lessonAspiration = userAspirations.find(asp => asp.lessonId === lesson.id)
         return (
-            <li key={lesson.id}>
+            <div key={lesson.id}>
                 <Link to={`/lessons/${lesson.id}`}>{lesson.name}</Link>
                 { !lessonAspiration &&
                     <button id={lesson.id} onClick={addToLearningPath}>Add to Learning Path</button>
                 }
-            </li>
+            </div>
         );
     });
     return (
         <>
             <h1>{course.name}</h1>
-            <ul>
                 {courseLessonsMap}
-            </ul>
         </>
     )
 }
