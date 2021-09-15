@@ -21,10 +21,9 @@ function Profile({ sessionUser }) {
                             <li className='email'>{sessionUser.email}</li>
                         </ul>
                     </div>
-                </div> 
+                </div>
                 <h1>{sessionUser.username}'s Profile</h1>
                 <LearningPath />
-                <DeleteUserModal/>
             </>
     )
 }
