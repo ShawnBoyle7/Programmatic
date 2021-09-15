@@ -174,6 +174,36 @@ export const addToPath = (lessonId, userId) => async (dispatch) => {
     }
 }
 
+export const editAspiration = (aspirationId) => async(dispatch) => {
+    const response = await fetch(`/api/aspirations/${aspirationId}`, {
+        method: 'PUT'
+    });
+
+    if (response.ok) {
+        const data = await response.json();
+        dispatch(setUser(data))
+        return null;
+    } else if (response.status < 500) {
+        const data = await response.json();
+        if (data.errors) {
+            return data.errors;
+        }
+    } else {
+        return ['An error occurred. Please try again.']
+    }
+}
+
+export const deleteAspiration = (aspirationId) => async (dispatch) => {
+    const response = await fetch(`/api/aspirations/${aspirationId}`, {
+        method: 'DELETE'
+    });
+    if (response.ok) {
+        const data = await response.json();
+        dispatch(setUser(data))
+        return null;
+    }
+}
+
 export default function reducer(state = initialState, action) {
     switch (action.type) {
         case SET_USER:
