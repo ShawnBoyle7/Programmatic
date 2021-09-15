@@ -30,7 +30,7 @@ def edit_aspiration(id):
     aspiration.completed= True if aspiration.completed is False else False
     db.session.commit()
     user = User.query.get(aspiration.user_id)
-    return user.to_dict()
+    return user.to_session_dict()
 
 
 @aspirations_routes.route("/<int:id>", methods=["DELETE"])
@@ -41,4 +41,4 @@ def delete_aspiration(id):
     db.session.delete(aspiration)
     db.session.commit()
     user = User.query.get(user_id)
-    return user.to_dict()
+    return user.to_session_dict()
