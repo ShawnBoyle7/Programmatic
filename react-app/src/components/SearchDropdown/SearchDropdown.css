@@ -1,0 +1,7 @@
+.search-dropdown {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid black;
+}
