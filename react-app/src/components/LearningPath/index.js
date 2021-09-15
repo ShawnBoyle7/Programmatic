@@ -26,7 +26,13 @@ function LearningPath() {
     setLessonIdDelete(e.target.id)
     setShowDeleteModal(true)
 }
+//aspirations is an array of obj
+//iterate through 
 
+//iterate through all the lessons
+  // check lesson course id, if isn't rendered, make new div
+  //if the lesson course id has already been seen, add to that div
+console.log(aspirations)
   const aspirationComponents = aspirations?.map((aspiration) => {
     return (
       <>
