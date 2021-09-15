@@ -13,6 +13,7 @@ import { authenticate } from './store/session';
 import { getCurriculum } from './store/curriculum';
 import { getComments } from './store/comments';
 import { getUsers } from './store/users';
+import SearchResults from "./components/SearchResults"
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -42,6 +43,11 @@ function App() {
                 <Route exact path='/' >
                     <Home authenticated={authenticated}/>
                 </Route>
+
+                <Route path="/search">
+                    <SearchResults/>
+                </Route>
+
                 <Route path='/courses'>
                     <Courses />
                 </Route>

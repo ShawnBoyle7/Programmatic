@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import LogoutButton from '../auth/LogoutButton';
 import LoginFormModal from '../LoginFormModal';
 import SignUpFormModal from '../SignUpFormModal';
@@ -7,6 +7,7 @@ import SearchDropdown from '../SearchDropdown';
 import './NavBar.css'
 
 const NavBar = ({sessionUser, authenticated}) => {
+    const history = useHistory();
 
     // Tracking user input in a state variable
     const [searchQuery, setSearchQuery] = useState("");
@@ -29,6 +30,20 @@ const NavBar = ({sessionUser, authenticated}) => {
             setRenderSearchDropdown(true)
         }
     }
+
+    const submitHandler = (e) => {
+        e.preventDefault()
+
+        if (!searchQuery.length) return
+
+        setRenderSearchDropdown(false)
+        const query = searchQuery
+        setSearchQuery("")
+
+        history.push(`/search?q=${query}`)
+
+
+    }
     
     return (
         <nav>
@@ -41,18 +56,20 @@ const NavBar = ({sessionUser, authenticated}) => {
             </NavLink>
 
             <div className="nav-search-div" onClick={e => e.stopPropagation()}>
-                <input 
-                placeholder='Search Here...'
-                onClick={handleClick}
-                // Comment this later
-                value={searchQuery}
-                // Listen to user input and update our state variable on change
-                onChange={e => setSearchQuery(e.target.value)}
-                />
-                {/* If there is user input, render the dropdown results */}
-                {renderSearchDropdown && 
-                    // Passing props for filtering our query and toggle the rendering of our dropdown results
-                    <SearchDropdown searchQuery={searchQuery} setSearchQuery={setSearchQuery} setRenderSearchDropdown={setRenderSearchDropdown}/>}
+                <form className="search-form" onSubmit={submitHandler}>
+                    <input 
+                    placeholder='Search Here...'
+                    onClick={handleClick}
+                    // Comment this later
+                    value={searchQuery}
+                    // Listen to user input and update our state variable on change
+                    onChange={e => setSearchQuery(e.target.value)}
+                    />
+                    {/* If there is user input, render the dropdown results */}
+                    {renderSearchDropdown && 
+                        // Passing props for filtering our query and toggle the rendering of our dropdown results
+                        <SearchDropdown searchQuery={searchQuery} setSearchQuery={setSearchQuery} setRenderSearchDropdown={setRenderSearchDropdown}/>}
+                </form>
             </div>
 
             { !authenticated ? 
