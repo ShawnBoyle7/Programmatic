@@ -13,7 +13,7 @@ function Profile({ sessionUser }) {
                     <div className='profile-card'>
                         <img className='profile-image' src={sessionUser.imgUrl}/>
                         <EditUserFormModal/>
-                        <h3 className='username'>{sessionUser.username}</h3>
+                        <h1 className='username'>{sessionUser.username}</h1>
                     </div>
                     <div className='profile-details'>
                         <ul>
@@ -22,7 +22,6 @@ function Profile({ sessionUser }) {
                         </ul>
                     </div>
                 </div> 
-                <h1>{sessionUser.username}'s Profile</h1>
                 <LearningPath />
                 <DeleteUserModal/>
             </>
