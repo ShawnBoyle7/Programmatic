@@ -7,7 +7,7 @@ import { addToPath } from "../../store/session"
 
 function Courses() {
     const dispatch = useDispatch();
-
+    const allUsers = Object.keys(state => state.users)
     const courses = Object.values(useSelector(state => state.curriculum.courses))
     const allLessons = Object.values(useSelector(state => state.curriculum.lessons))
     const userId = useSelector(state => state.session.user?.id)
@@ -23,8 +23,10 @@ function Courses() {
                 dispatch(addToPath(lesson.id, userId));
             }
         })
-
     }
+
+    const authenticated = userId !== undefined
+
     return (
     <>
         <Route exact path='/courses'>
@@ -33,7 +35,9 @@ function Courses() {
                     return(
                         <div key={course.id}>
                             <Link to={`/courses/${course.id}`}>{course.name}</Link>
-                            <button id={course.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                            {authenticated &&
+                              <button id={course.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                            }
                         </div>
                     )
 
