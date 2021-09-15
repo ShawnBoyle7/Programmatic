@@ -1,0 +1,38 @@
+.profile-banner {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.profile-image {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+.profile-card:hover .edit-user {
+	display: block;
+    cursor: pointer;
+}
+
+.profile-card {
+    position: relative;
+}
+
+.edit-user {
+	position: absolute;
+    top: 0px;
+    right: 0px;
+	display: none;
+}
+
+
+/* .profile-pic {
+	position: relative;
+	display: inline-block;
+} */
+
+
+/* .edit a {
+	color: #000;
+} */

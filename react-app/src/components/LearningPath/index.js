@@ -10,7 +10,7 @@ function LearningPath() {
   const sessionUser = useSelector(state => state.session?.user)
   const lessons = Object.values(useSelector(state => state.curriculum.lessons))
   const aspirations = sessionUser?.aspirations.sort((a, b) => {
-    return b.id - a.id
+    return a.id - b.id
   });
 
   const toggleAspiration = (e) => {
