@@ -7,7 +7,7 @@ import { addToPath } from "../../store/session"
 
 function Courses() {
     const dispatch = useDispatch();
-
+    const allUsers = Object.keys(state => state.users)
     const courses = Object.values(useSelector(state => state.curriculum.courses))
     const allLessons = Object.values(useSelector(state => state.curriculum.lessons))
     const userId = useSelector(state => state.session.user?.id)
@@ -23,17 +23,35 @@ function Courses() {
                 dispatch(addToPath(lesson.id, userId));
             }
         })
-
     }
+
+    const authenticated = userId !== undefined
+
+    const allLessonsAlreadyOnPath = (courseId) => {
+        const courseLessons = allLessons.filter(lesson => lesson.courseId === courseId)
+        //check if all lessons in course are already in asp
+        //if so, don't render button
+        for (let i = 0; i < courseLessons.length; i++) {
+            let lesson = courseLessons[i];
+            if(!userAspirations.find(asp => asp.lessonId === lesson.id)){
+                return false;
+            }
+        }
+        return true;
+    }
+
     return (
     <>
         <Route exact path='/courses'>
             <div>
                 {courses.map(course => {
+
                     return(
                         <div key={course.id}>
                             <Link to={`/courses/${course.id}`}>{course.name}</Link>
-                            <button id={course.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                            {authenticated && !allLessonsAlreadyOnPath(course.id) &&
+                              <button id={course.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                            }
                         </div>
                     )
 
