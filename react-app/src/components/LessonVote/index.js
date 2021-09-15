@@ -14,15 +14,12 @@ function LessonVote({ lessonId, userId }) {
     const handleVote = e => {
         const liked = e.target.innerHTML === 'Yes' ? true : false
         if (!userVote) {
-            console.log('create')
             dispatch(addVote(lessonId, userId, liked))
         }
         else if (userVote.liked !== liked){
-            console.log('update')
             dispatch(updateVote(userVote.id, liked))
         }
         else if (userVote.liked === liked){
-            console.log('delete')
             dispatch(deleteVote(userVote.id))
         }
     }

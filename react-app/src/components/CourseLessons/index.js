@@ -4,14 +4,15 @@ import { Link, useParams } from "react-router-dom";
 import { addToPath } from "../../store/session"
 
 function CourseLessons() {
-    let { courseId } = useParams()
     const dispatch = useDispatch()
+    let { courseId } = useParams()
+
     const userId = useSelector(state => state.session.user?.id)
     const curriculum = useSelector(state => state.curriculum)
+    
     const course = curriculum?.courses[+courseId]
     const allLessons = Object.values(curriculum?.lessons)
     let courseLessons = allLessons.filter(lesson => lesson.courseId === course.id)
-    console.log(allLessons)
 
     const addToLearningPath = (e) => {
         dispatch(addToPath(e.target.id, userId));
