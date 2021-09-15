@@ -9,7 +9,7 @@ function CourseLessons() {
 
     const userId = useSelector(state => state.session.user?.id)
     const curriculum = useSelector(state => state.curriculum)
-    
+
     const course = curriculum?.courses[+courseId]
     const allLessons = Object.values(curriculum?.lessons)
     let courseLessons = allLessons.filter(lesson => lesson.courseId === course.id)

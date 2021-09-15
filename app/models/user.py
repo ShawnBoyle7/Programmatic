@@ -37,7 +37,7 @@ class User(db.Model, UserMixin):
         }
 
     def to_session_dict(self):
-        asp = [{"id": asp.id, "lessonId": asp.lesson_id, "completed": asp.completed} for asp in self.aspirations]
+        asp = [{"id": asp.id, "lessonId": asp.lesson_id, "courseId": asp.lesson.course_id, "completed": asp.completed} for asp in self.aspirations]
         return {
             'id': self.id,
             'firstName': self.first_name,
