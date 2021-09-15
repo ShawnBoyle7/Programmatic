@@ -1,11 +1,8 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import EditCommentFormModal from "../EditCommentFormModal";
-<<<<<<< HEAD
 import DeleteCommentModal from "../DeleteCommentModal"
-=======
 import "./Comments.css"
->>>>>>> main
 
 const Comments = ({ lessonId }) => {
     const user = useSelector(state => state.session.user)
