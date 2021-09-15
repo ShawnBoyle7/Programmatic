@@ -11,9 +11,9 @@ function Courses() {
     <>
         <Route exact path='/courses'>
             <div>
-                {courses.map(course => 
+                {courses.map(course =>
                     <div key={course.id}>
-                        <Link to='/courses/1'>{course.name}</Link>
+                        <Link to={`/courses/${course.id}`}>{course.name}</Link>
                     </div>)}
             </div>
         </Route>
