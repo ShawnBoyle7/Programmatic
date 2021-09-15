@@ -7,9 +7,9 @@ nav {
     width: 100vw;
     padding: 0;
     border-bottom: 1px solid black;
+    z-index: 1;
 }
 
 .nav-search-div {
     position: relative;
-    
 }

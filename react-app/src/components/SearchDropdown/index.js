@@ -6,13 +6,22 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import "./SearchDropdown.css"
 
-const SearchDropdown = ({ searchQuery, setRenderSearchDropdown }) => {
+const SearchDropdown = ({ searchQuery, setSearchQuery, setRenderSearchDropdown  }) => {
 
     const courses = Object.values(useSelector(state => state.curriculum.courses))
     const lessons = Object.values(useSelector(state => state.curriculum.lessons))
 
     const courseResults = courses?.filter(course => course.name.toLowerCase().includes(searchQuery?.toLowerCase()))
     const lessonResults = lessons?.filter(lesson => lesson.name.toLowerCase().includes(searchQuery?.toLowerCase()))
+
+    document.querySelector("html").addEventListener("click", () => {
+        setRenderSearchDropdown(false)
+    });
+
+    const handleClick = () => {
+        setRenderSearchDropdown(false)
+        setSearchQuery("")
+    }
 
     return (
         <>
@@ -23,7 +32,7 @@ const SearchDropdown = ({ searchQuery, setRenderSearchDropdown }) => {
                     <div className="search-courses-results">
                         {courseResults.length ? 
                             courseResults.map(course =>
-                                <Link to={`/courses/${course.id}`} key={course.id}> {course.name} </Link>
+                                <Link to={`/courses/${course.id}`} onClick={handleClick} key={course.id}> {course.name} </Link>
                             )
                         : <p>No courses found :/</p>}
                     </div>
@@ -34,7 +43,7 @@ const SearchDropdown = ({ searchQuery, setRenderSearchDropdown }) => {
                     <div className="search-lessons-results">
                         {lessonResults.length ? 
                             lessonResults.map(lesson =>
-                                <Link to={`/lessons/${lesson.id}`} key={lesson.id}> {lesson.name} </Link>
+                                <Link to={`/lessons/${lesson.id}`} onClick={handleClick} key={lesson.id}> {lesson.name} </Link>
                             )
                         : <p>No lessons found :/.....</p>}
                     </div>
