@@ -1,0 +1,20 @@
+.comment-form {
+    display: flex;
+    width: 100%;
+}
+
+.comment-form button {
+    width: fit-content;
+}
+
+.comment-input-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.comment-input {
+    height: 4em;
+    width: 50%;
+    resize: none;
+}
