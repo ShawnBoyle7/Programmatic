@@ -1,10 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToPath } from "../../store/session"
+import "./CourseDiv.css"
 
 const CourseDiv = ({ course }) => {
-
+    const history = useHistory();
     const dispatch = useDispatch();
     const allLessons = Object.values(useSelector(state => state.curriculum.lessons))
     const userId = useSelector(state => state.session.user?.id)
@@ -14,6 +15,7 @@ const CourseDiv = ({ course }) => {
     // We need to iterate through all the lessons in the course to see if any are already part of the learning path.
     // If so, don't add those
     const addToLearningPath = (e) => {
+        e.stopPropagation()
         const courseId = e.target.id
         const courseLessons = allLessons.filter(lesson => lesson.courseId === +courseId)
         courseLessons.forEach((lesson) => {
@@ -39,11 +41,26 @@ const CourseDiv = ({ course }) => {
     }
     
     return(
-        <div>
-            <Link to={`/courses/${course.id}`}>{course.name}</Link>
-            {authenticated && !allLessonsAlreadyOnPath(course.id) &&
-                <button id={course.id} onClick={addToLearningPath}>Add to Learning Path</button>
-            }
+        <div className="course-div" onClick={() => history.push(`/courses/${course.id}`)}>
+
+            <div className="course-header">
+                Course
+            </div>
+            
+            <div className="course-name">
+                {course.name}
+            </div>
+
+            <div className="lesson-count">
+                <span>{course.lessons.length}</span> Lessons
+            </div>
+
+            <div className="course-button-div">
+                {authenticated && !allLessonsAlreadyOnPath(course.id) &&
+                    <button id={course.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                }
+            </div>
+
         </div>
     )
 };
