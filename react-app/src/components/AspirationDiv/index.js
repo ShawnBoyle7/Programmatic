@@ -33,8 +33,8 @@ function AspirationDiv({ aspiration }) {
             <div className={`aspiration ${aspiration.completed ? 'completed' : ''}`}>
                 <span className='aspiration-name'>{lesson.name}</span>
                 <input className='aspiration-option toggle-complete'id={aspiration.id} checked={aspiration.completed} onChange={toggleAspiration} onClick={e=>e.stopPropagation()} type="checkbox" />
-                <i className="fas fa-minus-circle aspiration-option delete" id={aspiration.id} onClick={renderDeleteModal}></i>
-                <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal} />
+                <span onClick={renderDeleteModal}><i className="fas fa-minus-circle aspiration-option delete" id={aspiration.id} ></i></span>
+                <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal}/>
             </div>
         </Link>
     );

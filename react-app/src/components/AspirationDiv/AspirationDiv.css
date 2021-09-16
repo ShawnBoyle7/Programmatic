@@ -4,18 +4,20 @@
 
 .aspiration {
     border: 1px solid black;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     border-radius: 100px;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 1em;
+    padding: 0 .5em;
 }
 
 .completed {
     border: 2px solid green;
+    background-color: rgba(0, 128, 0, 0.1);
 }
 
 .aspiration-option {
@@ -24,13 +26,14 @@
 }
 
 .aspiration-option.delete {
-    top: 45%;
-    right: 5%;
+    bottom: 5%;
+    right: 45%;
+    color: red;
 }
 
 .aspiration-option.toggle-complete {
-    top: 45%;
-    left: 5%;
+    top: 5%;
+    left: 45%;
 }
 
 .aspiration-name {

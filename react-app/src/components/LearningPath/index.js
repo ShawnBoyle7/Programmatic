@@ -34,11 +34,11 @@ function LearningPath() {
     );
 
   return (
-    <>
-      <h1>Learning Path: </h1>
+    <div className='learning-path'>
+      <h2 className='learning-path-header'>Your Learning Path</h2>
       <div>{aspirationComponents}</div>
 
-    </>
+    </div>
   );
 }
 
