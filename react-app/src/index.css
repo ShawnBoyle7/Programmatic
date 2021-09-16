@@ -36,5 +36,5 @@ body {
     padding-top: 3em;
     height: calc(100vh - 50px - 20%);
     overflow-y: auto;
+    z-index: -1
 }
-

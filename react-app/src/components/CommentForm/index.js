@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { newComment } from '../../store/comments'
+import './CommentForm.css'
 
 const CommentForm = ({ userId, lessonId }) => {
     const dispatch = useDispatch();
@@ -24,19 +25,23 @@ const CommentForm = ({ userId, lessonId }) => {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form className='comment-form' onSubmit={onSubmit}>
             <div className="comment-errors">
                 {errors.map((error, idx) => <div className="comment-error" key={idx}>{error}</div>)}
             </div>
-            <div>
+            <div className='comment-img-div'>
+                <img className='comment-img' src={user.imgUrl} alt={user.username}/>
+            </div>
+            <div className='comment-input-div'>
                 <label>Comment as {user.firstName}</label>
                 <textarea
+                    className='comment-input'
                     name="content"
                     onChange={updateContent}
                     value={content}
                     required={true}/>
+                <button type="submit">Submit Comment</button>
             </div>
-            <button type="submit">Submit Comment</button>
         </form>
     )
 }
