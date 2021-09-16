@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
-import AlgoVis from "../AlgoVis"
+import DijkstraVisualization from "../DijkstraVisualization"
 
-function AlgoVisModal() {
+function AlgoVisModal({}) {
     const [showModal, setShowModal] = useState(false);
 
     return (
@@ -10,7 +10,7 @@ function AlgoVisModal() {
         <button className='algo-vis-modal-btn' onClick={() => setShowModal(true)}>See It In Action!</button>
         {showModal && (
         <Modal onClose={() => setShowModal(false)}>
-            <AlgoVis />
+            <DijkstraVisualization />
         </Modal>
         )}
     </>

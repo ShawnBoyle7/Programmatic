@@ -11,30 +11,41 @@
     height: 125%;
 }
 
-.r7c4 {
+.r7c8 {
     position: relative;
-    top: 55%;
-    width: 500%;
-    height: 1px;
+    left: 60%;
+    width: 1px;
+    height: 300%;
     border: solid 1px black;
+    background-color: black; 
 }
 
-.r6c10 {
+.r6c9 {
     position: relative;
-    top: 40%;
-    right: 10%;
-    width: 330%;
+    top: 60%;
+    width: 300%;
     height: 1px;
     border: solid 1px black;
-    transform: rotate(-35deg);
+    background-color: black; 
 }
 
-.r4c10 {
+.r9c9 {
     position: relative;
-    top: 80%;
-    right: 10%;
-    width: 330%;
+    right: 140%;
+    width: 550%;
     height: 1px;
     border: solid 1px black;
-    transform: rotate(35deg);
+    background-color: black;
+    transform: rotate(-45deg);
+}
+
+.r7c13 {
+    position: relative;
+    top:78%;
+    right: 10%;
+    width: 400%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(27deg);
 }
