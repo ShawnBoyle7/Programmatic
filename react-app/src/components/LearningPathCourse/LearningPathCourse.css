@@ -1,0 +1,10 @@
+.learning-path-course {
+    border: 1px solid black;
+    background-color: white;
+    margin: 1em 0;
+    padding: 1em;
+}
+
+.aspirations-div {
+    display: flex;
+}

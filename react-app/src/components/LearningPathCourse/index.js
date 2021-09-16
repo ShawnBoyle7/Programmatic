@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import AspirationDiv from '../AspirationDiv'
+import './LearningPathCourse.css'
 
 function LearningPathCourse({ aspirations }) {
     const courses = useSelector(state => state.curriculum.courses)

@@ -1,0 +1,44 @@
+.aspirations-div > a {
+    border-radius: 100px;
+}
+
+.aspiration {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1em;
+}
+
+.completed {
+    border: 2px solid green;
+}
+
+.aspiration-option {
+	position: absolute;
+	display: none;
+}
+
+.aspiration-option.delete {
+    top: 45%;
+    right: 5%;
+}
+
+.aspiration-option.toggle-complete {
+    top: 45%;
+    left: 5%;
+}
+
+.aspiration-name {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.aspiration:hover .aspiration-option {
+	display: block;
+    cursor: pointer;
+}
