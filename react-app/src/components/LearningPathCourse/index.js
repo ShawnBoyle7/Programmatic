@@ -8,7 +8,7 @@ function LearningPathCourse({ aspirations }) {
     const course = courses[aspirations[0]?.courseId]
     return ( course &&
         <div className='learning-path-course'>
-            <h3>{course.name}</h3>
+            <h3 className='course-name'>{course.name}</h3>
             <div className='aspirations-div'>
                 {aspirations.map(aspiration => <AspirationDiv key={aspiration.id} aspiration={aspiration}/>)}
             </div>
