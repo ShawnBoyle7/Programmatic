@@ -6,9 +6,10 @@ import './LearningPathCourse.css'
 function LearningPathCourse({ aspirations }) {
     const courses = useSelector(state => state.curriculum.courses)
     const course = courses[aspirations[0]?.courseId]
+    aspirations.sort((a,b) => a.lessonId - b.lessonId)
     return ( course &&
         <div className='learning-path-course'>
-            <h3>{course.name}</h3>
+            <h3 className='course-name'>{course.name}</h3>
             <div className='aspirations-div'>
                 {aspirations.map(aspiration => <AspirationDiv key={aspiration.id} aspiration={aspiration}/>)}
             </div>

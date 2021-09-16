@@ -6,15 +6,20 @@ import { deleteAspiration } from "../../store/session";
 function DeleteAspirationModal({ lessonId, setShowModal, showModal }) {
     const dispatch = useDispatch();
 
-    const handleDelete = () => {
+    const handleDelete = (e) => {
         dispatch(deleteAspiration(lessonId))
         setShowModal(false)
+    }
+
+    const onClose = (e) => {
+        setShowModal(false)
+        e.stopPropagation()
     }
 
     return (
         <>
             {showModal && (
-                <Modal onClose={() => setShowModal(false)}>
+                <Modal onClose={onClose}>
                     <p>Remove from Learning Path?</p>
                     <button onClick={handleDelete}>Delete</button>
                     <button className="cancel-button" onClick={() => setShowModal(false)}>Cancel</button>
