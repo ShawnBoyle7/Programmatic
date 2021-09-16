@@ -5,7 +5,6 @@ import ProtectedRoute from '../auth/ProtectedRoute';
 import CourseLessons from '../CourseLessons';
 import CourseDiv from '../CourseDiv';
 
-
 function Courses() {
     const courses = Object.values(useSelector(state => state.curriculum.courses))
 
@@ -13,14 +12,7 @@ function Courses() {
     <>
         <Route exact path='/courses'>
             <div>
-                {courses.map((course) => {
-                    return (
-                    <div className="course-div">
-                        <CourseDiv course={course} key={course.id}/>
-                    </div>
-
-                   )
-                })}
+                {courses.map(course => <CourseDiv course={course} key={course.id}/>)}
             </div>
         </Route>
 
