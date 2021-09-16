@@ -21,7 +21,6 @@ function LearningPath() {
     setLessonIdDelete(e.target.id)
     setShowDeleteModal(true)
 }
-<<<<<<< HEAD
 //aspirations is an array of obj
 //iterate through
 
@@ -35,18 +34,6 @@ function LearningPath() {
       <button id={aspiration.id} onClick={renderDeleteModal}>Delete Aspiration</button>
       <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal}/>
     </div>
-=======
-
-  const aspirationComponents = aspirations?.map((aspiration) => 
-        <div key={aspiration.id}>
-          <p>{lessons.find(lesson => lesson.id === aspiration.lessonId).name}</p>
-          <input id={aspiration.id} checked={aspiration.completed} onChange={toggleAspiration} type="checkbox"/>
-          <button id={aspiration.id} onClick={renderDeleteModal}>Delete Aspiration</button>
-
-          <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal}/>
-
-        </div>
->>>>>>> main
   );
 
   return (
