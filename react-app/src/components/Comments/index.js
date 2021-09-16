@@ -30,7 +30,7 @@ const Comments = ({ lessonId }) => {
                 {comments.map(comment =>
                     <div className="comment-div" key={comment.id}>
                         <div className="comment">
-                            <img className='comment-pic' src={users[comment.userId].imgUrl}/>
+                            <img className='comment-pic' src={users[comment.userId].imgUrl} alt={`${users[comment.userId].username}'s Avatar'`}/>
                             <div>
                                 <p className='comment-author'>{users[comment.userId].username}</p>
                                 <p className="comment-content">{comment.content}</p>

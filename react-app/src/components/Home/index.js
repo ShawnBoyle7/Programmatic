@@ -1,7 +1,7 @@
 import React from "react";
 import Splash from "../Splash";
 import { useSelector } from 'react-redux'
-import { Link } from "react-router-dom";
+import LessonDiv from "../LessonDiv";
 
 function Home({authenticated}) {
     const lessons = Object.values(useSelector(state => state.curriculum.lessons))
@@ -20,9 +20,10 @@ function Home({authenticated}) {
             </h1>
             <div className="popular-lessons">
                 {lessonsByPopularity.map(lesson => 
-                    <div className="popular-lesson">
-                        <Link to={`/lessons/${lesson.id}`}>{lesson.name}</Link>
-                    </div>
+                    <LessonDiv lesson={lesson} key={lesson.id}/>
+                    // <div className="popular-lesson">
+                    //     <Link to={`/lessons/${lesson.id}`}>{lesson.name}</Link>
+                    // </div>
                 )}
             </div>
         </>
