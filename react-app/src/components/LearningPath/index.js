@@ -1,5 +1,5 @@
 import { useSelector} from 'react-redux'
-import AspirationsDiv from "../AspirationDiv"
+import LearningPathCourse from "../LearningPathCourse"
 
 function LearningPath() {
   const sessionUser = useSelector(state => state.session?.user)
@@ -7,21 +7,19 @@ function LearningPath() {
     return a.id - b.id
   });
 
-  const getCourseIds = () => {
+  let courseIdArr = [];
     for(let i = 0; i < aspirationsArr.length; i++) {
       let aspiration = aspirationsArr[i];
-      let courseIdArr = [];
         //check if the course id is already in arr
       if(!courseIdArr.includes(aspiration.courseId)){
         courseIdArr.push(aspiration.courseId)
       }
     }
-    return courseIdArr;
-  }
+
 
   let aspByCourseArr = []
   courseIdArr.forEach(courseId => {
-    let allAspInCourse = aspirationsArr.filter(asp => asp.couseId === courseId)
+    let allAspInCourse = aspirationsArr.filter(asp => asp.courseId === courseId)
     aspByCourseArr.push(allAspInCourse)
   });
 
@@ -31,11 +29,8 @@ function LearningPath() {
     //if haven't encountered, create a new array/div
     //else add to array/div already created
 
-    const aspirationComponents = aspirationsArr?.map((aspiration) =>
-        <div key={aspiration.id}>
-          {/* <AspirationsDiv aspiration={aspiration} /> */}
-          <div>{separateByCourse}</div>
-        </div>
+    const aspirationComponents = aspByCourseArr?.map((aspirations,idx) =>
+          <LearningPathCourse key={idx} aspirations={aspirations} />
     );
 
   return (
