@@ -14,6 +14,8 @@ const SearchDropdown = ({ searchQuery, setSearchQuery, setRenderSearchDropdown  
     const courseResults = courses?.filter(course => course.name.toLowerCase().includes(searchQuery?.toLowerCase()))
     const lessonResults = lessons?.filter(lesson => lesson.name.toLowerCase().includes(searchQuery?.toLowerCase()))
 
+    const authenticated = useSelector(state => state.session.user) !== null
+
     document.querySelector("html").addEventListener("click", () => {
         setRenderSearchDropdown(false)
     });
@@ -63,16 +65,18 @@ const SearchDropdown = ({ searchQuery, setSearchQuery, setRenderSearchDropdown  
                     </div>
                 </div>
 
-                <div className="search-lessons">
-                    <h3>LESSONS :3</h3>
-                    <div className="search-lessons-results">
-                        {lessonResults.length ? 
-                            lessonResults.map(lesson =>
-                                <Link to={`/lessons/${lesson.id}`} onClick={handleClick} key={lesson.id}> {formatResult(lesson.name)} </Link>
-                            )
-                        : <p>No lessons found :/.....</p>}
+                {authenticated && 
+                    <div className="search-lessons">
+                        <h3>LESSONS :3</h3>
+                        <div className="search-lessons-results">
+                            {lessonResults.length ? 
+                                lessonResults.map(lesson =>
+                                    <Link to={`/lessons/${lesson.id}`} onClick={handleClick} key={lesson.id}> {formatResult(lesson.name)} </Link>
+                                )
+                            : <p>No lessons found :/.....</p>}
+                        </div>
                     </div>
-                </div>
+                }
             </div>
         </>
     )

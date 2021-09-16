@@ -16,7 +16,10 @@ const SearchResults = () => {
     const courseResults = courses?.filter(course => course.name.toLowerCase().includes(searchQuery?.toLowerCase()))
     const lessonResults = lessons?.filter(lesson => lesson.name.toLowerCase().includes(searchQuery?.toLowerCase()))
 
-    const numResults = courseResults.length + lessonResults.length
+    const authenticated = useSelector(state => state.session.user) !== null
+
+    const numResults = authenticated ? courseResults.length + lessonResults.length : courseResults.length
+
 
     return (
         <>
@@ -33,7 +36,7 @@ const SearchResults = () => {
                 )}
             </div>}
 
-            {lessonResults.length > 0 && 
+            {lessonResults.length > 0 && authenticated && 
             <div>
                 <h2>Lessons</h2>
                 {lessonResults.map(lesson =>
