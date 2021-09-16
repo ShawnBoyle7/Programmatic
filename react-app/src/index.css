@@ -2,6 +2,24 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF0E5;
+}
+
+button {
+    background-color: #264653;
+    color: white;
+    padding: 1em;
+    border: 1px solid #264653;
+}
+
+.cancel-button {
+    background-color: white;
+    color: #264653;
+    padding: 1em;
+    border: 1px solid #264653;
+}
 
 body {
     margin: 0;
@@ -11,8 +29,11 @@ body {
 .content {
     position: absolute;
     top: 50px;
+
     width: 100vw;
     padding: 0 25%;
+    padding-top: 3em;
     height: calc(100vh - 50px - 20%);
     overflow-y: auto;
 }
+

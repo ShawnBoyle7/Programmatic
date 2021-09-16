@@ -15,7 +15,7 @@ function Courses() {
                 {courses.map(course => <CourseDiv course={course} key={course.id}/>)}
             </div>
         </Route>
-        
+
         <ProtectedRoute path='/courses/:courseId'>
             <CourseLessons />
         </ProtectedRoute>

@@ -1,6 +1,7 @@
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0px;
     height: 50px;
@@ -12,4 +13,7 @@ nav {
 
 .nav-search-div {
     position: relative;
+}
+a {
+    text-decoration: none;
 }
