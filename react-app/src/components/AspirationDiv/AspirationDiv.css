@@ -26,13 +26,13 @@
 }
 
 .aspiration-option.delete {
-    bottom: 15%;
+    bottom: 5%;
     right: 45%;
     color: red;
 }
 
 .aspiration-option.toggle-complete {
-    top: 15%;
+    top: 5%;
     left: 45%;
 }
 
