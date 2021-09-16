@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import Aspiration from '../Aspiration'
+import AspirationDiv from '../AspirationDiv'
 
 function LearningPathCourse({ aspirations }) {
     const courses = useSelector(state => state.curriculum.courses)
@@ -10,7 +10,7 @@ function LearningPathCourse({ aspirations }) {
         <div className='learning-path-course'>
             <h3>{course.name}</h3>
             <div className='aspirations-div'>
-                {aspirations.map(aspiration => <Aspiration aspiration={aspiration}/>)}
+                {aspirations.map(aspiration => <AspirationDiv aspiration={aspiration}/>)}
             </div>
         </div>
     )

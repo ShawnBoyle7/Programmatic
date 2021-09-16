@@ -1,5 +1,5 @@
 import { useSelector} from 'react-redux'
-import AspirationsDiv from "../AspirationsDiv"
+import AspirationsDiv from "../AspirationDiv"
 
 function LearningPath() {
   const sessionUser = useSelector(state => state.session?.user)
@@ -25,7 +25,7 @@ function LearningPath() {
     aspByCourseArr.push(allAspInCourse)
   });
 
-  
+
 
   //check aspiration.courseId
     //if haven't encountered, create a new array/div
