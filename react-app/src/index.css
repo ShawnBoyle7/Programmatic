@@ -4,8 +4,8 @@
 }
 html {
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: #FFF0E5; */
-    background-color: rgba(232, 244, 248, .60);
+    background-color: #FFF0E5;
+    /* background-color: rgba(232, 244, 248, .60); */
 }
 
 button {
