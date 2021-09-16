@@ -1,4 +1,13 @@
 .algo-vis-div {
-    width: 50vw;
-    height: 50vh;
+    /* width: 50vw; */
+    /* height: 50vh; */
+    height: fit-content;
+    width: fit-content
+}
+
+.grid-container {
+    display: grid;
+    /* CSS Grid to display the cells visually, as opposed to the javascript grid which comes from the for loops */
+    grid-template-rows: repeat(10, 50px);
+    grid-template-columns: repeat(15, 50px);
 }
