@@ -21,7 +21,6 @@ function Profile({ sessionUser }) {
                         </ul>
                     </div>
                 </div>
-                <h1>{sessionUser.username}'s Profile</h1>
                 <LearningPath />
             </>
     )

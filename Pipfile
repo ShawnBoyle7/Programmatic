@@ -28,8 +28,9 @@ Mako = "==1.1.4"
 email-validator = "==1.1.3"
 dnspython = "==2.1.0"
 idna = "==3.2"
-psycopg2-binary = "*"
-faker = "*"
+psycopg2-binary = "==2.9.1"
+Faker = "==8.13.2"
+text-unidecode = "==1.3"
 
 [dev-packages]
 psycopg2-binary = "==2.8.6"

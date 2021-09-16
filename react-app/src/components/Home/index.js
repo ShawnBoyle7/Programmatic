@@ -14,7 +14,6 @@ function Home({authenticated}) {
     return (
         authenticated ? 
         <>
-            <h1>Home</h1>
             <h1 className="popular-lessons-header">
                 Browse Popular Lessons!
             </h1>
