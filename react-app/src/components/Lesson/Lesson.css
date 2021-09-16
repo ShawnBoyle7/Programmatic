@@ -1,0 +1,37 @@
+.lesson-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.algo-vis-modal-btn {
+    width: fit-content;
+    align-self: flex-end;
+}
+
+.lesson-name {
+}
+
+.lesson-description {
+    color: #264653ff;
+    padding: 0 10%;
+    font-style: italic;
+}
+
+.lesson-img {
+    margin: 2em 0;
+}
+
+.lesson-content {
+    text-align: left;
+}
+
+.lesson-comment-div {
+    width: 100%;
+    text-align: left;
+}
+
+.lesson-comment-container {
+    padding: 0 3em;
+}
