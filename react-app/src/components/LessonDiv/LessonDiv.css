@@ -1,28 +1,23 @@
-.course-container {
+.lesson-container {
     background-color: white;
     border: 1px solid black;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0;
     margin-bottom: 1rem;
     width: 100%;
-    height: 8rem;
-    position: relative;
+    height: 8rem
 }
 
-.course-div:hover {
-    top: -7px;
-    transition: .2s;
-    right: -7px;
+.lesson-container:hover {
     cursor: pointer;
-    box-shadow: -7px 7px black;
 }
 
-.course-header {
+.lesson-header {
     font-size: 0.875rem;
     margin-bottom: 0.75rem;
 }
 
-.course-name {
+.lesson-name {
     font-size: 1.25rem;
     font-weight: bold;
     margin: 0;
@@ -30,21 +25,13 @@
     margin-bottom: 0.25rem;
 }
 
-.lesson-count {
-    font-size: 0.875rem;
-}
-
-.lesson-count span{
-    font-weight: bold;
-}
-
-.course-button-div {
+.lesson-button-div {
     position: relative;
     left: 12rem;
     bottom: 3rem;
 }
 
-.course-button-div:hover {
+.lesson-button-div:hover {
     cursor: pointer;
 }
 
