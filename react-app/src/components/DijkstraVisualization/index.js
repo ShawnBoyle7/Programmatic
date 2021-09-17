@@ -85,6 +85,7 @@ function DijkstraVisualization() {
     const [dijkstraPath, traversalOrder] = dijkstraAlgorithm(graphNodes.r10c8, graphNodes.r8c16)
 
     const playVisualization = (e) => {
+        resetGraph();
         const traversalOrderCopy = traversalOrder.slice();
         const dijkstraPathCopy = dijkstraPath.slice();
         window.animateTraversalInterval = setInterval(() => {
@@ -92,7 +93,7 @@ function DijkstraVisualization() {
             if (!traversalOrderCopy.length) {
                 clearInterval(window.animateTraversalInterval);
             }
-        }, 500)
+        }, e.target.value)
 
     }
 
@@ -108,7 +109,7 @@ function DijkstraVisualization() {
                 if (!dijkstraPathCopy.length) {
                     clearInterval(window.animatePathInterval);
                 }
-            }, 500)
+            }, 100)
         }
     }
 
@@ -119,14 +120,46 @@ function DijkstraVisualization() {
         }
     }
 
+    const resetGraph = () => {
+        clearInterval(window.animateTraversalInterval);
+        clearInterval(window.animatePathInterval);
+        traversalOrder.forEach(coordinate => {
+            document.querySelector(`.${coordinate}`)?.classList.remove("traversed");
+        })
+        dijkstraPath.forEach(coordinate => {
+            document.querySelector(`.${coordinate}`)?.classList.remove("path");
+        })
+    }
+
+    const whyDidYouClickThatButton = () => {
+        resetGraph();
+        const traversalOrderCopy = shuffle(traversalOrder.slice())
+        const dijkstraPathCopy = shuffle(dijkstraPath.slice())
+
+        window.animateTraversalInterval = setInterval(() => {
+            animateTraversal(traversalOrderCopy, dijkstraPathCopy);
+            if (!traversalOrderCopy.length) {
+                clearInterval(window.animateTraversalInterval);
+            }
+        }, 300)
+    }
+
+    const shuffle = (array) => {
+        for (let i = 0; i < array.length; i++){
+            let j = Math.floor(Math.random()*array.length);
+            [array[i], array[j]] = [array[j], array[i]]
+        }
+        return array;
+    }
+
     return (
         // Targets entire modal
         <div className='algo-vis-div'>
-            <button onClick={playVisualization}>Play</button>
-            <button>FASTER</button>
-            <button>OMG too fast</button>
-            <button>ABORT</button>
-            <button>DON'T click this button</button>
+            <button onClick={playVisualization} value={500}>Play</button>
+            <button onClick={playVisualization} value={250}>FASTER</button>
+            <button onClick={playVisualization} value={100}>OMG too fast</button>
+            <button onClick={resetGraph}>ABORT</button>
+            <button onClick={whyDidYouClickThatButton}>DON'T click this button</button>
             {/* <h1>Algo Vis</h1> */}
             {/* Targets entire grid element contianing all grid cells */}
             <div className="grid-container">
