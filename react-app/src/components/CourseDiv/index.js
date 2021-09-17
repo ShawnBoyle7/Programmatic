@@ -41,7 +41,7 @@ const CourseDiv = ({ course }) => {
     }
 
     return(
-        <div className="course-div div-hover" onClick={() => history.push(`/courses/${course.id}`)}>
+        <div className="course-div" onClick={() => history.push(`/courses/${course.id}`)}>
 
             <div className="course-header">
                 Course
