@@ -103,7 +103,7 @@ export const signUp = (firstName, lastName, username, email, password) => async 
     }
 }
 
-export const updateUser = (firstName, lastName, username, email, password, imgUrl, userId) => async (dispatch) => {
+export const updateUser = (firstName, lastName, username, email, password, imgFile, userId) => async (dispatch) => {
     const response = await fetch(`/api/users/${userId}`, {
         method: 'PUT',
         headers: {
@@ -115,7 +115,7 @@ export const updateUser = (firstName, lastName, username, email, password, imgUr
             username,
             email,
             password,
-            img_url: imgUrl,
+            img_file: imgFile,
             user_id: userId
         }),
     });

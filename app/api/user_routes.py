@@ -3,6 +3,7 @@ from flask_login import login_required
 from app.models import User, db
 from .utils import validation_errors_to_error_messages
 from ..forms import EditUserForm
+from .aws_s3 import public_file_upload
 
 user_routes = Blueprint('users', __name__)
 
@@ -29,14 +30,17 @@ def edit_user(id):
     form = EditUserForm()
     form['csrf_token'].data = request.cookies['csrf_token']
     if form.validate_on_submit():
+        # print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", form.data["img_file"])
         user.first_name=form.data['first_name']
         user.last_name=form.data['last_name']
         user.username=form.data['username']
         user.email=form.data['email']
         user.password=form.data['password']
-        user.img_url=form.data['img_url']
+        img_url = public_file_upload(form.data['img_file'])
+        user.img_url=img_url
         db.session.commit()
 
         # Return the updated user to the thunk action creator so that we can update the redux store
         return user.to_session_dict()
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
+
