@@ -10,11 +10,11 @@
 }
 
 .course-div:hover {
-    top: -12px;
+    top: -7px;
     transition: .2s;
-    right: -12px;
+    right: -7px;
     cursor: pointer;
-    box-shadow: -12px 12px black;
+    box-shadow: -7px 7px black;
 }
 
 .course-header {
