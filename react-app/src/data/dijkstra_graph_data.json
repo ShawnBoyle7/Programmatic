@@ -1,0 +1,62 @@
+{
+	"r6c8": {
+		"coord": "r6c8",
+		"neighbors": [
+			{
+				"edge": "r7c8",
+				"coord": "r10c8",	
+				"weight": 1
+			},
+			{
+				"edge": "r6c9",
+				"coord": "r6c12",	
+				"weight": 1
+			}
+		]
+	},
+	"r10c8": {
+		"coord": "r10c8",
+		"neighbors": [
+			{
+				"edge": "r7c8",
+				"coord": "r6c8",	
+				"weight": 1
+			},
+			{
+				"edge": "r9c9",
+				"coord": "r6c12",	
+				"weight": 5.67
+			}
+		]
+	},
+	"r6c12": {
+		"coord": "r6c12",
+		"neighbors": [
+			{
+				"edge": "r6c9",
+				"coord": "r6c8",	
+				"weight": 1
+			},
+			{
+				"edge": "r9c9",
+				"coord": "r10c8",	
+				"weight": 5.67
+			},
+			{
+				"edge": "r7c13",
+				"coord": "r8c16",	
+				"weight": 4.47
+			}
+		]
+	},
+	"r8c16": {
+		"coord": "r8c16",
+		"neighbors": [
+			{
+				"edge": "r7c13",
+				"coord": "r6c12",	
+				"weight": 4.47
+			}
+		]
+	}
+}

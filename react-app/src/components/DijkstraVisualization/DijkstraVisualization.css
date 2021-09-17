@@ -8,6 +8,6 @@
 .grid-container {
     display: grid;
     /* CSS Grid to display the cells visually, as opposed to the javascript grid which comes from the for loops */
-    grid-template-rows: repeat(10, 50px);
-    grid-template-columns: repeat(15, 50px);
+    grid-template-rows: repeat(20, 50px);
+    grid-template-columns: repeat(30, 50px);
 }
