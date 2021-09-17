@@ -51,7 +51,7 @@ function DijkstraVisualization() {
             // add neighbors to nodesToVisit
             graphNodes[currentNode.coord].neighbors.forEach(neighbor => {
                 traversalOrder.push(neighbor.edge)
-                // if we have vistied this neighbor already, do not add it to nodesToVisit
+                // if we have visited this neighbor already, do not add it to nodesToVisit
                 if (visitedNodeCoordinates.has(neighbor.coord)) return;
 
                 const plannedToVisit = nodesToVisit.find(node => node.coord === neighbor.coord)
@@ -85,48 +85,81 @@ function DijkstraVisualization() {
     const [dijkstraPath, traversalOrder] = dijkstraAlgorithm(graphNodes.r10c8, graphNodes.r8c16)
 
     const playVisualization = (e) => {
+        resetGraph();
         const traversalOrderCopy = traversalOrder.slice();
         const dijkstraPathCopy = dijkstraPath.slice();
-        const interval = setInterval(() => {
+        window.animateTraversalInterval = setInterval(() => {
             animateTraversal(traversalOrderCopy, dijkstraPathCopy);
             if (!traversalOrderCopy.length) {
-                clearInterval(interval);
+                clearInterval(window.animateTraversalInterval);
             }
-        }, 500)
+        }, e.target.value)
 
     }
 
     const animateTraversal = (traversalOrderCopy, dijkstraPathCopy) => {
         if (traversalOrderCopy.length) {
             const coordinate = traversalOrderCopy.shift()
-            document.querySelector(`.${coordinate}`).classList.add("traversed");
+            document.querySelector(`.${coordinate}`)?.classList.add("traversed");
         }
 
         if (!traversalOrderCopy.length) {
-            const test = setInterval(() => {
+            window.animatePathInterval = setInterval(() => {
                 animatePath(dijkstraPathCopy);
                 if (!dijkstraPathCopy.length) {
-                    clearInterval(test);
+                    clearInterval(window.animatePathInterval);
                 }
-            }, 500)
+            }, 100)
         }
     }
 
     const animatePath = (dijkstraPathCopy) => {
         if (dijkstraPathCopy.length) {
             const coordinate = dijkstraPathCopy.shift()
-            document.querySelector(`.${coordinate}`).classList.add("path");
+            document.querySelector(`.${coordinate}`)?.classList.add("path");
         }
+    }
+
+    const resetGraph = () => {
+        clearInterval(window.animateTraversalInterval);
+        clearInterval(window.animatePathInterval);
+        traversalOrder.forEach(coordinate => {
+            document.querySelector(`.${coordinate}`)?.classList.remove("traversed");
+        })
+        dijkstraPath.forEach(coordinate => {
+            document.querySelector(`.${coordinate}`)?.classList.remove("path");
+        })
+    }
+
+    const whyDidYouClickThatButton = () => {
+        resetGraph();
+        const traversalOrderCopy = shuffle(traversalOrder.slice())
+        const dijkstraPathCopy = shuffle(dijkstraPath.slice())
+
+        window.animateTraversalInterval = setInterval(() => {
+            animateTraversal(traversalOrderCopy, dijkstraPathCopy);
+            if (!traversalOrderCopy.length) {
+                clearInterval(window.animateTraversalInterval);
+            }
+        }, 300)
+    }
+
+    const shuffle = (array) => {
+        for (let i = 0; i < array.length; i++){
+            let j = Math.floor(Math.random()*array.length);
+            [array[i], array[j]] = [array[j], array[i]]
+        }
+        return array;
     }
 
     return (
         // Targets entire modal
         <div className='algo-vis-div'>
-            <button onClick={playVisualization}>Play</button>
-            <button>FASTER</button>
-            <button>OMG too fast</button>
-            <button>ABORT</button>
-            <button>DON'T click this button</button>
+            <button onClick={playVisualization} value={500}>Play</button>
+            <button onClick={playVisualization} value={100}>FASTER</button>
+            <button onClick={playVisualization} value={200}>OMG too fast</button>
+            <button onClick={resetGraph}>ABORT</button>
+            <button onClick={whyDidYouClickThatButton}>DON'T click this button</button>
             {/* <h1>Algo Vis</h1> */}
             {/* Targets entire grid element contianing all grid cells */}
             <div className="grid-container">
