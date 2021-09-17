@@ -9,6 +9,6 @@
     margin: 1em 0;
     padding: 1em;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
     position: relative;
 }
