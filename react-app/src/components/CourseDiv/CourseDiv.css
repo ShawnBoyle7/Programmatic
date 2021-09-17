@@ -5,14 +5,16 @@
     margin: 0;
     margin-bottom: 1rem;
     width: 100%;
-    height: 8rem
+    height: 8rem;
+    position: relative;
 }
 
-/* Adjust button placement with more text */
-/* Animations */
-
 .course-container:hover {
+    top: -7px;
+    transition: .2s;
+    right: -7px;
     cursor: pointer;
+    box-shadow: -7px 7px black;
 }
 
 .course-header {

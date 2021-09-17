@@ -33,20 +33,20 @@ const CourseDiv = ({ course }) => {
         // If so, don't render button
         for (let i = 0; i < courseLessons.length; i++) {
             let lesson = courseLessons[i];
-            if(!userAspirations.find(asp => asp.lessonId === lesson.id)){
+            if (!userAspirations.find(asp => asp.lessonId === lesson.id)) {
                 return false;
             }
         }
         return true;
     }
-    
-    return(
+
+    return (
         <div className="course-container" onClick={() => history.push(`/courses/${course.id}`)}>
 
             <div className="course-header">
                 Course
             </div>
-            
+
             <div className="course-name">
                 {course.name}
             </div>

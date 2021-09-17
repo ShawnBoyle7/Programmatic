@@ -5,7 +5,7 @@ import { editAspiration } from '../../store/session'
 import DeleteAspirationModal from '../DeleteAspirationModal';
 import './AspirationDiv.css'
 
-function AspirationDiv({ aspiration }) {
+function AspirationDiv({ aspiration, showScroll }) {
     const [lessonIdDelete, setLessonIdDelete] = useState("")
     const [showDeleteModal, setShowDeleteModal] = useState(false);
     const dispatch = useDispatch();
@@ -30,7 +30,7 @@ function AspirationDiv({ aspiration }) {
     //if the lesson course id has already been seen, add to that div
     return (lesson &&
         <Link to={`/lessons/${lesson.id}`}>
-            <div className={`aspiration ${aspiration.completed ? 'completed' : ''}`}>
+            <div className={`aspiration ${aspiration.completed ? 'completed' : ''}`} onLoad={showScroll}>
                 <span className='aspiration-name'>{lesson.name}</span>
                 <input className='aspiration-option toggle-complete'id={aspiration.id} checked={aspiration.completed} onChange={toggleAspiration} onClick={e=>e.stopPropagation()} type="checkbox" />
                 <span onClick={renderDeleteModal}><i className="fas fa-minus-circle aspiration-option delete" id={aspiration.id} ></i></span>

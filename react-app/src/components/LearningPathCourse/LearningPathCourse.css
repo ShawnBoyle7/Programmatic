@@ -4,11 +4,11 @@
 
 .aspirations-div {
     display: flex;
-    border: 1px solid black;
-    background-color: white;
     margin: 1em 0;
     padding: 1em;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
     position: relative;
 }
+
+
