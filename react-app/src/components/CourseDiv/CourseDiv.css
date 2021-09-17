@@ -9,7 +9,7 @@
     position: relative;
 }
 
-.course-div:hover {
+.course-container:hover {
     top: -7px;
     transition: .2s;
     right: -7px;
