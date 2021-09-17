@@ -16,7 +16,7 @@ function DijkstraVisualization() {
             for (let column = 0; column < 30; column++) {
                 // Every time we push a grid cell, it populates the currently iterated row/column into our class name in the grid cell component
                 // gridCells.push(<GridCell row={r} column={c} isNode={nodes.includes(`r${r}c${c}`)}/>)
-                gridCells.push(<GridCell key={`r${row}c${column}`} row={row} column={column} isNode={checkIfNode(`r${row}c${column}`)}/>)
+                gridCells.push(<GridCell key={`r${row}c${column}`} row={row} column={column} isNode={checkIfNode(`r${row}c${column}`)} />)
 
             }
         }
@@ -55,7 +55,7 @@ function DijkstraVisualization() {
                 if (visitedNodeCoordinates.has(neighbor.coord)) return;
 
                 const plannedToVisit = nodesToVisit.find(node => node.coord === neighbor.coord)
-                if (!plannedToVisit){
+                if (!plannedToVisit) {
                     // if the neighbor is NOT on the nodes to visit, push it on
                     nodesToVisit.push({
                         coord: neighbor.coord,
@@ -65,36 +65,74 @@ function DijkstraVisualization() {
                     })
                 } else {
                     // the neighbor is on the nodesToVisit already
-                    if (plannedToVisit.totalWeight > currentNode.totalWeight + neighbor.weight){
+                    if (plannedToVisit.totalWeight > currentNode.totalWeight + neighbor.weight) {
                         // the current path has a lower weight, so we update the nodesToVisit
                         const index = nodesToVisit.indexOf(plannedToVisit);
                         nodesToVisit[index].path = [...currentNode.path, neighbor.edge, neighbor.coord]
                         nodesToVisit[index].edgeToNode = neighbor.edge
                         nodesToVisit[index].totalWeight = currentNode.totalWeight + neighbor.weight
                     }
-                    
-                }   
+
+                }
             })
 
             // sort nodesToVisit by weight
             // (a, b) swap if return positive
-            nodesToVisit.sort((a,b) => a.totalWeight - b.totalWeight)
+            nodesToVisit.sort((a, b) => a.totalWeight - b.totalWeight)
         }
     }
 
     const [dijkstraPath, traversalOrder] = dijkstraAlgorithm(graphNodes.r10c8, graphNodes.r8c16)
-    console.log("Dijkstra's Algo ------------->", dijkstraPath)
-    console.log("Traversal Order ------------->", traversalOrder)
-    
+
+    const playVisualization = (e) => {
+        const traversalOrderCopy = traversalOrder.slice();
+        const dijkstraPathCopy = dijkstraPath.slice();
+        const interval = setInterval(() => {
+            animateTraversal(traversalOrderCopy, dijkstraPathCopy);
+            if (!traversalOrderCopy.length) {
+                clearInterval(interval);
+            }
+        }, 500)
+
+    }
+
+    const animateTraversal = (traversalOrderCopy, dijkstraPathCopy) => {
+        if (traversalOrderCopy.length) {
+            const coordinate = traversalOrderCopy.shift()
+            document.querySelector(`.${coordinate}`).classList.add("traversed");
+        }
+
+        if (!traversalOrderCopy.length) {
+            const test = setInterval(() => {
+                animatePath(dijkstraPathCopy);
+                if (!dijkstraPathCopy.length) {
+                    clearInterval(test);
+                }
+            }, 500)
+        }
+    }
+
+    const animatePath = (dijkstraPathCopy) => {
+        if (dijkstraPathCopy.length) {
+            const coordinate = dijkstraPathCopy.shift()
+            document.querySelector(`.${coordinate}`).classList.add("path");
+        }
+    }
 
     return (
         // Targets entire modal
         <div className='algo-vis-div'>
+            <button onClick={playVisualization}>Play</button>
+            <button>FASTER</button>
+            <button>OMG too fast</button>
+            <button>ABORT</button>
+            <button>DON'T click this button</button>
             {/* <h1>Algo Vis</h1> */}
             {/* Targets entire grid element contianing all grid cells */}
             <div className="grid-container">
                 {createGrid()}
             </div>
+
         </div>
     )
 }

@@ -2,6 +2,8 @@
     /* border: 1px solid lightgray; */
     width: 50px;
     height: 50px;
+    position: relative;
+    z-index: 0;
 }
 
 .node {
@@ -9,6 +11,7 @@
     border-radius: 50%;
     width: 125%;
     height: 125%;
+    z-index: 1;
 }
 
 .r7c8 {
@@ -17,7 +20,7 @@
     width: 1px;
     height: 300%;
     border: solid 1px black;
-    background-color: black; 
+    background-color: black;
 }
 
 .r6c9 {
@@ -26,7 +29,7 @@
     width: 300%;
     height: 1px;
     border: solid 1px black;
-    background-color: black; 
+    background-color: black;
 }
 
 .r9c9 {
@@ -48,4 +51,14 @@
     border: solid 1px black;
     background-color: black;
     transform: rotate(27deg);
+}
+
+.traversed {
+    background-color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+.path {
+    background-color: violet;
+    border: 1px solid violet;
 }
