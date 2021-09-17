@@ -35,6 +35,12 @@ function App() {
         return null;
     }
 
+    document.querySelector('body').classList.add("preload")
+
+    setTimeout(function(){
+        document.body.className="";
+    },500);
+
     return (
         <BrowserRouter>
         <NavBar sessionUser={sessionUser} authenticated={authenticated}/>
