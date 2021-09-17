@@ -51,7 +51,7 @@ function DijkstraVisualization() {
             // add neighbors to nodesToVisit
             graphNodes[currentNode.coord].neighbors.forEach(neighbor => {
                 traversalOrder.push(neighbor.edge)
-                // if we have vistied this neighbor already, do not add it to nodesToVisit
+                // if we have visited this neighbor already, do not add it to nodesToVisit
                 if (visitedNodeCoordinates.has(neighbor.coord)) return;
 
                 const plannedToVisit = nodesToVisit.find(node => node.coord === neighbor.coord)

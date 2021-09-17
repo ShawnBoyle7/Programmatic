@@ -56,9 +56,19 @@
 .traversed {
     background-color: lightskyblue;
     border: 1px solid lightskyblue;
+    transition: border 500ms;
+}
+
+.node.traversed {
+    transition: background-color 500ms;
 }
 
 .path {
     background-color: violet;
     border: 1px solid violet;
+    transition: border 500ms;
+}
+
+.node.path {
+    transition: background-color 500ms;
 }
