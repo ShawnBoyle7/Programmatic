@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToPath } from "../../store/session"
 import "./CourseDiv.css"
@@ -41,7 +41,7 @@ const CourseDiv = ({ course }) => {
     }
     
     return(
-        <div className="course-div" onClick={() => history.push(`/courses/${course.id}`)}>
+        <div className="course-container" onClick={() => history.push(`/courses/${course.id}`)}>
 
             <div className="course-header">
                 Course

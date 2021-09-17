@@ -11,13 +11,13 @@ const EditUserForm = ({ setShowModal }) => {
     const [email, setEmail] = useState(user?.email);
     const [password, setPassword] = useState('');
     const [repeatPassword, setRepeatPassword] = useState('');
-    const [imgUrl, setImgUrl] = useState(user?.imgUrl || '')
+    const [imgFile, setImgFile] = useState("")
     const dispatch = useDispatch();
 
     const onSubmit = async (e) => {
         e.preventDefault();
         if (password === repeatPassword) {
-            const data = await dispatch(updateUser(firstName, lastName, username, email, password, imgUrl, user?.id));
+            const data = await dispatch(updateUser(firstName, lastName, username, email, password, imgFile, user?.id));
         if (data) {
             setErrors(data)
         }
@@ -51,8 +51,10 @@ const EditUserForm = ({ setShowModal }) => {
         setRepeatPassword(e.target.value);
     };
 
-    const updateImgUrl = (e) => {
-        setImgUrl(e.target.value);
+    const updateImgFile = (e) => {
+        const file = e.target.files[0]
+        console.log(file)
+        setImgFile(file);
     };
 
     return (
@@ -129,10 +131,10 @@ const EditUserForm = ({ setShowModal }) => {
         <div>
             <label>Profile Image</label>
             <input
-            type='text'
-            name='imgUrl'
-            onChange={updateImgUrl}
-            value={imgUrl}
+            type='file'
+            name='imgFile'
+            onChange={updateImgFile}
+            // value={imgFile}
             required={false}
             ></input>
         </div>
