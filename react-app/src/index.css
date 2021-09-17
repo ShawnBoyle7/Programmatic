@@ -11,6 +11,10 @@ html {
     /* background-color: rgba(176,169,153, .25); */
 }
 
+a {
+    color: #264653;
+}
+
 button {
     background-color: #264653;
     color: white;
@@ -24,6 +28,17 @@ button {
     color: #264653;
     padding: 1em;
     border: 1px solid #264653;
+}
+
+i {
+    background-color: #FFF0E5;
+    color: #264653;
+
+}
+
+#scroll-right, #scroll-left {
+    border: none;
+    background-color: #FFF0E5;
 }
 
 body {

@@ -5,11 +5,16 @@
     margin: 0;
     margin-bottom: 1rem;
     width: 100%;
-    height: 8rem
+    height: 8rem;
+    position: relative;
 }
 
 .course-div:hover {
+    top: -12px;
+    transition: .2s;
+    right: -12px;
     cursor: pointer;
+    box-shadow: -12px 12px black;
 }
 
 .course-header {
