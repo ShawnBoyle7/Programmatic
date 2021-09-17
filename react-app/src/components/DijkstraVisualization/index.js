@@ -87,10 +87,10 @@ function DijkstraVisualization() {
     const playVisualization = (e) => {
         const traversalOrderCopy = traversalOrder.slice();
         const dijkstraPathCopy = dijkstraPath.slice();
-        const interval = setInterval(() => {
+        window.animateTraversalInterval = setInterval(() => {
             animateTraversal(traversalOrderCopy, dijkstraPathCopy);
             if (!traversalOrderCopy.length) {
-                clearInterval(interval);
+                clearInterval(window.animateTraversalInterval);
             }
         }, 500)
 
@@ -99,14 +99,14 @@ function DijkstraVisualization() {
     const animateTraversal = (traversalOrderCopy, dijkstraPathCopy) => {
         if (traversalOrderCopy.length) {
             const coordinate = traversalOrderCopy.shift()
-            document.querySelector(`.${coordinate}`).classList.add("traversed");
+            document.querySelector(`.${coordinate}`)?.classList.add("traversed");
         }
 
         if (!traversalOrderCopy.length) {
-            const test = setInterval(() => {
+            window.animatePathInterval = setInterval(() => {
                 animatePath(dijkstraPathCopy);
                 if (!dijkstraPathCopy.length) {
-                    clearInterval(test);
+                    clearInterval(window.animatePathInterval);
                 }
             }, 500)
         }
@@ -115,7 +115,7 @@ function DijkstraVisualization() {
     const animatePath = (dijkstraPathCopy) => {
         if (dijkstraPathCopy.length) {
             const coordinate = dijkstraPathCopy.shift()
-            document.querySelector(`.${coordinate}`).classList.add("path");
+            document.querySelector(`.${coordinate}`)?.classList.add("path");
         }
     }
 
