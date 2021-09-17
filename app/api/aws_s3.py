@@ -19,7 +19,7 @@ def public_file_upload(file_name, bucket="week-20-group-project"):
             file_name,
             bucket,
             object_name,
-            # ExtraArgs={'ACL': 'public-read'}
+            ExtraArgs={'ACL': 'public-read'}
             )
 
         # get public url of newly created obj

@@ -103,21 +103,22 @@ export const signUp = (firstName, lastName, username, email, password) => async 
     }
 }
 
+
+
 export const updateUser = (firstName, lastName, username, email, password, imgFile, userId) => async (dispatch) => {
+
+    const form = new FormData()
+    form.append("first_name", firstName)
+    form.append("last_name", lastName)
+    form.append("username", username)
+    form.append("email", email)
+    form.append("password", password)
+    form.append("img_file", imgFile)
+    form.append("user_id", userId)
+
     const response = await fetch(`/api/users/${userId}`, {
         method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            first_name: firstName,
-            last_name: lastName,
-            username,
-            email,
-            password,
-            img_file: imgFile,
-            user_id: userId
-        }),
+        body: form
     });
 
     if (response.ok) {
@@ -134,6 +135,39 @@ export const updateUser = (firstName, lastName, username, email, password, imgFi
         return ['An error occurred. Please try again.']
     }
 };
+
+// export const updateUser = (firstName, lastName, username, email, password, imgFile, userId) => async (dispatch) => {
+
+//     const response = await fetch(`/api/users/${userId}`, {
+//         method: 'PUT',
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({
+//             first_name: firstName,
+//             last_name: lastName,
+//             username,
+//             email,
+//             password,
+//             img_file: imgFile,
+//             user_id: userId
+//         }),
+//     });
+
+//     if (response.ok) {
+//         const data = await response.json();
+//         dispatch(setUser(data))
+//         dispatch(getUsers());
+//         return null;
+//     } else if (response.status < 500) {
+//         const data = await response.json();
+//         if (data.errors) {
+//             return data.errors;
+//         }
+//     } else {
+//         return ['An error occurred. Please try again.']
+//     }
+// };
 
 export const deleteUser = (userId) => async (dispatch) => {
     const response = await fetch(`/api/auth/${userId}`, {
