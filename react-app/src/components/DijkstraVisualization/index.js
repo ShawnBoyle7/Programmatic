@@ -156,8 +156,8 @@ function DijkstraVisualization() {
         // Targets entire modal
         <div className='algo-vis-div'>
             <button onClick={playVisualization} value={500}>Play</button>
-            <button onClick={playVisualization} value={250}>FASTER</button>
-            <button onClick={playVisualization} value={100}>OMG too fast</button>
+            <button onClick={playVisualization} value={100}>FASTER</button>
+            <button onClick={playVisualization} value={200}>OMG too fast</button>
             <button onClick={resetGraph}>ABORT</button>
             <button onClick={whyDidYouClickThatButton}>DON'T click this button</button>
             {/* <h1>Algo Vis</h1> */}
