@@ -5,10 +5,29 @@
 .aspirations-div {
     display: flex;
     margin: 1em 0;
-    padding: 1em;
     width: 100%;
     overflow-x: hidden;
     position: relative;
+    scroll-behavior: smooth;
 }
 
+.buttons-and-path {
+    display: flex;
+    position: relative;
+}
 
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+}
+
+.scroll-left {
+    left: 0px;
+    /* transform: translateX(-100%); */
+    transform: translate(-150%, -50%)
+}
+
+.scroll-right {
+    right: 0px;
+    transform: translate(150%, -50%)
+}

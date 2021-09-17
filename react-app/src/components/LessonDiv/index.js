@@ -39,15 +39,6 @@ const LessonDiv = ({ lesson }) => {
         </div>
 
     )
-    
-    {/* // return (
-    //     <div>
-    //         <Link to={`/lessons/${lesson.id}`}>{lesson.name}</Link>
-    //         { !lessonAspiration &&
-                <button id={lesson.id} onClick={addToLearningPath}>Add to Learning Path</button>
-            }
-        </div>
-    ); */}
 };
 
 export default LessonDiv;
