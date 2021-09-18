@@ -1,7 +1,7 @@
 /* TODO Add site wide styles */
 
 :root {
-    --bg-color: #f7f2ea; 
+    --bg-color: #f7f2ea;
     --primary-color: #203354;
     --secondary-color: white;
     --tertiary-color: #dd571c;
@@ -64,7 +64,7 @@ body.preload *{
     padding-top: 3em;
     height: calc(100vh - 50px - 15%);
     overflow-y: auto;
-    z-index: -1
+    z-index: -1;
 }
 
 form {
@@ -82,15 +82,9 @@ form input {
 
 }
 
-#modal {
-    
-}
-
-#modal-background {
-
-}
-
-#modal-content {
-
+.add-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: .2em 40% .2em;
 }
 
