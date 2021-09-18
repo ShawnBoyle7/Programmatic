@@ -5,7 +5,7 @@ import { addToPath } from "../../store/session"
 import "./LessonDiv.css"
 
 const LessonDiv = ({ lesson }) => {
-    
+
     const history = useHistory()
     const dispatch = useDispatch()
 
@@ -21,12 +21,12 @@ const LessonDiv = ({ lesson }) => {
     const lessonAspiration = userAspirations.find(asp => asp.lessonId === lesson.id)
 
     return(
-        <div className="lesson-container" onClick={() => history.push(`/lessons/${lesson.id}`)}>
+        <div className="lesson-container div-transition" onClick={() => history.push(`/lessons/${lesson.id}`)}>
 
             <div className="lesson-header">
                 Lesson
             </div>
-            
+
             <div className="lesson-name">
                 {lesson.name}
             </div>
@@ -39,7 +39,7 @@ const LessonDiv = ({ lesson }) => {
         </div>
 
     )
-    
+
     {/* // return (
     //     <div>
     //         <Link to={`/lessons/${lesson.id}`}>{lesson.name}</Link>
