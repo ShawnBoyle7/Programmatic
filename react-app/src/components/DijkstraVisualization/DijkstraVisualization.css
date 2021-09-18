@@ -11,3 +11,7 @@
     grid-template-rows: repeat(20, 50px);
     grid-template-columns: repeat(30, 50px);
 }
+
+.secret-button {
+    display: none;
+}
