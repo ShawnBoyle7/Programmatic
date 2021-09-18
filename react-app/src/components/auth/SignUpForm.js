@@ -52,15 +52,18 @@ const SignUpForm = ({setShowModal}) => {
     };
 
     if (user) {
-        return <Redirect to='/' />;
+        return <Redirect to='/'/>;
     }
 
     return (
         <form onSubmit={onSignUp}>
         <h3 className="form-login-header">Sign Up</h3>
-        <div>
-            {errors.map((error, ind) => (
-            <div key={ind}>{error}</div>
+        <div className="signup-errors">
+            {errors.map((error, idx) => (
+            <p key={idx}>
+                {console.log(errors)}
+                {error}
+            </p>
             ))}
         </div>
         <div>

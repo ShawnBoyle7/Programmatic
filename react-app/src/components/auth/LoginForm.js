@@ -37,9 +37,11 @@ const LoginForm = ({setShowModal}) => {
     return (
         <form className="login-form" onSubmit={onLogin}>
         <h3 className="login-form-header">Log In</h3>
-        <div>
+        <div className="login-errors">
             {errors.map((error, ind) => (
-            <div key={ind}>{error}</div>
+            <div key={ind}>
+                {error}
+            </div>
             ))}
         </div>
         <div>
