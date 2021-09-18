@@ -56,11 +56,11 @@ const NavBar = ({sessionUser, authenticated}) => {
     return (
         <nav>
             <NavLink to='/' exact={true} activeClassName='active'>
-                Home
+                <button>Home</button>
             </NavLink>
 
             <NavLink to='/courses' exact={true} activeClassName='active'>
-                Courses
+                <button>Courses</button>
             </NavLink>
 
             <div className="nav-search-div" onClick={e => e.stopPropagation()}>
@@ -80,6 +80,7 @@ const NavBar = ({sessionUser, authenticated}) => {
                 </form>
             </div>
 
+            <div className='nav-auth-div'>
             { !authenticated ? 
                 <>
                     <LoginFormModal/>
@@ -88,13 +89,14 @@ const NavBar = ({sessionUser, authenticated}) => {
                 </>
                 :
                 <>
-                    Welcome, {sessionUser?.firstName}
+                    <span>Welcome, {sessionUser?.firstName}</span>
                     <NavLink to='/profile' exact={true} activeClassName='active'>
-                        Profile
+                        <i class="fas fa-user fa-2x"></i>
                     </NavLink>
                     <LogoutButton />
                 </>
             }
+            </div>
         </nav>
     );
 }

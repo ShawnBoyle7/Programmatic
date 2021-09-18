@@ -6,12 +6,37 @@ nav {
     top: 0px;
     height: 50px;
     width: 100vw;
-    padding: 0 1%;
+    /* padding: 0 1%; */
     border-bottom: 1px solid black;
+}
+
+nav * {
+    margin: auto;
 }
 
 .nav-search-div {
     position: relative;
+    width: 50%;
+}
+
+.search-form {
+    width: 100%;
+}
+
+.search-form > input {
+    width: 100%;
+    margin: auto;
+}
+
+.nav-auth-div {
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.nav-auth-div button {
+    /* margin: auto 1%; */
+    width: fit-content;
 }
 
 nav a {
