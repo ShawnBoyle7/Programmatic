@@ -1,6 +1,7 @@
 import { getUsers } from './users'
 // constants
 const SET_USER = 'session/SET_USER';
+// const DEMO_USER = 'session/DEMO_USER';
 const REMOVE_USER = 'session/REMOVE_USER';
 
 // action creators
@@ -8,6 +9,11 @@ const setUser = (user) => ({
     type: SET_USER,
     payload: user
 });
+
+// const demoUser = (userId) => ({
+//     type: DEMO_USER,
+//     userId
+// })
 
 const removeUser = () => ({
     type: REMOVE_USER,
@@ -29,6 +35,23 @@ export const authenticate = () => async (dispatch) => {
         }
 
         dispatch(setUser(data));
+    }
+}
+
+export const demo = (userId) => async (dispatch) => {
+    const response = await fetch(`/api/auth/demo/${userId}`, {
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        const data = await response.json();
+        if (data.errors) {
+            return;
+        }
+
+        dispatch(setUser(data))
     }
 }
 
@@ -242,6 +265,10 @@ export default function reducer(state = initialState, action) {
     switch (action.type) {
         case SET_USER:
             return { user: action.payload }
+        // case DEMO_USER:
+            // const user = state[action.userId]
+            // return { user: user }
+            // return { user: action.payload }
         case REMOVE_USER:
             return { user: null }
             // delete stateCopy.user;
