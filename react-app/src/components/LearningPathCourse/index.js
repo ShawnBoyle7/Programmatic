@@ -59,7 +59,8 @@ function LearningPathCourse({ aspirations, idx }) {
     }, []);
 
     window.addEventListener('resize', () => {
-        showScroll()
+        if (window.location.href.endsWith("/profile"))
+            showScroll();
     })
 
     return ( course &&
