@@ -16,7 +16,7 @@ const CourseDiv = ({ course }) => {
     // If so, don't add those
     const addToLearningPath = (e) => {
         e.stopPropagation()
-        const courseId = e.target.id
+        const courseId = e.currentTarget.id
         const courseLessons = allLessons.filter(lesson => lesson.courseId === +courseId)
         courseLessons.forEach((lesson) => {
             if (!userAspirations?.find(asp => asp.lessonId === lesson.id)) {
@@ -76,7 +76,7 @@ const CourseDiv = ({ course }) => {
             <div className="course-button-div">
                 {authenticated && !allLessonsAlreadyOnPath(course.id) &&
                     <span id={course.id} onClick={addToLearningPath}>
-                       <i className="far fa-plus-square fa-2x add-btn"></i>
+                       <i className="far fa-plus-square fa-2x add-btn" ></i>
                        <span>Add to Learning Path</span>
                     </span>
                 }
