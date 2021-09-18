@@ -1,10 +1,17 @@
 /* TODO Add site wide styles */
+
+:root {
+    --bg-color: #FFF0E5;
+    --primary-color: #264653;
+    --secondary-color: white;
+}
+
 * {
     box-sizing: border-box;
 }
 html {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FFF0E5;
+    background-color: var(--bg-color)
     /* background-color: rgba(232, 244, 248, .60); */
     /* background-color: rgba(72, 99, 156, .2); */
     /* background-color: rgba(240, 224, 214, .80); */
@@ -12,27 +19,27 @@ html {
 }
 
 a {
-    color: #264653;
+    color: var(--primary-color);
 }
 
 button {
-    background-color: #264653;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     padding: 1em;
-    border: 1px solid #264653;
+    border: 1px solid var(--primary-color);
     cursor: pointer;
 }
 
 .cancel-button {
-    background-color: white;
-    color: #264653;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 1em;
-    border: 1px solid #264653;
+    border: 1px solid var(--primary-color);
 }
 
 i {
     background-color: #FFF0E5;
-    color: #264653;
+    color: var(--primary-color);
 
 }
 
@@ -53,7 +60,60 @@ body {
     width: 100vw;
     padding: 0 25%;
     padding-top: 3em;
-    height: calc(100vh - 50px - 20%);
+    height: calc(100vh - 50px - 15%);
     overflow-y: auto;
     z-index: -1
 }
+
+form {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin-bottom: 1em;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+
+}
+
+/* 
+
+form div {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+form button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 3rem;
+} 
+
+form label {
+    margin-right: 0.5rem;
+}
+
+.login-form-header {
+    text-align: center;
+    margin: 0;
+}  */
+
+#modal {
+    
+}
+
+#modal-background {
+
+}
+
+#modal-content {
+
+}
+

@@ -2,7 +2,7 @@
     position: absolute;
     width: 100%;
     height: fit-content;
-    background-color: white;
+    background-color: var(--secondary-color);
     border: 1px solid black;
 }
 

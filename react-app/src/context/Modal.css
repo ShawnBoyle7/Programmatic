@@ -1,9 +1,9 @@
 #modal {
     position: fixed;
-    top: 0;
+    top: 0%;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,9 @@
     
 #modal-content {
     position: absolute;
-    background-color:white;
+    background-color: var(--bg-color);
+    padding: 2em 6.5em 3em;
+    border: 2px solid black;
 } 
 
 .auth-modal {
