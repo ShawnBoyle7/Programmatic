@@ -1,9 +1,10 @@
 /* TODO Add site wide styles */
 
 :root {
-    --bg-color: #FFF0E5;
-    --primary-color: #264653;
+    --bg-color: #f7f2ea; 
+    --primary-color: #203354;
     --secondary-color: white;
+    --tertiary-color: #dd571c;
 }
 
 * {
@@ -12,10 +13,6 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--bg-color)
-    /* background-color: rgba(232, 244, 248, .60); */
-    /* background-color: rgba(72, 99, 156, .2); */
-    /* background-color: rgba(240, 224, 214, .80); */
-    /* background-color: rgba(176,169,153, .25); */
 }
 
 a {
@@ -23,7 +20,7 @@ a {
 }
 
 button {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     color: var(--secondary-color);
     padding: 1em;
     border: 1px solid var(--primary-color);
@@ -84,31 +81,6 @@ form input {
     border-bottom: 1px solid black;
 
 }
-
-/* 
-
-form div {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-
-form button {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 3rem;
-} 
-
-form label {
-    margin-right: 0.5rem;
-}
-
-.login-form-header {
-    text-align: center;
-    margin: 0;
-}  */
 
 #modal {
     
