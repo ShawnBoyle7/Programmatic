@@ -68,8 +68,8 @@ body.preload *{
 }
 
 form {
-    height: fit-content;
-    width: fit-content;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -79,7 +79,12 @@ form input {
     border: none;
     background: transparent;
     border-bottom: 1px solid black;
+    width: 100%;
+}
 
+.auth-buttons {
+    margin: auto;
+    width: 30%;
 }
 
 .add-btn {

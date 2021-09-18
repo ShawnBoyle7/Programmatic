@@ -21,10 +21,12 @@
 #modal-content {
     position: absolute;
     background-color: var(--bg-color);
-    padding: 2em 6.5em 3em;
+    padding: 2% 4% 2%;
     border: 2px solid black;
+    width: 40%;
 } 
 
 .auth-modal {
-    display: flex
+    display: flex;
+    width: 70%;
 }
