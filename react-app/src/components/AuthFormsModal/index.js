@@ -16,9 +16,9 @@ function AuthFormsModal() {
     return (
     <>
         {showModal && (
-        <Modal onClose={handleClose}>
-            <p>You need to be logged in to access that!</p>
-            <div className='auth-modal'>
+        <Modal onClose={handleClose} className="auth-modal">
+            <p className="auth-header">You need to be logged in to access that!</p>
+            <div className='auth-forms'>
                 <LoginForm setShowModal={setShowModal}/>
                 <SignUpForm setShowModal={setShowModal}/>
             </div>

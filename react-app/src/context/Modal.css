@@ -21,10 +21,23 @@
 #modal-content {
     position: absolute;
     background-color: var(--bg-color);
-    padding: 2em 6.5em 3em;
+    padding: 2% 4% 2%;
     border: 2px solid black;
 } 
 
+.login-modal, .signup-modal {
+    width: 25%;
+}
+
+.auth-forms {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.auth-header {
+    text-align: center;
+}
+
 .auth-modal {
-    display: flex
+    width: 50%;
 }
