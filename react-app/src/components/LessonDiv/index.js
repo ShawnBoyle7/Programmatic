@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { addToPath } from "../../store/session"
@@ -19,6 +19,23 @@ const LessonDiv = ({ lesson }) => {
     const userAspirations = useSelector(state => state.session.user.aspirations)
 
     const lessonAspiration = userAspirations.find(asp => asp.lessonId === lesson.id)
+
+    function animateDiv() {
+        const lessonDivArray = Array.from(document.getElementsByClassName('lesson-container'));
+        const addAnimatedClass = (e) => {
+            e.currentTarget.classList.add('animation');
+            e.currentTarget.removeEventListener('mouseover', addAnimatedClass);
+
+        }
+
+        lessonDivArray.forEach(div => {
+            div.addEventListener('mouseover', addAnimatedClass);
+        })
+    }
+
+    useEffect(() => {
+        animateDiv()
+    },[]);
 
     return(
         <div className="lesson-container div-transition" onClick={() => history.push(`/lessons/${lesson.id}`)}>

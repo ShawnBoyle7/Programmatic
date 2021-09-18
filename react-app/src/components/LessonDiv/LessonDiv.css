@@ -18,14 +18,14 @@
     100% {top: 0px; right: 0px; box-shadow: -0px 0px black;}
 }
 
-.lesson-container:hover {
+.animation:hover {
     cursor: pointer;
     animation-name: divMove;
     animation: divMove .2s;
     animation-fill-mode: forwards;
 }
 
-.lesson-container:not(:hover) {
+.animation:not(:hover) {
     animation-name: divMoveBack;
     animation: divMoveBack .2s;
     animation-fill-mode: forwards;
