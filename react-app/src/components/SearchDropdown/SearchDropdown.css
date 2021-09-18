@@ -1,9 +1,20 @@
 .search-dropdown {
     position: absolute;
+    top: 32px;
     width: 100%;
     height: fit-content;
     background-color: var(--secondary-color);
     border: 1px solid black;
+    padding: 0 1em;
+}
+
+.search-dropdown h3 {
+    margin: 1em 0;
+}
+
+.result-div {
+    margin-bottom: 0.5em;
+    margin-left: 2em;
 }
 
 .match {

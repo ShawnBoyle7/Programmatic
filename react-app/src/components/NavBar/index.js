@@ -60,11 +60,12 @@ const NavBar = ({sessionUser, authenticated}) => {
             </NavLink>
 
             <NavLink to='/courses' exact={true} activeClassName='active'>
-                <button>Courses</button>
+                Courses
             </NavLink>
 
             <div className="nav-search-div" onClick={e => e.stopPropagation()}>
                 <form className="search-form" onSubmit={submitHandler}>
+                    <i className="fas fa-search" onClick={submitHandler}></i>
                     <input 
                     placeholder='Search Here...'
                     onClick={handleClick}

@@ -11,8 +11,8 @@ const SearchDropdown = ({ searchQuery, setSearchQuery, setRenderSearchDropdown  
     const courses = Object.values(useSelector(state => state.curriculum.courses))
     const lessons = Object.values(useSelector(state => state.curriculum.lessons))
 
-    const courseResults = courses?.filter(course => course.name.toLowerCase().includes(searchQuery?.toLowerCase()))
-    const lessonResults = lessons?.filter(lesson => lesson.name.toLowerCase().includes(searchQuery?.toLowerCase()))
+    const courseResults = courses?.filter(course => course.name.toLowerCase().includes(searchQuery?.toLowerCase())).slice(0,5)
+    const lessonResults = lessons?.filter(lesson => lesson.name.toLowerCase().includes(searchQuery?.toLowerCase())).slice(0,5)
 
     const authenticated = useSelector(state => state.session.user) !== null
 
@@ -55,11 +55,15 @@ const SearchDropdown = ({ searchQuery, setSearchQuery, setRenderSearchDropdown  
             <div className="search-dropdown">
 
                 <div className="search-courses">
-                    <h3>Courses!!! :)</h3>
+                    <h3>Courses</h3>
                     <div className="search-courses-results">
                         {courseResults.length ? 
                             courseResults.map(course =>
-                                <Link to={`/courses/${course.id}`} onClick={handleClick} key={course.id}> {formatResult(course.name)} </Link>
+                                <Link key={course.id} to={`/courses/${course.id}`} onClick={handleClick}>
+                                    <div className='result-div'>
+                                        {formatResult(course.name)} 
+                                    </div>
+                                </Link>
                             )
                         : <p>No courses found :/</p>}
                     </div>
@@ -67,11 +71,15 @@ const SearchDropdown = ({ searchQuery, setSearchQuery, setRenderSearchDropdown  
 
                 {authenticated && 
                     <div className="search-lessons">
-                        <h3>LESSONS :3</h3>
+                        <h3>Lessons</h3>
                         <div className="search-lessons-results">
                             {lessonResults.length ? 
                                 lessonResults.map(lesson =>
-                                    <Link to={`/lessons/${lesson.id}`} onClick={handleClick} key={lesson.id}> {formatResult(lesson.name)} </Link>
+                                    <Link key={lesson.id} to={`/lessons/${lesson.id}`} onClick={handleClick}>
+                                        <div className='result-div'>
+                                            {formatResult(lesson.name)} 
+                                        </div>
+                                    </Link>
                                 )
                             : <p>No lessons found :/.....</p>}
                         </div>
