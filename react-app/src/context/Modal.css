@@ -23,10 +23,21 @@
     background-color: var(--bg-color);
     padding: 2% 4% 2%;
     border: 2px solid black;
-    width: 40%;
 } 
 
-.auth-modal {
+.login-modal, .signup-modal {
+    width: 25%;
+}
+
+.auth-forms {
     display: flex;
-    width: 70%;
+    justify-content: space-evenly;
+}
+
+.auth-header {
+    text-align: center;
+}
+
+.auth-modal {
+    width: 50%;
 }

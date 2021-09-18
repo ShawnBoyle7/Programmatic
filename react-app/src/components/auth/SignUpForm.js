@@ -60,7 +60,7 @@ const SignUpForm = ({setShowModal}) => {
         <div className="small-form-div">
             <form onSubmit={onSignUp}>
             <h3 className="form-login-header">Sign Up</h3>
-            <div className="signup-errors">
+            <div className="form-errors">
                 {errors.map((error, idx) => (
                 <p key={idx}>
                     {console.log(errors)}
@@ -129,7 +129,7 @@ const SignUpForm = ({setShowModal}) => {
                 required={true}
                 ></input>
             </div>
-            <button type='submit' className="auth-buttons">Sign Up</button>
+            <button type='submit' className="form-buttons">Sign Up</button>
             </form>
         </div>
     );

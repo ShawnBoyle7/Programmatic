@@ -37,35 +37,35 @@ const LoginForm = ({setShowModal}) => {
     return (
         <div className="small-form-div">
             <form className="login-form" onSubmit={onLogin}>
-            <h3 className="login-form-header">Log In</h3>
-            <div className="login-errors">
-                {errors.map((error, ind) => (
-                <div key={ind}>
-                    {error}
+                <h3 className="login-form-header">Log In</h3>
+                <div className="form-errors">
+                    {errors.map((error, ind) => (
+                    <div key={ind}>
+                        {error}
+                    </div>
+                    ))}
                 </div>
-                ))}
-            </div>
-            <div>
-                {/* <label htmlFor='email'>Email</label> */}
-                <input
-                name='email'
-                type='text'
-                placeholder='Email'
-                value={email}
-                onChange={updateEmail}
-                />
-            </div>
-            <div>
-                {/* <label htmlFor='password'>Password</label> */}
-                <input
-                name='password'
-                type='password'
-                placeholder='Password'
-                value={password}
-                onChange={updatePassword}
-                />
-            </div>
-                <button type='submit' className="auth-buttons">Login</button>
+                <div>
+                    {/* <label htmlFor='email'>Email</label> */}
+                    <input
+                    name='email'
+                    type='text'
+                    placeholder='Email'
+                    value={email}
+                    onChange={updateEmail}
+                    />
+                </div>
+                <div>
+                    {/* <label htmlFor='password'>Password</label> */}
+                    <input
+                    name='password'
+                    type='password'
+                    placeholder='Password'
+                    value={password}
+                    onChange={updatePassword}
+                    />
+                </div>
+                <button type='submit' className="form-buttons">Login</button>
             </form>
         </div>
     );
