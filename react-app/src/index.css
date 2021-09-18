@@ -85,40 +85,9 @@ form input {
 
 }
 
-/* 
-
-form div {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-
-form button {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    top: 3rem;
-} 
-
-form label {
-    margin-right: 0.5rem;
-}
-
-.login-form-header {
-    text-align: center;
-    margin: 0;
-}  */
-
-#modal {
-    
-}
-
-#modal-background {
-
-}
-
-#modal-content {
-
+.add-btn {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: .2em;
 }
 

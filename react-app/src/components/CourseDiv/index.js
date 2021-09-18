@@ -75,7 +75,13 @@ const CourseDiv = ({ course }) => {
 
             <div className="course-button-div">
                 {authenticated && !allLessonsAlreadyOnPath(course.id) &&
-                    <button id={course.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                    // <button className='add-btn' >
+                    <span id={course.id} onClick={addToLearningPath}>
+                       <i class="far fa-plus-square fa-2x add-btn"></i>
+                       <span>Add to Learning Path</span>
+                    </span>
+
+                    // </button>
                 }
             </div>
 
