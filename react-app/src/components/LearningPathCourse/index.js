@@ -11,9 +11,30 @@ function LearningPathCourse({ aspirations, idx }) {
     const course = courses[aspirations[0]?.courseId]
     aspirations.sort((a,b) => a.lessonId - b.lessonId)
 
-    useEffect(()=>{
-        console.log('wow!')
-    }, [renderScrollLeft, renderScrollRight])
+
+    const showScroll = (scrollLeft = document.getElementById(`aspirations-div${idx}`).scrollLeft) => {
+        const scrollWidth = document.getElementById(`aspirations-div${idx}`)?.scrollWidth
+        const divWidth = document.getElementById(`aspirations-div${idx}`)?.clientWidth
+
+        if(divWidth < scrollWidth) {
+            setRenderScrollButton(true)
+        } else {
+            setRenderScrollButton(false)
+        }
+
+        if(scrollLeft === 0) {
+            setRenderScrollLeft(false)
+        }
+        else {
+            setRenderScrollLeft(true)
+        }
+        if(scrollLeft === scrollWidth - divWidth) {
+            setRenderScrollRight(false)
+        }
+        else {
+            setRenderScrollRight(true)
+        }
+    }
 
     const scroll = (e) => {
         const scrollAmount = e.currentTarget.id === 'scroll-left' ? -212 : 212;
@@ -24,45 +45,18 @@ function LearningPathCourse({ aspirations, idx }) {
         const aspirationsDiv = document.getElementById(e.currentTarget.value)
 
         aspirationsDiv.scrollLeft += scrollAmount;
-        showScroll()
-        // if (aspirationsDiv.scrollLeft === 0) setRenderScrollLeft(false)
-        console.log("scrollLeft", document.getElementById(e.currentTarget.value).scrollLeft)
-        console.log(`scrollable range -------------> ${scrollWidth - divWidth}`)
 
+        let adjustedScrollLeft = aspirationsDiv.scrollLeft + scrollAmount
+        if (adjustedScrollLeft < 0 ) adjustedScrollLeft = 0;
+        if (adjustedScrollLeft > scrollWidth - divWidth) adjustedScrollLeft = scrollWidth - divWidth;
+
+        showScroll(adjustedScrollLeft)
     }
 
-    const showScroll = () => {
-        const aspirationsDiv = document.getElementById(`aspirations-div${idx}`)
-        const scrollWidth = document.getElementById(`aspirations-div${idx}`)?.scrollWidth
-        const divWidth = document.getElementById(`aspirations-div${idx}`)?.clientWidth
-
-        if(divWidth < scrollWidth) {
-            setRenderScrollButton(true)
-        } else {
-            setRenderScrollButton(false)
-        }
-
-        if(aspirationsDiv.scrollLeft === 0) {
-            console.log('left gone')
-            setRenderScrollLeft(false)
-        }
-        else {
-            console.log('left render')
-            setRenderScrollLeft(true)
-        }
-        if(aspirationsDiv.scrollLeft === scrollWidth - divWidth) {
-            console.log('right gone')
-            setRenderScrollRight(false)
-        }
-        else {
-            console.log('right render')
-            setRenderScrollRight(true)
-        }
-    }
-
-    useEffect(()=> {
+    // DO NOT PUT ANYTHING IN DEP ARRAY
+    useEffect(() => {
         showScroll();
-    });
+    }, []);
 
     window.addEventListener('resize', () => {
         showScroll()
