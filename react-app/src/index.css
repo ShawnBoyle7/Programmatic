@@ -64,7 +64,7 @@ body.preload *{
     padding-top: 3em;
     height: calc(100vh - 50px - 15%);
     overflow-y: auto;
-    z-index: -1
+    z-index: -1;
 }
 
 form {
@@ -85,6 +85,6 @@ form input {
 .add-btn {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: .2em;
+    padding: .2em 40% .2em;
 }
 

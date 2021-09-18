@@ -60,28 +60,25 @@ const CourseDiv = ({ course }) => {
 
     return (
         <div className="course-container" onClick={() => history.push(`/courses/${course.id}`)}>
+            <div className='course-details'>
+                <div className="course-header">
+                    Course
+                </div>
 
-            <div className="course-header">
-                Course
+                <div className="course-name">
+                    {course.name}
+                </div>
+
+                <div className="lesson-count">
+                    <span>{course.lessons.length}</span> Lessons
+                </div>
             </div>
-
-            <div className="course-name">
-                {course.name}
-            </div>
-
-            <div className="lesson-count">
-                <span>{course.lessons.length}</span> Lessons
-            </div>
-
             <div className="course-button-div">
                 {authenticated && !allLessonsAlreadyOnPath(course.id) &&
-                    // <button className='add-btn' >
                     <span id={course.id} onClick={addToLearningPath}>
-                       <i class="far fa-plus-square fa-2x add-btn"></i>
+                       <i className="far fa-plus-square fa-2x add-btn"></i>
                        <span>Add to Learning Path</span>
                     </span>
-
-                    // </button>
                 }
             </div>
 
