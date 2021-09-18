@@ -53,6 +53,11 @@ body {
     padding: 0;
 }
 
+body.preload *{
+    animation-duration: 0s !important;
+    transition: 0s !important;
+}
+
 .content {
     position: absolute;
     top: 50px;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToPath } from "../../store/session"
@@ -39,6 +39,24 @@ const CourseDiv = ({ course }) => {
         }
         return true;
     }
+
+    function animateDiv() {
+        const courseDivArray = Array.from(document.getElementsByClassName('course-container'));
+        const addAnimatedClass = (e) => {
+
+                e.currentTarget.classList.add('animation');
+                e.currentTarget.removeEventListener('mouseover', addAnimatedClass);
+
+        }
+        courseDivArray.forEach(div => {
+            div.addEventListener('mouseover', addAnimatedClass);
+        })
+
+   }
+
+    useEffect(() => {
+        animateDiv()
+    },[]);
 
     return (
         <div className="course-container" onClick={() => history.push(`/courses/${course.id}`)}>

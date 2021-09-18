@@ -9,13 +9,29 @@
     position: relative;
 }
 
-.course-container:hover {
-    top: -7px;
-    transition: .2s;
-    right: -7px;
-    cursor: pointer;
-    box-shadow: -7px 7px black;
+@keyframes divMove {
+    0% {top: 0px; right: 0px; box-shadow: -0px 0px black;}
+    100% {top: -8px; right: -9px; box-shadow: -9px 10px black;}
 }
+@keyframes divMoveBack {
+    0% {top: -8px; right: -9px; box-shadow: -9px 10px black;}
+    100% {top: 0px; right: 0px; box-shadow: -0px 0px black;}
+}
+
+.animation:hover {
+    cursor: pointer;
+    animation-name: divMove;
+    animation: divMove .2s;
+    animation-fill-mode: forwards;
+}
+
+.animation:not(:hover) {
+    animation-name: divMoveBack;
+    animation: divMoveBack .2s;
+    animation-fill-mode: forwards;
+}
+
+
 
 .course-header {
     font-size: 0.875rem;
