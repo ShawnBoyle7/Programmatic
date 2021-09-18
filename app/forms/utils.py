@@ -1,5 +1,6 @@
 from ..models import User
 from wtforms.validators import ValidationError
+import re
 
 
 # def user_exists(form, field):
@@ -40,5 +41,19 @@ def username_validation():
         if user and user_id != user.id:
             raise ValidationError('Username is already in use.')
     return username_exists
+
+def password_validation(form, field):
+    def validate_password():
+        user_id = 0
+        if hasattr(form, 'user_id'):
+            email = field.data
+            user = User.query.filter(User.email == email).first()
+
+        password = field.data
+        regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+        matches = re.match(regex, password)
+        if not matches:
+            return "Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+
 
 # Password Validator

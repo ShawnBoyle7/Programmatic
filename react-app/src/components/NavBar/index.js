@@ -36,6 +36,7 @@ const NavBar = ({sessionUser, authenticated}) => {
 
     const handleDemo = () => {
         dispatch(demo(1))
+        history.push("/")
     }
 
     const submitHandler = (e) => {
