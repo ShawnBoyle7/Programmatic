@@ -39,18 +39,20 @@ const LessonDiv = ({ lesson }) => {
 
     return(
         <div className="lesson-container div-transition" onClick={() => history.push(`/lessons/${lesson.id}`)}>
-
-            <div className="lesson-header">
-                Lesson
+            <div className='lesson-details'>
+                <div className="lesson-header">
+                    Lesson
+                </div>
+                <div className="lesson-name">
+                    {lesson.name}
+                </div>
             </div>
-
-            <div className="lesson-name">
-                {lesson.name}
-            </div>
-
             <div className="lesson-button-div">
                 {!lessonAspiration &&
-                    <button id={lesson.id} onClick={addToLearningPath}>Add to Learning Path</button>
+                    <span id={lesson.id} onClick={addToLearningPath}>
+                        <i className="far fa-plus-square fa-2x add-btn" ></i>
+                        <span>Add to Learning Path</span>
+                    </span>
                 }
             </div>
         </div>
