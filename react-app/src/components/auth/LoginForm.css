@@ -1,0 +1,26 @@
+.login-form {
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    /* height: 20rem;
+    width: 20rem; */
+}
+
+.login-form input {
+    /* margin: auto; */
+    /* display: inline-flex; */
+    /* justify-content: center; */
+    /* float: left; */
+}
+
+.login-form div {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin-bottom: 1rem; */
+}
+
+.login-form button {
+    /* position: relative; */
+    /* top: 10rem; */
+    /* align-self: center; */
+}

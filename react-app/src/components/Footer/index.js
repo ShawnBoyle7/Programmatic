@@ -21,7 +21,7 @@ function Footer() {
                     <p>Shawn Boyle</p>
                 </div>
             </div>
-            <div><p>Meet The Developers</p></div>
+            {/* <div><p>Meet The Developers</p></div> */}
         </footer>
     )
 }

@@ -1,5 +1,5 @@
 .course-container {
-    background-color: white;
+    background-color: var(--secondary-color);
     border: 1px solid black;
     padding: 1rem 1rem 1rem 1rem;
     margin: 0;

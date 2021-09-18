@@ -17,6 +17,11 @@ def authenticate():
         return current_user.to_session_dict()
     return {'errors': ['Unauthorized']}
 
+@auth_routes.route('/demo/<int:id>')
+def demo_user(id):
+    user = User.query.get(id)
+    login_user(user)
+    return user.to_session_dict()
 
 @auth_routes.route('/login', methods=['POST'])
 def login():
@@ -42,7 +47,6 @@ def logout():
     """
     logout_user()
     return {'message': 'User logged out'}
-
 
 @auth_routes.route('/signup', methods=['POST'])
 def sign_up():
