@@ -4,10 +4,13 @@ import LogoutButton from '../auth/LogoutButton';
 import LoginFormModal from '../LoginFormModal';
 import SignUpFormModal from '../SignUpFormModal';
 import SearchDropdown from '../SearchDropdown';
+import { useDispatch } from "react-redux";
+import { demo } from "../../store/session";
 import './NavBar.css'
 
 const NavBar = ({sessionUser, authenticated}) => {
     const history = useHistory();
+    const dispatch = useDispatch();
 
     // Tracking user input in a state variable
     const [searchQuery, setSearchQuery] = useState("");
@@ -29,6 +32,10 @@ const NavBar = ({sessionUser, authenticated}) => {
         if (searchQuery.length) {
             setRenderSearchDropdown(true)
         }
+    }
+
+    const handleDemo = () => {
+        dispatch(demo(1))
     }
 
     const submitHandler = (e) => {
@@ -76,6 +83,7 @@ const NavBar = ({sessionUser, authenticated}) => {
                 <>
                     <LoginFormModal/>
                     <SignUpFormModal />
+                    <button onClick={handleDemo}>Demo</button>
                 </>
                 :
                 <>
