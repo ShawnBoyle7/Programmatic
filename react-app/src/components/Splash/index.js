@@ -1,10 +1,12 @@
 import React from "react";
+import DijkstraVisualization from "../DijkstraVisualization";
 
 function Splash() {
 
     return (
         <>
-            <h1>Splash</h1>
+            <h2>Dijkstra's Visualization</h2>
+            <DijkstraVisualization/>
         </>
     )
 }
