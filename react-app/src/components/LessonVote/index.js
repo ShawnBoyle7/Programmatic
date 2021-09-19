@@ -34,7 +34,7 @@ function LessonVote({ lessonId, userId }) {
 
     return (
         <>
-        <div>
+        <div className='helpful-div'>
             <p>Did you find this lesson helpful?</p>
             <button className={setClassName(true)} onClick={handleVote}>Yes</button>
             <button className={setClassName(false)} onClick={handleVote}>No</button>

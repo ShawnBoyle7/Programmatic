@@ -105,6 +105,62 @@ form input {
     padding: .2em 40% .2em;
 }
 
+.delete-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 17%;
+    justify-content: center;
+    text-align: center;
+}
+
+.delete-modal > div > button {
+    width: 30%;
+    margin: .2em;
+}
+
+.delete-user-modal > div > div {
+    display: flex;
+    justify-content: space-evenly;
+}
+.delete-user-modal > div > div > button {
+    width: 30%;
+    margin: .2em;
+}
+
+.edit-modal > form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.edit-modal > form > .comment-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-modal > form > div > button {
+    width: 40%;
+    margin: .2em;
+    margin-top: .3em;
+}
+
+.deactivate-button{
+    margin-left: 60%;
+}
+
 .fab, .fas {
     background-color: transparent;
+}
+
+.comment-div > button {
+    width: 8%;
+    margin: .2em;
 }

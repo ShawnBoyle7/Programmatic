@@ -1,7 +1,15 @@
-.liked {
-    background-color: lightgreen;
+.helpful-div > button {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 1em;
+    border: 1px solid var(--primary-color);
+    width: 20%;
 }
 
-.not-liked {
-    background-color: red;
+.helpful-div > .liked {
+    background-color: rgba(0, 128, 0, .3);
+}
+
+.helpful-div > .not-liked {
+    background-color: rgba(221, 87, 28, .4);
 }
