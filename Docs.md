@@ -31,5 +31,5 @@ The search:
         if it was: the current node's path array was dijkstra's path to the target node
         if it wasn't we'd check the current node's neighboring nodes.
             if a neighboring node had already been visted, we ignored it.
-        
+
 
