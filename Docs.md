@@ -20,7 +20,7 @@ The nodes contain:
     the edges leading to those neighboring nodes
     and the weight of those edges (we chose to equate distance with weight)
 
-The dijkstraAlgothim function:
+The dijkstraAlgorithim function:
 We kept track of:
     the traversal order (used later for the visual rendering)
     the nodes that would be searched after the current node
@@ -39,3 +39,13 @@ Once the dijkstraAlgorithm function has been run, we take the returned traversal
 Once the traversal animation is done rendering, we take the ideal path (also from the return of the dijkstraAlgorithm function), iterate through and add a css class to animate the ideal path.
 
 
+
+Search Dropdown:
+to prevent the dropdown from being too long and obscuring most of the page, we limited the results render to a max of 5 results. 
+when you submit search query
+
+
+
+*keyfames
+*scroll buttons
+*seach results and dropdown
