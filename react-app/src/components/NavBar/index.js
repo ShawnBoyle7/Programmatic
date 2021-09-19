@@ -60,7 +60,7 @@ const NavBar = ({sessionUser, authenticated}) => {
             </NavLink>
 
             <NavLink to='/courses' exact={true} activeClassName='active'>
-                Courses
+                <span className='course-nav-link'>Courses</span>
             </NavLink>
 
             <div className="nav-search-div" onClick={e => e.stopPropagation()}>
@@ -90,7 +90,7 @@ const NavBar = ({sessionUser, authenticated}) => {
                 </>
                 :
                 <>
-                    <span>Welcome, {sessionUser?.firstName}</span>
+                    <span className='welcome'>Welcome, <span className='welcome-name'>{sessionUser?.firstName}</span></span>
                     <NavLink to='/profile' exact={true} activeClassName='active'>
                         <i className="fas fa-user fa-2x"></i>
                     </NavLink>

@@ -23,7 +23,7 @@ button {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
     padding: 1em;
-    border: 1px solid var(--primary-color);
+    border: none;
     cursor: pointer;
 }
 
