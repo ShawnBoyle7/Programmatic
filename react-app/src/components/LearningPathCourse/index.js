@@ -56,6 +56,7 @@ function LearningPathCourse({ aspirations, idx }) {
     // DO NOT PUT ANYTHING IN DEP ARRAY
     useEffect(() => {
         showScroll();
+    // eslint-disable-next-line
     }, []);
 
     window.addEventListener('resize', () => {
