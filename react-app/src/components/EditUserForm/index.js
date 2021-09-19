@@ -139,7 +139,7 @@ const EditUserForm = ({ setShowModal }) => {
                 ></input>
             </div>
             <div>
-                <button type='submit'>Submit Edit</button>
+                <button className='edit-button' type='submit'>Submit Edit</button>
             </div>
 
         </form>
