@@ -9,6 +9,7 @@
 
 .node {
     background-color: black;
+    border: 1px solid black;
     border-radius: 50%;
     width: 125%;
     height: 125%;
@@ -267,8 +268,8 @@
 }
 
 .traversed {
-    background-color: lightskyblue;
-    border: 1px solid lightskyblue;
+    background-color: var(--tertiary-color);
+    border: 1px solid var(--tertiary-color);
     transition: border 500ms;
 }
 
@@ -277,8 +278,8 @@
 }
 
 .path {
-    background-color: violet;
-    border: 1px solid violet;
+    background-color: #577ec3;
+    border: 1px solid #577ec3;
     transition: border 500ms;
 }
 
