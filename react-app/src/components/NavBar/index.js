@@ -56,7 +56,7 @@ const NavBar = ({sessionUser, authenticated}) => {
     return (
         <nav>
             <NavLink to='/' exact={true} activeClassName='active'>
-                <button>Home</button>
+                <img className='logo' src='/images/programmatic-logo.png'/>
             </NavLink>
 
             <NavLink to='/courses' exact={true} activeClassName='active'>
@@ -92,7 +92,7 @@ const NavBar = ({sessionUser, authenticated}) => {
                 <>
                     <span>Welcome, {sessionUser?.firstName}</span>
                     <NavLink to='/profile' exact={true} activeClassName='active'>
-                        <i class="fas fa-user fa-2x"></i>
+                        <i className="fas fa-user fa-2x"></i>
                     </NavLink>
                     <LogoutButton />
                 </>

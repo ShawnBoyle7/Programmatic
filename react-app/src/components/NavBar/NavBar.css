@@ -6,13 +6,17 @@ nav {
     top: 0px;
     height: 50px;
     width: 100vw;
-    /* padding: 0 1%; */
     border-bottom: 1px solid rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 nav * {
     margin: auto;
+}
+
+.logo {
+    height: 45px;
+    margin-top: 2px;
 }
 
 .nav-search-div {
