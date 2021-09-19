@@ -1,11 +1,12 @@
 import React from "react";
 import DijkstraVisualization from "../DijkstraVisualization";
+import "./Splash.css"
 
 function Splash() {
 
     return (
         <>
-            <h2>Dijkstra's Visualization</h2>
+            <h2 className="splash-header">Dijkstra's Visualization</h2>
             <DijkstraVisualization/>
         </>
     )

@@ -12,6 +12,16 @@
     grid-template-columns: repeat(30, 50px);
 }
 
+.algo-vis-control-div {
+    display: flex;
+    justify-content: center;
+}
+
+.algo-button {
+    width: 5.5%;
+    margin: 0 1em;
+}
+
 .secret-button {
     display: none;
 }
