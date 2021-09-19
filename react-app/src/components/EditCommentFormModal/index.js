@@ -7,7 +7,7 @@ function EditCommentFormModal({ commentId, setShowModal, showModal }) {
     return (
     <>
         {showModal && (
-        <Modal onClose={() => setShowModal(false)}>
+        <Modal onClose={() => setShowModal(false)} className='edit-modal'>
             <EditCommentForm commentId={commentId} setShowModal={setShowModal}/>
         </Modal>
         )}

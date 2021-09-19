@@ -123,3 +123,28 @@ form input {
     width: 30%;
     margin: .2em;
 }
+
+.edit-modal > form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+.edit-modal > form > .comment-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.edit-modal > form > div > button {
+    width: 40%;
+    margin: .2em;
+    padding: .4em;
+    margin-top: .3em;
+}
