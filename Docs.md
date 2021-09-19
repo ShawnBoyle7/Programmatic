@@ -20,7 +20,7 @@ The nodes contain:
     the edges leading to those neighboring nodes
     and the weight of those edges (we chose to equate distance with weight)
 
-The dijkstraAlgothim function:
+The dijkstraAlgorithim function:
 We kept track of:
     the traversal order (used later for the visual rendering)
     the nodes that would be searched after the current node
