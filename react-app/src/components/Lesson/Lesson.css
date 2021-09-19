@@ -5,6 +5,21 @@
     text-align: center;
 }
 
+.back-to-course {
+    width: fit-content;
+    align-self: flex-start;
+    display: flex;
+}
+
+.back-to-course > span {
+    margin-left: 1em;
+    height: fit-content;
+}
+
+.fa-level-up-alt {
+    transform: rotate(-90deg);
+}
+
 .algo-vis-modal-btn {
     width: fit-content;
     align-self: flex-end;
