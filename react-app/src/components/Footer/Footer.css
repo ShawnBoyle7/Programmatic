@@ -1,20 +1,21 @@
 footer {
     position: fixed;
     bottom: 0px;
-    height: 15%;
+    height: 16%;
     width: 100vw;
     border-top: 1px solid black;
     text-align: center;
     background-color: var(--primary-color);
+
 }
 
 .footer-cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .footer-cards > div {
-    margin: 1em 10%;
+    margin-top: .8%;
     padding: 1.3em;
     border: 1px solid black;
     border-radius: 50%;

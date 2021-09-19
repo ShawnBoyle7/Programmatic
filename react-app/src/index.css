@@ -62,7 +62,7 @@ body.preload *{
     width: 100vw;
     padding: 0 25%;
     padding-top: 3em;
-    height: calc(100vh - 50px - 15%);
+    height: calc(100vh - 50px - 16%);
     overflow-y: auto;
     z-index: -1;
 }
