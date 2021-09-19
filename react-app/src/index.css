@@ -104,3 +104,7 @@ form input {
     color: var(--primary-color);
     padding: .2em 40% .2em;
 }
+
+.fab, .fas {
+    background-color: transparent;
+}

@@ -10,7 +10,7 @@ function Home({authenticated}) {
         return b.votes.reduce((accum, vote) => vote.liked ? accum + 1 : accum - 1, 0)
         -
         a.votes.reduce((accum, vote) => vote.liked ? accum + 1 : accum - 1, 0)
-    })
+    }).splice(0,10);
 
     return (
         authenticated ? 
@@ -21,9 +21,6 @@ function Home({authenticated}) {
             <div className="popular-lessons">
                 {lessonsByPopularity.map(lesson => 
                     <LessonDiv lesson={lesson} key={lesson.id}/>
-                    // <div className="popular-lesson">
-                    //     <Link to={`/lessons/${lesson.id}`}>{lesson.name}</Link>
-                    // </div>
                 )}
             </div>
         </>
