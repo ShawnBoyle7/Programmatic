@@ -25,6 +25,13 @@
     position: relative;
 }
 
+.profile-details {
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-right: 1em;
+}
+
 .edit-user {
 	position: absolute;
     top: 0px;
@@ -47,4 +54,5 @@ span {
 
 li {
     list-style-type: none;
+    margin-bottom: 0.2em;
 }
