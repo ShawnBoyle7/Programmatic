@@ -1,8 +1,7 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
     position: fixed;
+    grid-template-columns: 20% 10% 40% 30%;
     top: 0px;
     height: 50px;
     width: 100vw;
@@ -23,16 +22,15 @@ nav * {
     font-weight: bold;
     font-size: 1.25em;
     position: relative;
-    top: 3px;
 }
 
 .nav-search-div {
     position: relative;
-    width: 30%;
+    width: 100%;
 }
 
 .search-form {
-    width: 100%;
+    width: 60%;
     position: relative;
 }
 
@@ -55,12 +53,12 @@ nav * {
 
 .nav-auth-div {
     display: flex;
-    width: 15%;
+    width: 100%;
     justify-content: space-between;
 }
 
 .nav-auth-div button {
-    width: 28%;
+    width: 20%;
     height: 35px;
     padding: 0;
     border: none;
