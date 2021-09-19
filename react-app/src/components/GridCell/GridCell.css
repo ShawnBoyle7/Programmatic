@@ -1,9 +1,10 @@
 .grid-cell {
-    border: 1px solid lightgray;
+    /* border: 1px solid lightgray; */
     width: 50px;
     height: 50px;
     position: relative;
     z-index: 0;
+    color: transparent;
 }
 
 .node {
@@ -12,45 +13,257 @@
     width: 125%;
     height: 125%;
     z-index: 1;
+    color: yellow;
+    text-align: center;
+    padding-top: 1em;
 }
 
-.r7c8 {
+.r2c2 {
     position: relative;
-    left: 60%;
     width: 1px;
+    left: 50%;
+    bottom: 100%;
     height: 300%;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(-43deg);
+}
+
+.r1c2 {
+    position: relative;
+    top: 60%;
+    width: 900%;
+    height: 1px;
     border: solid 1px black;
     background-color: black;
 }
 
-.r6c9 {
+.r4c4 {
+    position: relative;
+    width: 350%;
+    top: 80%;
+    right: 30%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(36deg);
+}
+
+.r6c5 {
+    position: relative;
+    bottom: 50%;
+    /* left: 0%; */
+    right: 110%;
+    width: 1px;
+    height: 1200%;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(24.5deg);
+} 
+
+.r6c7 {
+    position: relative;
+    top: 120%;
+    right: 60%;
+    width: 500%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(37deg);
+} 
+
+.r2c10 {
+    position: relative;
+    top: 0%;
+    bottom: 0%;
+    left: 60%;
+    width: 1px;
+    height: 700%;
+    border: solid 1px black;
+    background-color: black;
+}
+
+.r1c11 {
     position: relative;
     top: 60%;
+    left: 0%;
+    right: 0%;
+    width: 650%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(0deg);
+}
+
+.r2c16 {
+    position: relative;
+    bottom: 160%;
+    right: 200%;
+    width: 1px;
+    height: 1000%;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(45deg);
+}
+
+.r2c18 {
+    position: relative;
+    top: 55%;
+    left: 0%;
+    width: 850%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(13deg);
+}
+
+.r4c25 {
+    position: relative;
+    bottom: 150%;
+    right: 180%;
+    width: 1px;
+    height: 1300%;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(32.5deg);
+}
+
+.r4c26 {
+    position: relative;
+    top: 0%;
+    right: 88%;
+    width: 1px;
+    height: 1150%;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(14.5deg);
+}
+
+.r4c27 {
+    position: relative;
+    top: 0%;
+    left: 70%;
+    width: 1px;
+    height: 1450%;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(-7deg);
+}
+
+.r9c11 {
+    position: relative;
+    bottom: 50%;
+    left: 70%;
+    width: 1px;
+    height: 350%;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(-34.5deg);
+}
+
+.r11c13 {
+    position: relative;
+    top: 110%;
+    left: 0%;
+    right: 0%;
+    width: 250%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(20deg);
+}
+
+.r13c16 {
+    position: relative;
+    top: 60%;
+    left: 0%;
+    right: 0%;
+    width: 350%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(28deg);
+}
+
+.r13c20 {
+    position: relative;
+    top: 110%;
+    left: 0%;
+    right: 0%;
+    width: 150%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(-29.5deg);
+}
+
+.r14c18 {
+    position: relative;
+    top: 165%;
+    right: 1600%;
+    width: 1750%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(-6.2deg);
+}
+
+.r14c22 {
+    position: relative;
+    top: 80%;
+    right: 70%;
     width: 300%;
     height: 1px;
     border: solid 1px black;
     background-color: black;
+    transform: rotate(45deg);
 }
 
-.r9c9 {
+.r16c24 {
     position: relative;
-    right: 140%;
-    width: 550%;
+    top: 50%;
+    right: 50%;
+    width: 300%;
     height: 1px;
     border: solid 1px black;
     background-color: black;
-    transform: rotate(-45deg);
+    transform: rotate(35deg);
 }
 
-.r7c13 {
+.r17c27 {
     position: relative;
-    top:78%;
-    right: 10%;
-    width: 400%;
+    top: 120%;
+    left: 0%;
+    right: 0%;
+    width: 150%;
     height: 1px;
     border: solid 1px black;
     background-color: black;
-    transform: rotate(27deg);
+    transform: rotate(30deg);
+}
+
+.r18c27 {
+    position: relative;
+    top: 60%;
+    bottom: 0%;
+    right: 1400%;
+    width: 1500%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(0deg);
+}
+
+.r17c2 {
+    position: relative;
+    top: 75%;
+    left: 0%;
+    right: 0%;
+    width: 1200%;
+    height: 1px;
+    border: solid 1px black;
+    background-color: black;
+    transform: rotate(9deg);
 }
 
 .traversed {
