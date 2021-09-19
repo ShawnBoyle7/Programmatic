@@ -20,10 +20,13 @@ function DeleteAspirationModal({ lessonId, setShowModal, showModal, showScroll }
     return (
         <>
             {showModal && (
-                <Modal onClose={onClose}>
+                <Modal onClose={onClose} className='delete-modal'>
                     <p>Remove from Learning Path?</p>
-                    <button onClick={handleDelete}>Delete</button>
-                    <button className="cancel-button" onClick={() => setShowModal(false)}>Cancel</button>
+                    <div>
+                        <button onClick={handleDelete}>Delete</button>
+                        <button className="cancel-button" onClick={() => setShowModal(false)}>Cancel</button>
+                    </div>
+
                 </Modal>
             )}
         </>
