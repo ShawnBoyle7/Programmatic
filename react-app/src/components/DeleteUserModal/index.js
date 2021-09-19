@@ -22,13 +22,16 @@ function DeleteUserModal() {
     <>
         <button onClick={() => setShowModal(true)}>Deactivate Account</button>
         {showModal && (
-        <Modal onClose={() => setShowModal(false)}>
+        <Modal className='delete-user-modal' onClose={() => setShowModal(false)}>
             { sessionUser.id !== 1 ?
-                <>
-                    <button onClick={handleDelete}>Deactivate</button>
-                    <button onClick={() => setShowModal(false)}>Cancel</button>
-                </> 
-                : 
+                <div>
+                    <p>Are you sure you want to delete your account?</p>
+                    <div>
+                        <button onClick={handleDelete}>Delete</button>
+                        <button className='cancel-button' onClick={() => setShowModal(false)}>Cancel</button>
+                    </div>
+                </div>
+                :
                 <p>You CANNOT delete the Demo User. 😡</p>
             }
         </Modal>

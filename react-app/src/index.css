@@ -104,3 +104,22 @@ form input {
     color: var(--primary-color);
     padding: .2em 40% .2em;
 }
+
+.delete-modal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 17%;
+    justify-content: center;
+    text-align: center;
+}
+
+.delete-modal > div > button {
+    width: 30%;
+    margin: .2em;
+}
+
+.delete-user-modal > div > div > button {
+    width: 30%;
+    margin: .2em;
+}
