@@ -37,7 +37,7 @@ def edit_user(id):
         password = request.form["password"]
         img_file = None
         img_url = user.img_url
-        if 'img-file' in request.files:
+        if "img_file" in request.files:
             img_file = request.files["img_file"]
 
         if img_file:
