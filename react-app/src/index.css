@@ -36,7 +36,7 @@ button {
 .cancel-button {
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    padding: 1em;
+    padding: .95em;
     border: 1px solid var(--primary-color);
 }
 
@@ -68,7 +68,7 @@ body.preload *{
     width: 100vw;
     padding: 0 25%;
     padding-top: 3em;
-    height: calc(100vh - 50px - 15%);
+    height: calc(100vh - 50px - 16%);
     overflow-y: auto;
     z-index: -1;
 }
@@ -94,7 +94,7 @@ form input {
 
 .form-buttons {
     margin: auto;
-    width: 30%;
+    width: fit-content;
 }
 
 .form-errors {
@@ -121,7 +121,7 @@ form input {
 }
 
 .delete-modal > div > button {
-    width: 30%;
+    width: fit-content;
     margin: .2em;
 }
 
@@ -130,7 +130,7 @@ form input {
     justify-content: space-evenly;
 }
 .delete-user-modal > div > div > button {
-    width: 30%;
+    width: fit-content;
     margin: .2em;
 }
 
@@ -153,7 +153,7 @@ form input {
 }
 
 .edit-modal > form > div > button {
-    width: 40%;
+    width: fit-content;
     margin: .2em;
     margin-top: .3em;
 }
@@ -167,6 +167,11 @@ form input {
 }
 
 .comment-div > button {
-    width: 8%;
+    width: fit-content;
     margin: .2em;
+}
+
+.edit-button {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
 }

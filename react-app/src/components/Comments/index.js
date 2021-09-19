@@ -37,7 +37,7 @@ const Comments = ({ lessonId }) => {
                             </div>
                         </div>
                         {user.id === comment.userId &&
-                            <button className="comment-button" id={comment.id} onClick={renderEditModal}>Edit</button>}
+                            <button className="comment-button edit-button" id={comment.id} onClick={renderEditModal}>Edit</button>}
                         {user.id === comment.userId &&
                             <button className="comment-button cancel-button" id={comment.id} onClick={renderDeleteModal}>Delete</button>}
                     </div>)}
