@@ -5,24 +5,30 @@
     text-align: center;
 }
 
-.back-to-course {
-    width: fit-content;
-    align-self: flex-start;
+.lesson-top-buttons {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 2em;
+}
+
+.back-to-course {
+    display: flex;
+    flex-direction: column;
 }
 
 .back-to-course > span {
-    margin-left: 1em;
-    height: fit-content;
+    font-weight: bold;
+    color: var(--primary-color);
 }
 
 .fa-level-up-alt {
     transform: rotate(-90deg);
+    color: var(--tertiary-color);
 }
 
 .algo-vis-modal-btn {
     width: fit-content;
-    align-self: flex-end;
 }
 
 .lesson-name {

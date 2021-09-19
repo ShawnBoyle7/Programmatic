@@ -14,11 +14,13 @@ function Lesson() {
 
     return ( lesson && 
         <div className='lesson-page'>
-            <Link to={`/courses/${lesson.courseId}`} className='back-to-course'>
-                <i className="fas fa-level-up-alt fa-2x"></i>
-                <span>Back To Course</span>
-            </Link>
-            <AlgoVisModal />
+            <div className='lesson-top-buttons'>
+                <Link to={`/courses/${lesson.courseId}`} className='back-to-course'>
+                    <i className="fas fa-level-up-alt fa-2x"></i>
+                    <span>Back To Course</span>
+                </Link>
+                <AlgoVisModal />
+            </div>
             <div className='lesson-div'>
                 <h1 className='lesson-name'>{lesson.name}</h1>
                 <p className='lesson-description'>{lesson.description}</p>
