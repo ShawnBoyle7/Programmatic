@@ -18,7 +18,7 @@
 }
 
 .algo-button {
-    width: 5.5%;
+    width: fit-content;
     margin: 0 1em;
 }
 
