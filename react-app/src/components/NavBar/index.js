@@ -56,7 +56,7 @@ const NavBar = ({sessionUser, authenticated}) => {
     return (
         <nav>
             <NavLink to='/' exact={true} activeClassName='active'>
-                Home
+                <img className='logo' src='/images/programmatic-logo.png'/>
             </NavLink>
 
             <NavLink to='/courses' exact={true} activeClassName='active'>
@@ -65,6 +65,7 @@ const NavBar = ({sessionUser, authenticated}) => {
 
             <div className="nav-search-div" onClick={e => e.stopPropagation()}>
                 <form className="search-form" onSubmit={submitHandler}>
+                    <i className="fas fa-search" onClick={submitHandler}></i>
                     <input 
                     placeholder='Search Here...'
                     onClick={handleClick}
@@ -80,6 +81,7 @@ const NavBar = ({sessionUser, authenticated}) => {
                 </form>
             </div>
 
+            <div className='nav-auth-div'>
             { !authenticated ? 
                 <>
                     <LoginFormModal/>
@@ -88,13 +90,14 @@ const NavBar = ({sessionUser, authenticated}) => {
                 </>
                 :
                 <>
-                    Welcome, {sessionUser?.firstName}
+                    <span>Welcome, {sessionUser?.firstName}</span>
                     <NavLink to='/profile' exact={true} activeClassName='active'>
-                        Profile
+                        <i className="fas fa-user fa-2x"></i>
                     </NavLink>
                     <LogoutButton />
                 </>
             }
+            </div>
         </nav>
     );
 }

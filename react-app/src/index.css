@@ -80,6 +80,9 @@ form input {
     border: none;
     background: transparent;
     border-bottom: 1px solid black;
+    padding: 0 5px;
+    height: 2em;
+    outline: none;
     width: 100%;
 }
 
@@ -101,4 +104,3 @@ form input {
     color: var(--primary-color);
     padding: .2em 40% .2em;
 }
-
