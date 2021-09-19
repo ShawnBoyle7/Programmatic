@@ -119,6 +119,10 @@ form input {
     margin: .2em;
 }
 
+.delete-user-modal > div > div {
+    display: flex;
+    justify-content: space-evenly;
+}
 .delete-user-modal > div > div > button {
     width: 30%;
     margin: .2em;
@@ -154,4 +158,9 @@ form input {
 
 .fab, .fas {
     background-color: transparent;
+}
+
+.comment-div > button {
+    width: 8%;
+    margin: .2em;
 }
