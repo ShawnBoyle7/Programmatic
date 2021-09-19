@@ -25,35 +25,48 @@ def user(id):
 @user_routes.route("/<int:id>", methods=["PUT"])
 @login_required
 def edit_user(id):
-    user = User.query.get(id)
+    form = EditUserForm()
+    form['csrf_token'].data = request.cookies['csrf_token']
+    if form.validate_on_submit():
+        user = User.query.get(id)
 
-    first_name = request.form["first_name"]
-    last_name = request.form["last_name"]
-    username = request.form["username"]
-    email = request.form["email"]
-    password = request.form["password"]
-    img_file = request.files["img_file"]
+        first_name = request.form["first_name"]
+        last_name = request.form["last_name"]
+        username = request.form["username"]
+        email = request.form["email"]
+        password = request.form["password"]
+        img_file = None
+        img_url = user.img_url
+        if 'img-file' in request.files:
+            img_file = request.files["img_file"]
 
-    try:
-        temp_file_name = "app/api/tmp" + secure_filename(img_file.filename)
-        img_file.save(temp_file_name)
-        img_url = public_file_upload(temp_file_name, "week-20-group-project")
-        os.remove(temp_file_name)
-    except KeyError:
-        pass
+        if img_file:
+            try:
+                temp_file_name = "app/api/tmp" + secure_filename(img_file.filename)
+                img_file.save(temp_file_name)
+                img_url = public_file_upload(temp_file_name, "week-20-group-project")
+                os.remove(temp_file_name)
+            except KeyError:
+                pass
 
-    user.first_name = first_name
-    user.last_name = last_name
-    user.username = username
-    user.email = email
-    user.password = password
-    user.img_url = img_url
-    
-    db.session.commit()
+        if first_name:
+            user.first_name = first_name
+        if last_name:
+            user.last_name = last_name
+        if username:
+            user.username = username
+        if email:
+            user.email = email
+        if password:
+            user.password = password
+        if img_url:
+            user.img_url = img_url
+        
+        db.session.commit()
 
-    # Return the updated user to the thunk action creator so that we can update the redux store
-    return user.to_session_dict()
-
+        # Return the updated user to the thunk action creator so that we can update the redux store
+        return user.to_session_dict()
+    return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 
 
@@ -80,4 +93,3 @@ def edit_user(id):
 #         # Return the updated user to the thunk action creator so that we can update the redux store
 #         return user.to_session_dict()
 #     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
-
