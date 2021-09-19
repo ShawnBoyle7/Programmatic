@@ -26,10 +26,6 @@ nav * {
     top: 3px;
 }
 
-.active {
-    color: var(--tertiary-color);
-}
-
 .nav-search-div {
     position: relative;
     width: 30%;
@@ -71,7 +67,9 @@ nav * {
     outline: none;
 }
 
-nav a {
+nav > a {
+    font-family: 'Nobile', sans-serif;
+    font-weight: bolder;
     text-decoration: none;
 }
 
@@ -84,5 +82,9 @@ nav a {
 }
 
 .welcome-name {
+    color: var(--tertiary-color);
+}
+
+nav > a.active {
     color: var(--tertiary-color);
 }
