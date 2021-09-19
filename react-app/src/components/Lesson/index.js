@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Comments from "../Comments";
 import CommentForm from "../CommentForm"
@@ -14,6 +14,10 @@ function Lesson() {
 
     return ( lesson && 
         <div className='lesson-page'>
+            <Link to={`/courses/${lesson.courseId}`} className='back-to-course'>
+                <i className="fas fa-level-up-alt fa-2x"></i>
+                <span>Back To Course</span>
+            </Link>
             <AlgoVisModal />
             <div className='lesson-div'>
                 <h1 className='lesson-name'>{lesson.name}</h1>
