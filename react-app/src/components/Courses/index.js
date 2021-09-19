@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import ProtectedRoute from '../auth/ProtectedRoute';
 import CourseLessons from '../CourseLessons';
 import CourseDiv from '../CourseDiv';
+import "./Courses.css"
 
 function Courses() {
     const courses = Object.values(useSelector(state => state.curriculum.courses))
@@ -11,6 +12,9 @@ function Courses() {
     return (
     <>
         <Route exact path='/courses'>
+            <h1 className="courses-header">
+                All Courses
+            </h1>
             <div>
                 {courses.map(course => <CourseDiv course={course} key={course.id}/>)}
             </div>

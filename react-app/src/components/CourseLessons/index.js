@@ -2,6 +2,7 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import LessonDiv from "../LessonDiv"
+import "./CourseLessons.css"
 
 function CourseLessons() {
     let { courseId } = useParams()
@@ -16,7 +17,7 @@ function CourseLessons() {
 
     return (
         <>
-            <h1>{course.name}</h1>
+            <h1 className="course-page-header">{course.name}</h1>
                 {courseLessonsMap}
         </>
     )
