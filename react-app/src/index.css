@@ -23,7 +23,7 @@ button {
     background-color: var(--tertiary-color);
     color: var(--secondary-color);
     padding: 1em;
-    border: 1px solid var(--primary-color);
+    border: none;
     cursor: pointer;
 }
 
@@ -103,4 +103,8 @@ form input {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     padding: .2em 40% .2em;
+}
+
+.fab, .fas {
+    background-color: transparent;
 }
