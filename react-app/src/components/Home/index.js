@@ -10,7 +10,7 @@ function Home({authenticated}) {
         return b.votes.reduce((accum, vote) => vote.liked ? accum + 1 : accum - 1, 0)
         -
         a.votes.reduce((accum, vote) => vote.liked ? accum + 1 : accum - 1, 0)
-    }).splice(0,10);
+    }).slice(0,10);
 
     return (
         authenticated ? 
