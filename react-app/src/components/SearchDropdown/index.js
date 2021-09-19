@@ -65,7 +65,10 @@ const SearchDropdown = ({ searchQuery, setSearchQuery, setRenderSearchDropdown  
                                     </div>
                                 </Link>
                             )
-                        : <p>No courses found :/</p>}
+                        :
+                        <div className='result-div'>
+                                No courses found 
+                        </div>}
                     </div>
                 </div>
 
@@ -81,7 +84,10 @@ const SearchDropdown = ({ searchQuery, setSearchQuery, setRenderSearchDropdown  
                                         </div>
                                     </Link>
                                 )
-                            : <p>No lessons found :/.....</p>}
+                            : 
+                            <div className='result-div'>
+                                No lessons found 
+                            </div>}
                         </div>
                     </div>
                 }

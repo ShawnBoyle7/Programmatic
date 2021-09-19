@@ -39,7 +39,7 @@ function AspirationDiv({ aspiration, showScroll }) {
 
                 <span className='aspiration-name'>{lesson.name}</span>
                 <span onClick={renderDeleteModal}><i className="fas fa-minus-circle aspiration-option delete" id={aspiration.id} ></i></span>
-                <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal}/>
+                <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal} showScroll={showScroll}/>
             </div>
         </Link>
     );

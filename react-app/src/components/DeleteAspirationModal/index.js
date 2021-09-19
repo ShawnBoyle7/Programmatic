@@ -3,12 +3,13 @@ import { useDispatch } from "react-redux";
 import { Modal } from '../../context/Modal';
 import { deleteAspiration } from "../../store/session";
 
-function DeleteAspirationModal({ lessonId, setShowModal, showModal }) {
+function DeleteAspirationModal({ lessonId, setShowModal, showModal, showScroll }) {
     const dispatch = useDispatch();
 
-    const handleDelete = (e) => {
-        dispatch(deleteAspiration(lessonId))
+    const handleDelete = async (e) => {
+        await dispatch(deleteAspiration(lessonId))
         setShowModal(false)
+        showScroll()
     }
 
     const onClose = (e) => {
