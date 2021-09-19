@@ -82,7 +82,7 @@ function DijkstraVisualization() {
         }
     }
 
-    const [dijkstraPath, traversalOrder] = dijkstraAlgorithm(graphNodes.r16c1, graphNodes.r1c17)
+    const [dijkstraPath, traversalOrder] = dijkstraAlgorithm(graphNodes.r1c1, graphNodes.r18c28)
 
     const playVisualization = (e) => {
         resetGraph();

@@ -4,7 +4,7 @@
     height: 50px;
     position: relative;
     z-index: 0;
-    color: transparent;
+    /* color: transparent; */
 }
 
 .node {
@@ -13,9 +13,9 @@
     width: 125%;
     height: 125%;
     z-index: 1;
-    color: yellow;
-    text-align: center;
-    padding-top: 1em;
+    /* color: yellow; */
+    /* text-align: center; */
+    /* padding-top: 1em; */
 }
 
 .r2c2 {
