@@ -32,7 +32,7 @@ function DeleteUserModal() {
                     </div>
                 </div>
                 :
-                <p>You CANNOT delete the Demo User. 😡</p>
+                <p>You cannot delete the Demo user!</p>
             }
         </Modal>
         )}
