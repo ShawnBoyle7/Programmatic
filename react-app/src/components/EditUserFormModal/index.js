@@ -11,7 +11,7 @@ function EditUserFormModal() {
         <i className="edit-user fas fa-pencil-alt" onClick={() => setShowModal(true)}></i>
         {/* <i className="edit-user fas fa-edit fa-2x" onClick={() => setShowModal(true)}></i> */}
         {showModal && (
-        <Modal onClose={() => setShowModal(false)} className='edit-modal'>
+        <Modal onClose={() => setShowModal(false)} className='edit-modal signup-modal'>
             <EditUserForm setShowModal={setShowModal}/>
             <DeleteUserModal/>
         </Modal>

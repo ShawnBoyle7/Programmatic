@@ -18,12 +18,14 @@ const EditUserForm = ({ setShowModal }) => {
         e.preventDefault();
         if (password === repeatPassword) {
             const data = await dispatch(updateUser(firstName, lastName, username, email, password, imgFile, user?.id));
-        if (data) {
-            setErrors(data)
-        }
-        else {
-            setShowModal(false)
-        }
+            if (data) {
+                setErrors(data)
+            }
+            else {
+                setShowModal(false)
+            }
+        } else {
+            setErrors(["Passwords do not match!"])
         }
     }
 
@@ -125,7 +127,6 @@ const EditUserForm = ({ setShowModal }) => {
                 name='repeatPassword'
                 onChange={updateRepeatPassword}
                 value={repeatPassword}
-                required={true}
                 ></input>
             </div>
             <div>

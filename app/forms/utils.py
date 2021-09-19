@@ -41,11 +41,12 @@ def username_validation():
         if user and user_id != user.id:
             raise ValidationError('Username is already in use.')
     return username_exists
+
 def password_validation():
     def check_password(form, field):
         password = field.data
         regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
         matches = re.fullmatch(regex, password)
-        if not matches:
+        if not matches and len(password):
             raise ValidationError("Must contain at least one number and one uppercase and lowercase letter, one special character, and at least 8 or more characters")
     return check_password

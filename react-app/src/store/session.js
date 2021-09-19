@@ -130,7 +130,7 @@ export const updateUser = (firstName, lastName, username, email, password, imgFi
     form.append("username", username)
     form.append("email", email)
     form.append("password", password)
-    form.append("img_file", imgFile)
+    form.append("img_file", imgFile ? imgFile : undefined)
     form.append("user_id", userId)
 
     const response = await fetch(`/api/users/${userId}`, {
