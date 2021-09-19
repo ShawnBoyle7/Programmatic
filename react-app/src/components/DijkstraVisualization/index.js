@@ -155,11 +155,13 @@ function DijkstraVisualization() {
     return (
         // Targets entire modal
         <div className='algo-vis-div'>
-            <button onClick={playVisualization} value={500}>Visualize</button>
-            <button onClick={playVisualization} value={250}>Faster</button>
-            <button onClick={playVisualization} value={1000}>Slower</button>
-            <button onClick={resetGraph}>Reset</button>
-            <button onClick={whyDidYouClickThatButton} className="secret-button">DON'T click this button</button>
+            <div className="algo-vis-control-div">
+                <button className="algo-button" onClick={playVisualization} value={500}>Visualize</button>
+                <button className="algo-button" onClick={playVisualization} value={250}>Faster</button>
+                <button className="algo-button" onClick={playVisualization} value={1000}>Slower</button>
+                <button className="algo-button" onClick={resetGraph}>Reset</button>
+                <button onClick={whyDidYouClickThatButton} className="secret-button">DON'T click this button</button>
+            </div>
             {/* Targets entire grid element contianing all grid cells */}
             <div className="grid-container">
                 {createGrid()}
