@@ -22,7 +22,7 @@ function Lesson() {
                 <AlgoVisModal />
             </div>
             <div className='lesson-div'>
-                <h1 className='lesson-name'>{lesson.name}</h1>
+                <h1 className='lesson-page-header'>{lesson.name}</h1>
                 <p className='lesson-description'>{lesson.description}</p>
                 <img className='lesson-img' src={lesson.imgUrl} alt={lesson.name}/>
                 <p className='lesson-content'>{lesson.content}</p>

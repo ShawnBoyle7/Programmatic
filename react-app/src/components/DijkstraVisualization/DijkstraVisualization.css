@@ -8,8 +8,8 @@
 .grid-container {
     display: grid;
     /* CSS Grid to display the cells visually, as opposed to the javascript grid which comes from the for loops */
-    grid-template-rows: repeat(20, 50px);
-    grid-template-columns: repeat(30, 50px);
+    grid-template-rows: repeat(20, 2vw);
+    grid-template-columns: repeat(30, 2vw);
 }
 
 .algo-vis-control-div {
@@ -18,7 +18,7 @@
 }
 
 .algo-button {
-    width: 5.5%;
+    width: fit-content;
     margin: 0 1em;
 }
 

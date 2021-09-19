@@ -31,8 +31,8 @@
     width: fit-content;
 }
 
-.lesson-name {
-    /* text-align: center; */
+.lesson-page-header {
+    margin-top: 1.5em
 }
 
 .lesson-description {
