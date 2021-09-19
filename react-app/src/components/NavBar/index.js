@@ -56,7 +56,7 @@ const NavBar = ({sessionUser, authenticated}) => {
     return (
         <nav>
             <NavLink to='/' exact={true} activeClassName='active'>
-                <img className='logo' src='https://week-20-group-project.s3.amazonaws.com/tmpprogrammatic-logo.png'/>
+                <img className='logo' src='https://week-20-group-project.s3.amazonaws.com/tmpprogrammatic-new-logo.png'/>
             </NavLink>
 
             <NavLink to='/courses' exact={true} activeClassName='active'>
