@@ -145,6 +145,9 @@ form input {
 .edit-modal > form > div > button {
     width: 40%;
     margin: .2em;
-    padding: .4em;
     margin-top: .3em;
+}
+
+.deactivate-button{
+    margin-left: 60%;
 }
