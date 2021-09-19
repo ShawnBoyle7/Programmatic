@@ -1,5 +1,5 @@
 .profile-banner {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
 }
@@ -35,4 +35,16 @@
 .learning-path-header {
     margin-bottom: 0.5em;
     font-size: 2em;
+}
+
+.aspiration {
+    background-color: var(--secondary-color);
+}
+
+span {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }

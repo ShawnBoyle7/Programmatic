@@ -66,7 +66,6 @@ function LearningPathCourse({ aspirations, idx }) {
     return ( course &&
         <div className='learning-path-course' >
             <h3 className='course-name'>{`${course.name}`}</h3>
-            
             <div className='buttons-and-path'>
                 { renderScrollButton && renderScrollLeft && <button id='scroll-left' value={`aspirations-div${idx}`} className='scroll-btn scroll-left' onClick={scroll}>
                     <i className="fas fa-chevron-left fa-6x"></i>

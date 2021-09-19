@@ -31,8 +31,13 @@ function AspirationDiv({ aspiration, showScroll }) {
     return (lesson &&
         <Link to={`/lessons/${lesson.id}`}>
             <div className={`aspiration ${aspiration.completed ? 'completed' : ''}`} onLoad={showScroll}>
+                <div className='tooltip'>
+                    <input className='aspiration-option toggle-complete'id={aspiration.id} checked={aspiration.completed} onChange={toggleAspiration} onClick={e=>e.stopPropagation()} type="checkbox" />
+                    <span className='tooltiptext'>Completed?</span>
+                </div>
+
+
                 <span className='aspiration-name'>{lesson.name}</span>
-                <input className='aspiration-option toggle-complete'id={aspiration.id} checked={aspiration.completed} onChange={toggleAspiration} onClick={e=>e.stopPropagation()} type="checkbox" />
                 <span onClick={renderDeleteModal}><i className="fas fa-minus-circle aspiration-option delete" id={aspiration.id} ></i></span>
                 <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal}/>
             </div>
