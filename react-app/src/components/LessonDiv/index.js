@@ -13,7 +13,7 @@ const LessonDiv = ({ lesson }) => {
 
     const addToLearningPath = (e) => {
         e.stopPropagation()
-        dispatch(addToPath(e.target.id, userId));
+        dispatch(addToPath(e.currentTarget.id, userId));
     }
 
     const userAspirations = useSelector(state => state.session.user.aspirations)

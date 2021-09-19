@@ -35,14 +35,14 @@ button {
 }
 
 i {
-    background-color: #FFF0E5;
+    background-color:var(--bg-color);
     color: var(--primary-color);
 
 }
 
-#scroll-right, #scroll-left {
+#scroll-right {
     border: none;
-    background-color: #FFF0E5;
+
 }
 
 body {

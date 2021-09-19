@@ -9,32 +9,66 @@
     border-radius: 100px;
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 1em;
     padding: 0 .5em;
 }
 
-.completed {
+.aspiration.completed {
     border: 2px solid green;
-    background-color: rgba(0, 128, 0, 0.1);
+    background-color: rgb(230,242,230);
 }
 
 .aspiration-option {
 	position: absolute;
 	display: none;
+    font-size: 1.5rem;
 }
 
 .aspiration-option.delete {
-    bottom: 5%;
-    right: 45%;
-    color: red;
+    bottom: 8%;
+    right: 43%;
+    color: var(--tertiary-color);
+    background-color: transparent;
+    margin: auto;
+}
+
+.aspiration-option.delete.completed {
+    bottom: 8%;
+    right: 43%;
+    color: var(--tertiary-color);
+    margin: auto;
 }
 
 .aspiration-option.toggle-complete {
-    top: 5%;
+    top: 8%;
     left: 45%;
+    transform: scale(1.5);
 }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: var(--bg-color);
+    color:var(--primary-color);
+    text-align: center;
+    padding: .2rem .4rem;
+    position: absolute;
+    z-index: 1;
+    width: fit-content;
+    top: 25%;
+    left: 50%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 3px;
+    transform: translateX(-50%);
+  }
+
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
 
 .aspiration-name {
     text-align: center;
