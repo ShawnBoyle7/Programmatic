@@ -26,10 +26,16 @@ We kept track of:
     the nodes that would be searched after the current node
         (along with the path of nodes to that node, and the total weight of the path up to that node)
     the nodes we've already visited (this is a set to avoid repeat values)
+
 The search:
-    we'd check if the current node was the target node we were looking for
-        if it was: the current node's path array was dijkstra's path to the target node
-        if it wasn't we'd check the current node's neighboring nodes.
-            if a neighboring node had already been visted, we ignored it.
+we'd check if the current node was the target node we were looking for
+    if it was: the current node's path array was dijkstra's path to the target node
+    if it wasn't we'd check the current node's neighboring nodes.
+    compare the total weights of each of the prospective paths
+    repeat until we've reached the target node.
+
+Animating the traversal:
+Once the dijkstraAlgorithm function has been run, we take the returned traversal order and iterate through adding a css class to animate the traversal.
+Once the traversal animation is done rendering, we take the ideal path (also from the return of the dijkstraAlgorithm function), iterate through and add a css class to animate the ideal path.
 
 
