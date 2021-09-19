@@ -48,5 +48,5 @@ def password_validation():
         regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
         matches = re.fullmatch(regex, password)
         if not matches and len(password):
-            raise ValidationError("Must contain at least one number and one uppercase and lowercase letter, one special character, and at least 8 or more characters")
+            raise ValidationError("Must contain at least one number and one uppercase and lowercase letter, at least 8 or more characters, and one special character: @$!%*?&")
     return check_password
