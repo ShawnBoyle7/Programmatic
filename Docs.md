@@ -46,6 +46,19 @@ as the user inputs a search query, the search results are split into the charact
 
 
 
-*keyfames
-*scroll buttons
-*seach results and dropdown
+Scroll Buttons:
+The conditional rendering for the horizontal scroll buttons on the learning path was a click behind (after you've reached the end of the scrollable area, you needed to click one more time for the button to disappear)
+We realized this was because our logic to determine whether or not there was scrollable area remaining was running before the value .scrollLeft was updated.
+We rectified this by:
+    1. creating a variable to calculate the new scroll position
+    2. using that variable in our logic instead of value that .scrollLeft returned
+
+
+
+
+Key Frames:
+We used keyframes to animate the course and lesson divs.
+We used a not:(:hover) animation to play the reverse of the mouseon animation.
+We had an issue with the not:(:hover) animation playing on page load and every time a component was rendered.
+We tried to append a class to the body element the would prevent the animation and then a setTimeout that would remove the class. This prevented the animation on page refresh but not on component rerender.
+Our solution was to add a mouseover event listener that would add the animation class onto the div once the user has hovered over the div. 
