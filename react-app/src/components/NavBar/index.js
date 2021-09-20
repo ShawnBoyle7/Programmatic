@@ -21,10 +21,13 @@ const NavBar = ({sessionUser, authenticated}) => {
     useEffect(() => {
         
         // If no user input, don't render search results
-        if (!searchQuery.length) return setRenderSearchDropdown(false)
-        
+        if (!searchQuery.length) {
+            document.querySelector('.fa-search')?.classList.remove('clickable')
+            return setRenderSearchDropdown(false)
+        } 
         // If there is user input, we set this state variable to true so that we can render the dropdown results
         setRenderSearchDropdown(true)
+        document.querySelector('.fa-search')?.classList.add('clickable')
         
     }, [searchQuery]);
     
