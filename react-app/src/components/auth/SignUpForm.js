@@ -63,7 +63,6 @@ const SignUpForm = ({setShowModal}) => {
             <div className="form-errors">
                 {errors.map((error, idx) => (
                 <p key={idx}>
-                    {console.log(errors)}
                     {error}
                 </p>
                 ))}

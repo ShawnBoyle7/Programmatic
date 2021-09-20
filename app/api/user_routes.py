@@ -80,7 +80,6 @@ def edit_user(id):
 #     form = EditUserForm()
 #     form['csrf_token'].data = request.cookies['csrf_token']
 #     if form.validate_on_submit():
-#         # print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", form.data["img_file"])
 #         user.first_name=form.data['first_name']
 #         user.last_name=form.data['last_name']
 #         user.username=form.data['username']
