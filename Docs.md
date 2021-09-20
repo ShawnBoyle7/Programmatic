@@ -44,8 +44,8 @@ Search Dropdown:
 to prevent the dropdown from being too long and obscuring most of the page, we limited the results render to a max of 5 results.
 as the user inputs a search query, the search results are split into the characters that match, the characters before the match, and the characters after the match. this allows us to add styling to indicate which portion of the result matches the user input.
 
+Scroll Buttons:
 
 
 *keyfames
 *scroll buttons
-*seach results and dropdown
