@@ -14,7 +14,7 @@ function PageNotFound() {
             {authenticated && 
                 <Link to="/" className="not-found-link">Click here to take a look at our most popular lessons instead!</Link>
             }
-
+            
             {!authenticated && 
                 <Link to="/" className="not-found-link">Click here to go back home!</Link>
             }
