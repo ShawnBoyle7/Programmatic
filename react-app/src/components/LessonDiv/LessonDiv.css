@@ -59,6 +59,7 @@
     text-align: center;
 }
 
-.lesson-button-div:hover {
+.lesson-button-div:hover span > i {
     cursor: pointer;
+    color: var(--tertiary-color);
 }

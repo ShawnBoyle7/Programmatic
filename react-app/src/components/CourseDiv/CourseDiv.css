@@ -57,8 +57,8 @@
     font-weight: bold;
 }
 
-.course-button-div:hover {
-    cursor: pointer;
+.course-button-div:hover span > i {
+    color: var(--tertiary-color);
 }
 
 .course-button-div{
@@ -74,4 +74,3 @@
 span > span {
     text-align: center;
 }
-
