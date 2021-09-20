@@ -61,7 +61,8 @@ def sign_up():
             last_name=form.data['last_name'],
             username=form.data['username'],
             email=form.data['email'],
-            password=form.data['password']
+            password=form.data['password'],
+            img_url="https://week-20-group-project.s3.amazonaws.com/tmp451-4517876_default-profile-hd-png-download.png"
         )
         db.session.add(user)
         db.session.commit()
