@@ -55,7 +55,6 @@ const EditUserForm = ({ setShowModal }) => {
 
     const updateImgFile = (e) => {
         const file = e.target.files[0]
-        console.log(file)
         setImgFile(file);
     };
 
@@ -137,7 +136,6 @@ const EditUserForm = ({ setShowModal }) => {
                 type='file'
                 name='imgFile'
                 onChange={updateImgFile}
-                // value={imgFile}
                 required={false}
                 ></input>
             </div>

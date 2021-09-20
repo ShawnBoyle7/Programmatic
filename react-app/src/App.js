@@ -33,7 +33,7 @@ function App() {
         history.listen(()=>{
             document.querySelector('.content').scrollTop = 0
         })
-    }, [dispatch]);
+    }, [dispatch, history]);
 
     if (!loaded) {
         return null;

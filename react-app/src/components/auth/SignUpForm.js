@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { Redirect } from 'react-router-dom';
 import { signUp } from '../../store/session';
-import "./SignUpForm.css"
 
 const SignUpForm = ({setShowModal}) => {
     const [errors, setErrors] = useState([]);
@@ -63,13 +62,11 @@ const SignUpForm = ({setShowModal}) => {
             <div className="form-errors">
                 {errors.map((error, idx) => (
                 <p key={idx}>
-                    {console.log(errors)}
                     {error}
                 </p>
                 ))}
             </div>
             <div>
-                {/* <label>First Name</label> */}
                 <input
                 type='text'
                 name='firstName'
@@ -79,7 +76,6 @@ const SignUpForm = ({setShowModal}) => {
                 ></input>
             </div>
             <div>
-                {/* <label>Last Name</label> */}
                 <input
                 type='text'
                 name='lastName'
@@ -89,7 +85,6 @@ const SignUpForm = ({setShowModal}) => {
                 ></input>
             </div>
             <div>
-                {/* <label>User Name</label> */}
                 <input
                 type='text'
                 name='username'
@@ -99,7 +94,6 @@ const SignUpForm = ({setShowModal}) => {
                 ></input>
             </div>
             <div>
-                {/* <label>Email</label> */}
                 <input
                 type='text'
                 name='email'
@@ -109,7 +103,6 @@ const SignUpForm = ({setShowModal}) => {
                 ></input>
             </div>
             <div>
-                {/* <label>Password</label> */}
                 <input
                 type='password'
                 name='password'
@@ -120,7 +113,6 @@ const SignUpForm = ({setShowModal}) => {
                 ></input>
             </div>
             <div>
-                {/* <label>Repeat Password</label> */}
                 <input
                 type='password'
                 name='repeatPassword'

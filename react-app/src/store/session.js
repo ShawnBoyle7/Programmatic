@@ -153,6 +153,8 @@ export const updateUser = (firstName, lastName, username, email, password, imgFi
     }
 };
 
+// No form object thunk
+
 // export const updateUser = (firstName, lastName, username, email, password, imgFile, userId) => async (dispatch) => {
 
 //     const response = await fetch(`/api/users/${userId}`, {
@@ -261,8 +263,6 @@ export default function reducer(state = initialState, action) {
             return { user: action.payload }
         case REMOVE_USER:
             return { user: null }
-            // delete stateCopy.user;
-            // return stateCopy;
         default:
             return state;
     }
