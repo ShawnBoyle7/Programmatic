@@ -14,151 +14,151 @@ def seed_lessons():
             name='Linked Lists', description='An ordered set of data elements, each containing a link to its successor (and sometimes its predecessor).', content="A linked list is a linear collection of data elements whose order is not given by their physical placement in memory. Instead, each element points to the next. It is a data structure consisting of a collection of nodes which together represent a sequence.", img_url="https://i.kym-cdn.com/entries/icons/mobile/000/023/397/C-658VsXoAo3ovC.jpg", course_id=1
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=1
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=1
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=1 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=1 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=1 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=1 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=1 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=1 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=1 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=1 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=1 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=1 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=1 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=1 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=1 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=1 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=2 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=2 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=3 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=3 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=3
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=3
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=3 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=3 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=3 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=3 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=3 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=3 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=3 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=3 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=3 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=3 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=3 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=3 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=4 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=4 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
     lessons.append(Lesson(
-            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url=faker.image_url(), course_id=5 
+            name=faker.catch_phrase(), description=faker.text(500), content=faker.text(6000), img_url='https://week-20-group-project.s3.amazonaws.com/tmpdata-structure-diagram.png', course_id=5 
         ))
 
 

@@ -43,6 +43,7 @@
 
 .lesson-img {
     margin: 2em 0;
+    max-width: 100%;
 }
 
 .lesson-content {

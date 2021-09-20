@@ -11,1384 +11,1606 @@ def seed_comments():
             content="Whoa!!! Brady told me the same thing.", lesson_id=1, user_id=1
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     comments.append(Comment(
-            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=5, step=1)
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
+        ))
+    comments.append(Comment(
+            content=faker.text(300), lesson_id=faker.pyint(min_value=1, max_value=51, step=1), user_id=faker.pyint(min_value=1, max_value=9, step=1)
         ))
     
 
