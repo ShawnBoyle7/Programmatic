@@ -179,3 +179,7 @@ form input {
     padding-left: 1.3rem;
     padding-right: 1.3rem;
 }
+
+input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
