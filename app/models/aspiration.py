@@ -1,6 +1,5 @@
 from .db import db
 
-
 class Aspiration(db.Model):
     __tablename__ = "aspirations"
 

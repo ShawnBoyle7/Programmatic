@@ -136,7 +136,6 @@ const EditUserForm = ({ setShowModal }) => {
                 type='file'
                 name='imgFile'
                 onChange={updateImgFile}
-                // value={imgFile}
                 required={false}
                 ></input>
             </div>
