@@ -11,9 +11,6 @@ const CourseDiv = ({ course }) => {
     const userId = useSelector(state => state.session.user?.id)
     const userAspirations = useSelector(state => state.session.user?.aspirations)
 
-    // When someone clicks the add button,
-    // We need to iterate through all the lessons in the course to see if any are already part of the learning path.
-    // If so, don't add those
     const addToLearningPath = (e) => {
         e.stopPropagation()
         const courseId = e.currentTarget.id
@@ -29,8 +26,6 @@ const CourseDiv = ({ course }) => {
 
     const allLessonsAlreadyOnPath = (courseId) => {
         const courseLessons = allLessons.filter(lesson => lesson.courseId === courseId)
-        // Check if all lessons in course are already in asp
-        // If so, don't render button
         for (let i = 0; i < courseLessons.length; i++) {
             let lesson = courseLessons[i];
             if (!userAspirations.find(asp => asp.lessonId === lesson.id)) {
