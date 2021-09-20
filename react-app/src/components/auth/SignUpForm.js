@@ -113,6 +113,7 @@ const SignUpForm = ({setShowModal}) => {
                 <input
                 type='password'
                 name='password'
+                autoComplete="on"
                 placeholder="Password"
                 onChange={updatePassword}
                 value={password}
@@ -123,6 +124,7 @@ const SignUpForm = ({setShowModal}) => {
                 <input
                 type='password'
                 name='repeatPassword'
+                autoComplete="on"
                 placeholder="Confirm Password"
                 onChange={updateRepeatPassword}
                 value={repeatPassword}

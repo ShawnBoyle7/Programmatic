@@ -5,6 +5,7 @@ import { login } from '../../store/session';
 import "./LoginForm.css"
 
 const LoginForm = ({setShowModal}) => {
+
     const [errors, setErrors] = useState([]);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -12,7 +13,7 @@ const LoginForm = ({setShowModal}) => {
     const dispatch = useDispatch();
 
     const onLogin = async (e) => {
-        e.preventDefault();
+        e?.preventDefault();
         const data = await dispatch(login(email, password));
         if (data) {
             setErrors(data);
@@ -33,6 +34,7 @@ const LoginForm = ({setShowModal}) => {
     if (user) {
         return <Redirect to='/' />;
     }
+
 
     return (
         <div className="small-form-div">
@@ -60,6 +62,7 @@ const LoginForm = ({setShowModal}) => {
                     <input
                     name='password'
                     type='password'
+                    autoComplete="on"
                     placeholder='Password'
                     value={password}
                     onChange={updatePassword}
