@@ -86,3 +86,12 @@ nav > a {
 nav > a.active {
     color: var(--tertiary-color);
 }
+
+.nav-prof-img {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 1px rgb(64, 64, 64);
+    border-radius: 20px;
+}

@@ -1,5 +1,20 @@
 .comment {
     display: flex;
+    margin-top: 1em;
+}
+
+.comment-text {
+    padding: 0.7em 0 0;
+}
+
+
+.comment p {
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+
+.comment-author {
+    font-weight: bold;
 }
 
 .comment-img {
@@ -7,5 +22,12 @@
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    margin: 0.5em;
+    margin: 0.5em 1em 0 0;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 1px rgb(64, 64, 64);
+}
+
+.comment-controls {
+    position: relative;
+    left: 66px;
 }
