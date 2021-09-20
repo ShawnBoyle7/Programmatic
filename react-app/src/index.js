@@ -6,6 +6,7 @@ import App from './App';
 import configureStore from './store';
 import { ModalProvider } from './context/Modal';
 
+
 const store = configureStore();
 
 ReactDOM.render(
