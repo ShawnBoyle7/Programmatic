@@ -116,6 +116,7 @@ const EditUserForm = ({ setShowModal }) => {
                 <input
                 type='password'
                 name='password'
+                autoComplete="on"
                 onChange={updatePassword}
                 value={password}
                 ></input>
@@ -125,6 +126,7 @@ const EditUserForm = ({ setShowModal }) => {
                 <input
                 type='password'
                 name='repeatPassword'
+                autoComplete="on"
                 onChange={updateRepeatPassword}
                 value={repeatPassword}
                 ></input>

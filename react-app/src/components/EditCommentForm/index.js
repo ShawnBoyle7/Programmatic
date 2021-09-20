@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { editComment } from '../../store/comments'
 
 const EditCommentForm = ({ commentId, setShowModal }) => {
     const dispatch = useDispatch();
 
+    const comment = useSelector(state => state.comments[commentId])
+
     const [errors, setErrors] = useState([])
-    const [content, setContent] = useState("")
+    const [content, setContent] = useState(comment.content)
 
     const onSubmit = async (e) => {
         e.preventDefault();
@@ -29,7 +31,7 @@ const EditCommentForm = ({ commentId, setShowModal }) => {
             </div>
             <div className='comment-div'>
                 <label>Your Comment</label>
-                <textarea
+                <textarea className="edit-comment-input"
                     name="content"
                     onChange={updateContent}
                     value={content}/>
