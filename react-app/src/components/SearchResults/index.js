@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
 import CourseDiv from "../CourseDiv";
 import LessonDiv from "../LessonDiv";
+import "./SearchResults.css"
 
 const SearchResults = () => {
 
@@ -24,13 +25,13 @@ const SearchResults = () => {
     return (
         <>
             {numResults === 1 ? 
-                <h1> Found {`${numResults} result for '${searchQuery}'`}</h1> 
+                <h1 className="search-page-header"> Found {`${numResults} result for '${searchQuery}'`}</h1> 
             : 
-                <h1> Found {`${numResults} results for '${searchQuery}'`}</h1>}
+                <h1 className="search-page-header"> Found {`${numResults} results for '${searchQuery}'`}</h1>}
 
             {courseResults.length > 0 && 
             <div>
-                <h2>Courses</h2>
+                <h2 className='results-header'>Courses</h2>
                 {courseResults.map(course =>
                     <CourseDiv course={course} key={course.id}/>
                 )}
@@ -38,7 +39,7 @@ const SearchResults = () => {
 
             {lessonResults.length > 0 && authenticated && 
             <div>
-                <h2>Lessons</h2>
+                <h2 className='results-header'>Lessons</h2>
                 {lessonResults.map(lesson =>
                     <LessonDiv lesson={lesson} key={lesson.id}/>    
                 )}

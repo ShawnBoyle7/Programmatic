@@ -42,8 +42,12 @@
 }
 
 .learning-path-header {
-    margin-bottom: 0.5em;
+    margin: 1.5em 0 1em;
     font-size: 2em;
+}
+
+.learning-path h3.course-name {
+    margin: 2em 0 0.5em;
 }
 
 .aspiration {

@@ -37,18 +37,27 @@ function LearningPathCourse({ aspirations, idx }) {
     }
 
     const scroll = (e) => {
-        const scrollAmount = e.currentTarget.id === 'scroll-left' ? -212 : 212;
+        let scrollAmount = e.currentTarget.id === 'scroll-left' ? -212 : 212;
 
         const scrollWidth = document.getElementById(`aspirations-div${idx}`)?.scrollWidth
         const divWidth = document.getElementById(`aspirations-div${idx}`)?.clientWidth
+        let scrollableWidth = scrollWidth - divWidth;
 
         const aspirationsDiv = document.getElementById(e.currentTarget.value)
-
+        const scrollLeft = aspirationsDiv.scrollLeft;
+        
+        if (scrollAmount > 0 && scrollableWidth - scrollLeft < 2 * scrollAmount){
+            scrollAmount = scrollableWidth;
+        }
+        if (scrollAmount < 0 && scrollLeft < -2 * scrollAmount){
+            scrollAmount = -1 * scrollLeft;
+        }
+        
+        let adjustedScrollLeft = scrollLeft + scrollAmount
         aspirationsDiv.scrollLeft += scrollAmount;
 
-        let adjustedScrollLeft = aspirationsDiv.scrollLeft + scrollAmount
         if (adjustedScrollLeft < 0 ) adjustedScrollLeft = 0;
-        if (adjustedScrollLeft > scrollWidth - divWidth) adjustedScrollLeft = scrollWidth - divWidth;
+        if (adjustedScrollLeft > scrollableWidth) adjustedScrollLeft = scrollableWidth;
 
         showScroll(adjustedScrollLeft)
     }
