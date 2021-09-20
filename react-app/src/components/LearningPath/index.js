@@ -10,7 +10,7 @@ function LearningPath() {
   let courseIdArr = [];
     for(let i = 0; i < aspirationsArr.length; i++) {
       let aspiration = aspirationsArr[i];
-        //check if the course id is already in arr
+        // Check if the course id is already in arr
       if(!courseIdArr.includes(aspiration.courseId)){
         courseIdArr.push(aspiration.courseId)
       }
@@ -31,7 +31,6 @@ function LearningPath() {
     <div className='learning-path'>
       <h2 className='learning-path-header'>Your Learning Path</h2>
       <div className='asp-course-container'>{aspirationComponents}</div>
-
     </div>
   );
 }

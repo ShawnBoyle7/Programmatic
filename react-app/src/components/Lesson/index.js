@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import Comments from "../Comments";
@@ -11,10 +11,6 @@ function Lesson() {
     let { lessonId } = useParams()
     const lesson = useSelector(state => state.curriculum.lessons[+lessonId])
     const userId = useSelector(state => state.session.user.id)
-
-    // useEffect(()=> {
-    //     document.querySelector(".content").scrollTop = 0;
-    // })
 
     return ( lesson && 
         <div className='lesson-page'>

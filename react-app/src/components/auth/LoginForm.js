@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import { login } from '../../store/session';
-import "./LoginForm.css"
 
 const LoginForm = ({setShowModal}) => {
 
@@ -48,7 +47,6 @@ const LoginForm = ({setShowModal}) => {
                     ))}
                 </div>
                 <div>
-                    {/* <label htmlFor='email'>Email</label> */}
                     <input
                     name='email'
                     type='text'
@@ -58,7 +56,6 @@ const LoginForm = ({setShowModal}) => {
                     />
                 </div>
                 <div>
-                    {/* <label htmlFor='password'>Password</label> */}
                     <input
                     name='password'
                     type='password'

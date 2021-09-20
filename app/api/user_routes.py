@@ -1,7 +1,6 @@
 from flask import Blueprint, request
 from flask_login import login_required
 from werkzeug.utils import secure_filename
-from wtforms.fields.simple import PasswordField
 from app.models import User, db
 from .utils import validation_errors_to_error_messages
 from ..forms import EditUserForm
@@ -69,6 +68,7 @@ def edit_user(id):
     return {'errors': validation_errors_to_error_messages(form.errors)}, 401
 
 
+# User route without form object
 
 # @user_routes.route("/<int:id>", methods=["PUT"])
 # @login_required
@@ -80,7 +80,6 @@ def edit_user(id):
 #     form = EditUserForm()
 #     form['csrf_token'].data = request.cookies['csrf_token']
 #     if form.validate_on_submit():
-#         # print("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", form.data["img_file"])
 #         user.first_name=form.data['first_name']
 #         user.last_name=form.data['last_name']
 #         user.username=form.data['username']

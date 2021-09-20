@@ -5,7 +5,6 @@
     height: fit-content;
     background-color: var(--secondary-color);
     border: 1px solid black;
-    /* padding: 0 1em; */
 }
 
 .search-dropdown h3 {

@@ -1,5 +1,3 @@
-// frontend/src/components/LoginFormModal/index.js
-
 import React, { useState } from 'react';
 import { Modal } from '../../context/Modal';
 import LoginForm from '../auth/LoginForm'

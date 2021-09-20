@@ -47,7 +47,7 @@ const CourseDiv = ({ course }) => {
             div.addEventListener('mouseover', addAnimatedClass);
         })
 
-   }
+}
 
     useEffect(() => {
         animateDiv()
@@ -71,8 +71,8 @@ const CourseDiv = ({ course }) => {
             <div className="course-button-div">
                 {authenticated && !allLessonsAlreadyOnPath(course.id) &&
                     <span id={course.id} onClick={addToLearningPath}>
-                       <i className="far fa-plus-square fa-2x add-btn" ></i>
-                       <span>Add to Learning Path</span>
+                        <i className="far fa-plus-square fa-2x add-btn" ></i>
+                        <span>Add to Learning Path</span>
                     </span>
                 }
             </div>

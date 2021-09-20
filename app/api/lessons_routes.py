@@ -1,6 +1,6 @@
-from flask import Blueprint, request, jsonify
-from app.models import Lesson, db
-from .utils import validation_errors_to_error_messages
+from flask import Blueprint
+from app.models import Lesson
+
 
 lessons_routes = Blueprint('lessons', __name__)
 

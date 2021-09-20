@@ -88,7 +88,7 @@ export const deleteComment = (commentId) => async (dispatch) => {
         dispatch(removeComment(commentId))
         return null;
     } else {
-        return "Uh oh could not delete :/"
+        return ["An error occurred. Please try again."]
     }
 };
 
