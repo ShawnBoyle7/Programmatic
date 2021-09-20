@@ -19,3 +19,10 @@
     resize: none;
     margin: 1% 1% 1% 0%;
 }
+
+.edit-comment-input {
+    height: 6em;
+    width: 20vw;
+    resize: none;
+    margin: 1% 1% 1% 0%;
+}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import ProtectedRoute from './components/auth/ProtectedRoute';
 import NavBar from './components/NavBar';
@@ -20,6 +20,7 @@ function App() {
     const dispatch = useDispatch();
     const sessionUser = useSelector(state => state.session?.user)
     let authenticated = sessionUser !== null
+    const history = useHistory()
 
     useEffect(() => {
         (async() => {
@@ -29,15 +30,17 @@ function App() {
         await dispatch(getUsers());
         setLoaded(true);
         })();
+        history.listen(()=>{
+            document.querySelector('.content').scrollTop = 0
+        })
     }, [dispatch]);
 
     if (!loaded) {
         return null;
     }
 
-
     return (
-        <BrowserRouter>
+        <>
             <NavBar sessionUser={sessionUser} authenticated={authenticated}/>
             <div className='content'>
                 <Switch>
@@ -64,7 +67,7 @@ function App() {
                 </Switch>
             </div>
             <Footer />
-        </BrowserRouter>
+        </>
     );
 }
 

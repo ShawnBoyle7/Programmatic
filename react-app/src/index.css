@@ -160,8 +160,10 @@ form input {
     margin-top: .3em;
 }
 
-.deactivate-button{
+.cancel-button.deactivate-button{
     margin-left: 60%;
+    margin-top: 8%;
+    padding: 0.4em;
 }
 
 .fab, .fas {
@@ -176,4 +178,8 @@ form input {
 .edit-button {
     padding-left: 1.3rem;
     padding-right: 1.3rem;
+}
+
+input, textarea {
+    font-family: Arial, Helvetica, sans-serif;
 }
