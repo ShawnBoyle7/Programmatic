@@ -170,9 +170,10 @@ form input {
     background-color: transparent;
 }
 
-.comment-div > button {
+.comment-controls > button {
     width: fit-content;
     margin: .2em;
+    padding: 0.7em;
 }
 
 .edit-button {

@@ -7,7 +7,7 @@ import "./Comments.css"
 const Comments = ({ lessonId }) => {
     const user = useSelector(state => state.session.user)
     const users = useSelector(state => state.users)
-    const comments = Object.values(useSelector(state => state.comments)).filter(comment => comment.lessonId === +lessonId)
+    const comments = Object.values(useSelector(state => state.comments)).filter(comment => comment.lessonId === +lessonId).reverse()
 
     const [commentIdEdit, setCommentIdEdit] = useState("")
     const [commentIdDelete, setCommentIdDelete] = useState("")
@@ -31,15 +31,16 @@ const Comments = ({ lessonId }) => {
                     <div className="comment-div" key={comment.id}>
                         <div className="comment">
                             <img className='comment-img' src={users[comment.userId].imgUrl} alt={`${users[comment.userId].username}'s Avatar'`}/>
-                            <div>
+                            <div className='comment-text'>
                                 <p className='comment-author'>{users[comment.userId].username}</p>
                                 <p className="comment-content">{comment.content}</p>
                             </div>
                         </div>
                         {user.id === comment.userId &&
-                            <button className="comment-button edit-button" id={comment.id} onClick={renderEditModal}>Edit</button>}
-                        {user.id === comment.userId &&
-                            <button className="comment-button cancel-button" id={comment.id} onClick={renderDeleteModal}>Delete</button>}
+                            <div className='comment-controls'>
+                                <button className="comment-button edit-button" id={comment.id} onClick={renderEditModal}>Edit</button>
+                                <button className="comment-button cancel-button" id={comment.id} onClick={renderDeleteModal}>Delete</button>
+                            </div>}
                     </div>)}
             </div>
 

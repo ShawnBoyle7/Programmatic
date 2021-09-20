@@ -33,7 +33,7 @@ const CommentForm = ({ userId, lessonId }) => {
                 <img className='comment-img' src={user.imgUrl} alt={user.username}/>
             </div>
             <div className='comment-input-div'>
-                <label>Comment as {user.firstName}</label>
+                <label>Comment as {user.username}</label>
                 <textarea
                     className='comment-input'
                     name="content"
