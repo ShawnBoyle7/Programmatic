@@ -160,8 +160,10 @@ form input {
     margin-top: .3em;
 }
 
-.deactivate-button{
+.cancel-button.deactivate-button{
     margin-left: 60%;
+    margin-top: 8%;
+    padding: 0.4em;
 }
 
 .fab, .fas {

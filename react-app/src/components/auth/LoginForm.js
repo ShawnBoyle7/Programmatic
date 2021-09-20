@@ -60,6 +60,7 @@ const LoginForm = ({setShowModal}) => {
                     <input
                     name='password'
                     type='password'
+                    autoComplete="on"
                     placeholder='Password'
                     value={password}
                     onChange={updatePassword}

@@ -11,7 +11,7 @@ function Splash() {
                 <h2 className="splash-header">Visualize Your Learning</h2>
             <AuthFormsModal forbidden={false}/>
             </div>
-            <img src="https://week-20-group-project.s3.amazonaws.com/tmpGWCAk2s.png" className="splash-img"/>
+            <img src="https://week-20-group-project.s3.amazonaws.com/tmpGWCAk2s.png" className="splash-img" alt="splash-diagram"/>
         </>
     )
 }
