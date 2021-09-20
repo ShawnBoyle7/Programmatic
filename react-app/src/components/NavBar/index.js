@@ -92,7 +92,8 @@ const NavBar = ({sessionUser, authenticated}) => {
                 <>
                     <span className='welcome'>Welcome, <span className='welcome-name'>{sessionUser?.firstName}</span></span>
                     <NavLink to='/profile' exact={true} activeClassName='active'>
-                        <i className="fas fa-user fa-2x"></i>
+                        <img className='nav-prof-img' src={sessionUser.imgUrl} alt='user'/>
+                        {/* <i className="fas fa-user fa-2x"></i> */}
                     </NavLink>
                     <LogoutButton />
                 </>
