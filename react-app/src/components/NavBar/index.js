@@ -19,18 +19,18 @@ const NavBar = ({sessionUser, authenticated}) => {
 
     // Tracking user input from the state variable in a use effect because apparently you need it for real time updates
     useEffect(() => {
-        
+
         // If no user input, don't render search results
         if (!searchQuery.length) {
             document.querySelector('.fa-search')?.classList.remove('clickable')
             return setRenderSearchDropdown(false)
-        } 
+        }
         // If there is user input, we set this state variable to true so that we can render the dropdown results
         setRenderSearchDropdown(true)
         document.querySelector('.fa-search')?.classList.add('clickable')
-        
+
     }, [searchQuery]);
-    
+
     const handleClick = () => {
         if (searchQuery.length) {
             setRenderSearchDropdown(true)
@@ -55,11 +55,15 @@ const NavBar = ({sessionUser, authenticated}) => {
 
 
     }
-    
+
     return (
         <nav>
             <NavLink to='/' exact={true} activeClassName='active'>
                 <img className='logo' src='https://week-20-group-project.s3.amazonaws.com/tmpprogrammatic-new-logo.png' alt="site-logo"/>
+            </NavLink>
+
+            <NavLink to='/visualizations' exact={true} activeClassName='active'>
+            <span className='visualization-nav-link'>Visualizations</span>
             </NavLink>
 
             <NavLink to='/courses' exact={true} activeClassName='active'>
@@ -69,7 +73,7 @@ const NavBar = ({sessionUser, authenticated}) => {
             <div className="nav-search-div" onClick={e => e.stopPropagation()}>
                 <form className="search-form" onSubmit={submitHandler}>
                     <i className="fas fa-search" onClick={submitHandler}></i>
-                    <input 
+                    <input
                     placeholder='Search Here...'
                     onClick={handleClick}
                     // Comment this later
@@ -78,14 +82,14 @@ const NavBar = ({sessionUser, authenticated}) => {
                     onChange={e => setSearchQuery(e.target.value)}
                     />
                     {/* If there is user input, render the dropdown results */}
-                    {renderSearchDropdown && 
+                    {renderSearchDropdown &&
                         // Passing props for filtering our query and toggle the rendering of our dropdown results
                         <SearchDropdown searchQuery={searchQuery} setSearchQuery={setSearchQuery} setRenderSearchDropdown={setRenderSearchDropdown}/>}
                 </form>
             </div>
 
             <div className='nav-auth-div'>
-            { !authenticated ? 
+            { !authenticated ?
                 <>
                     <LoginFormModal/>
                     <SignUpFormModal />
