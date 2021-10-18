@@ -1,17 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Modal } from "../../context/Modal";
 
-function AlgorithmsPage() {
+function VisualizationsPage() {
     const [showModal, setShowModal] = useState(false);
-    const [selectedAlgoId, setSelectedAlgoId] = useState('')
+    const [selectedVisId, setSelectedVisId] = useState('')
 
-    const algorithms = {
-        1: 'dijkstra',
+    const visualizations = {
+        1: 'DijkstraVisualization',
         2: 'test'
     };
-    const algorithm = selectedAlgoId ? algorithms[selectedAlgoId] : null
+    const visualization = selectedVisId ? visualizations[selectedVisId] : null
 
     const clickHandler = (e) => {
-        setSelectedAlgoId(+e.target.id);
+        setSelectedVisId(+e.target.id);
         setShowModal(true);
     }
 
@@ -24,14 +25,14 @@ function AlgorithmsPage() {
     }
 
     function animateDiv() {
-        const courseDivArray = Array.from(document.getElementsByClassName('algorithm-div'));
+        const visualizationDivArray = Array.from(document.getElementsByClassName('visualization-div'));
         const addAnimatedClass = (e) => {
 
                 e.currentTarget.classList.add('animation');
                 e.currentTarget.removeEventListener('mouseover', addAnimatedClass);
 
         }
-        courseDivArray.forEach(div => {
+        visualizationDivArray.forEach(div => {
             div.addEventListener('mouseover', addAnimatedClass);
         })
     }
@@ -42,20 +43,19 @@ function AlgorithmsPage() {
 
     return (
         <>
-            <div className='algorithm-div' onClick={clickHandler}>
+            <div className='visualization-div' onClick={clickHandler}>
 
             </div>
-            <div className='algorithm-div'>
+            <div className='visualization-div'>
 
             </div>
             {showModal && (
                 <Modal onClose={onClose}>
-                    
+
                 </Modal>
-            )
-            }
+            )}
         </>
     )
 }
 
-export default AlgorithmsPage;
+export default VisualizationsPage;

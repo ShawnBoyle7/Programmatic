@@ -14,6 +14,7 @@ import { getCurriculum } from './store/curriculum';
 import { getComments } from './store/comments';
 import { getUsers } from './store/users';
 import SearchResults from "./components/SearchResults"
+import AlgorithmsPage from './components/VisualizationsPage/VisualizationsPage';
 
 function App() {
     const [loaded, setLoaded] = useState(false);
@@ -54,6 +55,9 @@ function App() {
 
                     <Route path='/courses'>
                         <Courses />
+                    </Route>
+                    <Route path='/visualizations'>
+                        <AlgorithmsPage />
                     </Route>
                     <ProtectedRoute path='/lessons/:lessonId'>
                         <Lesson />
