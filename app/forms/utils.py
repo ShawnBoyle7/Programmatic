@@ -29,9 +29,9 @@ def username_validation():
 
 def password_validation():
     def check_password(form, field):
+        regexValidator = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
         password = field.data
-        regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
-        matches = re.fullmatch(regex, password)
+        matches = re.fullmatch(regexValidator, password)
         if not matches and len(password):
-            raise ValidationError("Must contain at least one number and one uppercase and lowercase letter, at least 8 or more characters, and one special character: @$!%*?&")
+            raise ValidationError("Password must contain at least 8 or more characters, at least one number, one uppercase letter, one lowercase letter, and one special character: @$!%*?&")
     return check_password
