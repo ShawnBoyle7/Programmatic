@@ -1,15 +1,17 @@
 import { useState, useEffect } from "react";
 import { Modal } from "../../context/Modal";
 import SelectedVisualization from "../SelectedVisualization";
+import './VisualizationsPage.css'
 
 function VisualizationsPage() {
     const [showModal, setShowModal] = useState(false);
     const [selectedVisId, setSelectedVisId] = useState('')
 
     const visualizations = {
-        1: 'Dijkstra />',
+        1: 'Dijkstra',
         2: 'test'
     };
+
     const visualization = selectedVisId ? visualizations[selectedVisId] : null
 
     const clickHandler = (e) => {
