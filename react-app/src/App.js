@@ -14,7 +14,7 @@ import { getCurriculum } from './store/curriculum';
 import { getComments } from './store/comments';
 import { getUsers } from './store/users';
 import SearchResults from "./components/SearchResults"
-import AlgorithmsPage from './components/VisualizationsPage/VisualizationsPage';
+import AlgorithmsPage from './components/VisualizationsPage';
 
 function App() {
     const [loaded, setLoaded] = useState(false);

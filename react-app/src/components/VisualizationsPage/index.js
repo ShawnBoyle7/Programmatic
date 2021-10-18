@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react";
 import { Modal } from "../../context/Modal";
+import SelectedVisualization from "../SelectedVisualization";
 
 function VisualizationsPage() {
     const [showModal, setShowModal] = useState(false);
     const [selectedVisId, setSelectedVisId] = useState('')
 
     const visualizations = {
-        1: 'DijkstraVisualization',
+        1: 'Dijkstra />',
         2: 'test'
     };
     const visualization = selectedVisId ? visualizations[selectedVisId] : null
@@ -43,15 +44,15 @@ function VisualizationsPage() {
 
     return (
         <>
-            <div className='visualization-div' onClick={clickHandler}>
-
+            <div id={1} className='visualization-div' onClick={clickHandler}>
+                Dijkstra
             </div>
             <div className='visualization-div'>
-
+                test
             </div>
             {showModal && (
                 <Modal onClose={onClose}>
-
+                    <SelectedVisualization visualizationId={selectedVisId} />
                 </Modal>
             )}
         </>
