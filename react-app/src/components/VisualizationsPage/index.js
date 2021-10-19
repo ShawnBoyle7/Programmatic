@@ -11,7 +11,7 @@ function VisualizationsPage() {
         0: {
             id: 0,
             name:`Dijkstra's Search Traversal`,
-            imgUrl: 'https://i.imgur.com/NlhwnnO.png'
+            imgUrl: 'https://i.imgur.com/EaM1bjN.png'
         },
     };
     const visualizations = Object.values(visualizationsObj)
