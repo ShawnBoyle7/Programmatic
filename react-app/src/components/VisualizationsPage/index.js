@@ -7,12 +7,15 @@ function VisualizationsPage() {
     const [showModal, setShowModal] = useState(false);
     const [selectedVisId, setSelectedVisId] = useState('')
 
-    const visualizations = {
-        1: 'Dijkstra',
-        2: 'test'
+    const visualizationsObj = {
+        0: {
+            id: 0,
+            name:`Dijkstra's Search Traversal`,
+            imgUrl: 'https://i.imgur.com/NlhwnnO.png'
+        },
     };
-
-    const visualization = selectedVisId ? visualizations[selectedVisId] : null
+    const visualizations = Object.values(visualizationsObj)
+    // const visualization = selectedVisId ? visualizations[selectedVisId] : null
 
     const clickHandler = (e) => {
         setSelectedVisId(+e.target.id);
@@ -43,15 +46,19 @@ function VisualizationsPage() {
     useEffect(() => {
         animateDiv()
     },[]);
-
+    console.log(visualizations)
     return (
         <>
-            <div id={1} className='visualization-div' onClick={clickHandler}>
-                Dijkstra
-            </div>
-            <div className='visualization-div'>
-                test
-            </div>
+            {visualizations.map(visualization => {
+                return (
+                    <div id={visualization.id} className='visualization-div' onClick={clickHandler}>
+                        <img src={`${visualization.imgUrl}`}></img>
+                        <span className='visualization-name'>{visualization.name}</span>
+
+                    </div>
+                )
+
+            })}
             {showModal && (
                 <Modal onClose={onClose}>
                     <SelectedVisualization visualizationId={selectedVisId} />

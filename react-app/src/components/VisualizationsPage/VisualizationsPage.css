@@ -1,10 +1,12 @@
 div.visualization-div {
-    width: 20%;
-    height: 20%;
+    max-width: 40%;
+    height: fit-content;
     margin: 2%;
     background-color: white;
     border: 1px solid black;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes divMove {
@@ -28,3 +30,19 @@ div.visualization-div {
     animation: divMoveBack .2s;
     animation-fill-mode: forwards;
 }
+
+.visualization-div > img {
+    object-fit: cover;
+    max-width: 100%;
+    /* border: 1px solid black; */
+    padding: 4%;
+}
+
+.visualization-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
