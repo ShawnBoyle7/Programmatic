@@ -48,13 +48,12 @@ function VisualizationsPage() {
     },[]);
     console.log(visualizations)
     return (
-        <>
+        <div className='visualization-container'>
             {visualizations.map(visualization => {
                 return (
                     <div id={visualization.id} className='visualization-div' onClick={clickHandler}>
                         <img src={`${visualization.imgUrl}`}></img>
                         <span className='visualization-name'>{visualization.name}</span>
-
                     </div>
                 )
 
@@ -64,7 +63,7 @@ function VisualizationsPage() {
                     <SelectedVisualization visualizationId={selectedVisId} />
                 </Modal>
             )}
-        </>
+        </div>
     )
 }
 

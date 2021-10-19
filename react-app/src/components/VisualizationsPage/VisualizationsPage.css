@@ -1,3 +1,9 @@
+div.visualization-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 div.visualization-div {
     max-width: 40%;
     height: fit-content;
