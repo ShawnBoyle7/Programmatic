@@ -1,7 +1,7 @@
 nav {
     display: grid;
     position: fixed;
-    grid-template-columns: 20% 10% 40% 30%;
+    grid-template-columns: 15% 10% 10% 35% 30%;
     top: 0px;
     height: 50px;
     width: 100vw;
@@ -16,6 +16,12 @@ nav * {
 .logo {
     height: 45px;
     margin-top: 2px;
+}
+
+.visualization-nav-link {
+    font-weight: bold;
+    font-size: 1.25em;
+    position: relative;
 }
 
 .course-nav-link {
