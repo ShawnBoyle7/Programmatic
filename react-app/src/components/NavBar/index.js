@@ -39,7 +39,7 @@ const NavBar = ({sessionUser, authenticated}) => {
 
     const handleDemo = () => {
         dispatch(demo(1))
-        history.push("/")
+        history.push("/visualizations/")
     }
 
     const submitHandler = (e) => {
