@@ -46,12 +46,12 @@ function VisualizationsPage() {
     useEffect(() => {
         animateDiv()
     },[]);
-    console.log(visualizations)
+    
     return (
         <div className='visualization-container'>
             {visualizations.map(visualization => {
                 return (
-                    <div id={visualization.id} className='visualization-div' onClick={clickHandler}>
+                    <div key={visualization.id} id={visualization.id} className='visualization-div' onClick={clickHandler}>
                         <img src={`${visualization.imgUrl}`}></img>
                         <span className='visualization-name'>{visualization.name}</span>
                     </div>
