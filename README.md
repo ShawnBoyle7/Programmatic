@@ -136,6 +136,7 @@ While on your profile, you can edit your account details by hovering over your p
 ![Edit Account](https://i.imgur.com/iNFOOXI.png)
 
 ## Code Highlights
+### This is Dijkstra's shortest path being used to animate the traversal process of the algorithm through a graph. The shortest path is also rendered after the traversal.
 
 ```js
 const graphNodes = require('../../data/dijkstra_graph_data.json')
