@@ -30,3 +30,21 @@ footer {
 .fab {
     margin: .2em .1em 0;
 }
+
+@media screen and (max-width: 500px) {
+    .fab {
+        font-size: 3em;
+    }
+
+    .footer-cards > div {
+        padding: 0.6em;
+    }
+
+    .footer-cards p {
+        margin-top: 0;
+    }
+
+    .footer-cards {
+        padding-top: 1.5em;
+    }
+}
