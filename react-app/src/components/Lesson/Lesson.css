@@ -67,4 +67,8 @@
     .lesson-description, .lesson-content, .lesson-comment-container {
         font-size: 20px;
     }
+    
+    .lesson-top-buttons {
+        padding-left: 0;
+    }
 }
