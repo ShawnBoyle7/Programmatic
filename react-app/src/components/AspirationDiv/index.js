@@ -37,7 +37,7 @@ function AspirationDiv({ aspiration, showScroll }) {
                 </div>
 
 
-                <span className='aspiration-name'>{lesson.name}</span>
+                <span className='aspiration-name'>{lesson.name.length > 32 ? `${lesson.name.slice(0,32)}...` : lesson.name}</span>
                 <span onClick={renderDeleteModal}><i className="fas fa-minus-circle aspiration-option delete" id={aspiration.id} ></i></span>
                 <DeleteAspirationModal lessonId={lessonIdDelete} setShowModal={setShowDeleteModal} showModal={showDeleteModal} showScroll={showScroll}/>
             </div>

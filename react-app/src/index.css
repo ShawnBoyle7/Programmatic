@@ -200,4 +200,8 @@ input, textarea {
     .content {
         padding: 3em 5% 0;
     }
+
+    .delete-modal, .edit-modal {
+        width: 50%;
+    }
 }

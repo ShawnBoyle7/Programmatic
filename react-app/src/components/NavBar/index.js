@@ -170,7 +170,7 @@ const NavBar = ({sessionUser, authenticated}) => {
                                 <div className='dropdown-item'>
                                     <SignUpFormModal dropdown={true} setRenderNavDropdown={setRenderNavDropdown}/>
                                 </div>
-                                <div className='dropdown-item' onClick={handleDemo}>
+                                <div className='dropdown-item last-dropdown-item' onClick={handleDemo}>
                                     Demo
                                 </div>
                             </>
@@ -182,7 +182,7 @@ const NavBar = ({sessionUser, authenticated}) => {
                                         Profile
                                     </NavLink>
                                 </div>
-                                <div className='dropdown-item'>
+                                <div className='dropdown-item last-dropdown-item'>
                                     <LogoutButton dropdown={true} setRenderNavDropdown={setRenderNavDropdown}/>
                                 </div>
                             </>

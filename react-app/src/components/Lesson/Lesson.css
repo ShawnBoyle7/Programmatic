@@ -63,10 +63,8 @@
     .lesson-comment-container {
         padding: 0;
     }
-}
 
-/* @media screen and (max-width: 800px) {
-    .lesson-comment-container {
-        padding: 3em 5% 0;
+    .lesson-description, .lesson-content, .lesson-comment-container {
+        font-size: 20px;
     }
-} */
+}
