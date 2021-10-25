@@ -58,3 +58,15 @@
 .lesson-comment-container {
     padding: 0 3em;
 }
+
+@media screen and (max-width: 1280px) {
+    .lesson-comment-container {
+        padding: 0;
+    }
+}
+
+/* @media screen and (max-width: 800px) {
+    .lesson-comment-container {
+        padding: 3em 5% 0;
+    }
+} */

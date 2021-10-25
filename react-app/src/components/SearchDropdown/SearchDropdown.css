@@ -14,7 +14,9 @@
 
 .result-div {
     padding-left: 2em;
-    height: 2em;
+    padding-right: 1em;
+    height: fit-content;
+    margin-bottom: 0.5em;
 }
 
 .match {
