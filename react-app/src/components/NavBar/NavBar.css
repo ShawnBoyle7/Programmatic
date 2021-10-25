@@ -143,6 +143,10 @@ nav > a.active {
         display: flex;
     }
 
+    .home-link {
+        margin-left: 4px;
+    }
+
     .small-logo {
         display: inherit;
     }
