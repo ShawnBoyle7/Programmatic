@@ -29,7 +29,7 @@
 
 .aspiration-option.delete {
     bottom: 8%;
-    right: 43%;
+    right: 42%;
     color: var(--tertiary-color);
     background-color: transparent;
     margin: auto;
@@ -37,7 +37,7 @@
 
 .aspiration-option.delete.completed {
     bottom: 8%;
-    right: 43%;
+    right: 42%;
     color: var(--tertiary-color);
     margin: auto;
 }
@@ -78,4 +78,24 @@
 .aspiration:hover .aspiration-option {
 	display: block;
     cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .aspiration {
+        width: 150px;
+        height: 150px;
+    }
+
+    .aspiration-option {
+        display: block;
+    }
+
+    .aspiration-option.delete {
+        bottom: 2%;
+        right: 40%;
+    }
+
+    .aspiration-option.toggle-complete {
+        top: 2%;
+    }
 }

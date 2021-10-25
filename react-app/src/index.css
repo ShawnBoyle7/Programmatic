@@ -64,11 +64,10 @@ body.preload *{
 .content {
     position: absolute;
     top: 50px;
-
     width: 100vw;
-    padding: 0 25%;
-    padding-top: 3em;
-    height: calc(100vh - 50px - 16%);
+    padding: 3em 25% 0;
+    /* padding-top: 3em; */
+    height: calc(100vh - 50px - 165px);
     overflow-y: auto;
     z-index: -1;
 }
@@ -185,4 +184,24 @@ form input {
 
 input, textarea {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1280px) {
+    .content {
+        padding: 3em 15% 0;
+    }
+
+    form {
+        width: 90%
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        padding: 3em 5% 0;
+    }
+
+    .delete-modal, .edit-modal {
+        width: 50%;
+    }
 }

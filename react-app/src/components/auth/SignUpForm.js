@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Redirect, useHistory } from 'react-router-dom';
 import { signUp } from '../../store/session';
 
-const SignUpForm = ({setShowModal}) => {
+const SignUpForm = ({setShowModal, setRenderNavDropdown}) => {
     const [errors, setErrors] = useState([]);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -24,6 +24,7 @@ const SignUpForm = ({setShowModal}) => {
             }
             else {
                 setShowModal(false)
+                if (setRenderNavDropdown) setRenderNavDropdown(false)
                 history.push('/visualizations/')
             }
         }

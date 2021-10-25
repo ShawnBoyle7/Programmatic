@@ -16,6 +16,11 @@ const NavBar = ({sessionUser, authenticated}) => {
     const [searchQuery, setSearchQuery] = useState("");
     // State variable for conditional rendering search results
     const [renderSearchDropdown, setRenderSearchDropdown] = useState(false);
+    const [renderNavDropdown, setRenderNavDropdown] = useState(false);
+
+    document.querySelector("html").addEventListener("click", () => {
+        setRenderNavDropdown(false)
+    });
 
     // Tracking user input from the state variable in a use effect because apparently you need it for real time updates
     useEffect(() => {
@@ -39,6 +44,7 @@ const NavBar = ({sessionUser, authenticated}) => {
 
     const handleDemo = () => {
         dispatch(demo(1))
+        setRenderNavDropdown(false)
         history.push("/visualizations/")
     }
 
@@ -52,61 +58,139 @@ const NavBar = ({sessionUser, authenticated}) => {
         setSearchQuery("")
 
         history.push(`/search?q=${query}`)
+    }
 
+    const toggleNavDropdown = (e) => {
+        e.stopPropagation()
+        setRenderSearchDropdown(false)
+        setRenderNavDropdown(!renderNavDropdown)
+    }
 
+    const handleSearchDivClick = (e) => {
+        e.stopPropagation()
+        setRenderNavDropdown(false)
     }
 
     return (
-        <nav>
-            <NavLink to='/' exact={true} activeClassName='active'>
-                <img className='logo' src='https://week-20-group-project.s3.amazonaws.com/tmpprogrammatic-new-logo.png' alt="site-logo"/>
-            </NavLink>
+        <>
+            <nav className='full-nav'>
+                <NavLink className='home-link' to='/' exact={true} activeClassName='active'>
+                    <img className='logo big-logo' src='https://week-20-group-project.s3.amazonaws.com/tmpprogrammatic-new-logo.png' alt="site-logo"/>
+                    <img className='logo small-logo' src='https://week-20-group-project.s3.amazonaws.com/tmpprogrammatic-icon.png' alt="site-logo"/>
+                </NavLink>
 
-            <NavLink to='/visualizations' exact={true} activeClassName='active'>
-            <span className='visualization-nav-link'>Visualizations</span>
-            </NavLink>
+                <NavLink className='visualizations-link' to='/visualizations' exact={true} activeClassName='active'>
+                    <span className='visualization-nav-link long'>Visualizations</span>
+                    <span className='visualization-nav-link short'>Visuals</span>
+                </NavLink>
 
-            <NavLink to='/courses' exact={true} activeClassName='active'>
-                <span className='course-nav-link'>Courses</span>
-            </NavLink>
+                <NavLink className='courses-link' to='/courses' exact={true} activeClassName='active'>
+                    <span className='course-nav-link'>Courses</span>
+                </NavLink>
 
-            <div className="nav-search-div" onClick={e => e.stopPropagation()}>
-                <form className="search-form" onSubmit={submitHandler}>
-                    <i className="fas fa-search" onClick={submitHandler}></i>
-                    <input
-                    placeholder='Search Here...'
-                    onClick={handleClick}
-                    // Comment this later
-                    value={searchQuery}
-                    // Listen to user input and update our state variable on change
-                    onChange={e => setSearchQuery(e.target.value)}
-                    />
-                    {/* If there is user input, render the dropdown results */}
-                    {renderSearchDropdown &&
-                        // Passing props for filtering our query and toggle the rendering of our dropdown results
-                        <SearchDropdown searchQuery={searchQuery} setSearchQuery={setSearchQuery} setRenderSearchDropdown={setRenderSearchDropdown}/>}
-                </form>
-            </div>
+                <div className="nav-search-div" onClick={e => e.stopPropagation()}>
+                    <form className="search-form" onSubmit={submitHandler}>
+                        <i className="fas fa-search" onClick={submitHandler}></i>
+                        <input
+                        placeholder='Search Here...'
+                        onClick={handleClick}
+                        // Comment this later
+                        value={searchQuery}
+                        // Listen to user input and update our state variable on change
+                        onChange={e => setSearchQuery(e.target.value)}
+                        />
+                        {/* If there is user input, render the dropdown results */}
+                        {renderSearchDropdown &&
+                            // Passing props for filtering our query and toggle the rendering of our dropdown results
+                            <SearchDropdown searchQuery={searchQuery} setSearchQuery={setSearchQuery} setRenderSearchDropdown={setRenderSearchDropdown}/>}
+                    </form>
+                </div>
 
-            <div className='nav-auth-div'>
-            { !authenticated ?
-                <>
-                    <LoginFormModal/>
-                    <SignUpFormModal />
-                    <button onClick={handleDemo}>Demo</button>
-                </>
-                :
-                <>
-                    <span className='welcome'>Welcome, <span className='welcome-name'>{sessionUser?.firstName}</span></span>
-                    <NavLink to='/profile' exact={true} activeClassName='active'>
-                        <img className='nav-prof-img' src={sessionUser.imgUrl} alt='user'/>
-                        {/* <i className="fas fa-user fa-2x"></i> */}
+                <div className='nav-auth-div'>
+                { !authenticated ?
+                    <>
+                        <LoginFormModal/>
+                        <SignUpFormModal />
+                        <button onClick={handleDemo}>Demo</button>
+                    </>
+                    :
+                    <>
+                        <span className='welcome'>Welcome, <span className='welcome-name'>{sessionUser?.firstName}</span></span>
+                        <NavLink className='profile-link' to='/profile' exact={true} activeClassName='active'>
+                            <img className='nav-prof-img' src={sessionUser.imgUrl} alt='user'/>
+                            {/* <i className="fas fa-user fa-2x"></i> */}
+                        </NavLink>
+                        <LogoutButton />
+                    </>
+                }
+                </div>
+            </nav>
+            <nav className='small-nav'>
+                <div className='top-row'>
+                    <NavLink className='home-link' to='/' exact={true} activeClassName='active' onClick={e => setRenderNavDropdown(false)}>
+                        <img className='logo big-logo' src='https://week-20-group-project.s3.amazonaws.com/tmpprogrammatic-new-logo.png' alt="site-logo"/>
+                        <img className='logo small-logo' src='https://week-20-group-project.s3.amazonaws.com/tmpprogrammatic-icon.png' alt="site-logo"/>
                     </NavLink>
-                    <LogoutButton />
-                </>
-            }
-            </div>
-        </nav>
+                    <div className="nav-search-div" onClick={handleSearchDivClick}>
+                        <form className="search-form" onSubmit={submitHandler}>
+                            <i className="fas fa-search" onClick={submitHandler}></i>
+                            <input
+                            placeholder='Search Here...'
+                            onClick={handleClick}
+                            // Comment this later
+                            value={searchQuery}
+                            // Listen to user input and update our state variable on change
+                            onChange={e => setSearchQuery(e.target.value)}
+                            />
+                            {/* If there is user input, render the dropdown results */}
+                            {renderSearchDropdown &&
+                                // Passing props for filtering our query and toggle the rendering of our dropdown results
+                                <SearchDropdown searchQuery={searchQuery} setSearchQuery={setSearchQuery} setRenderSearchDropdown={setRenderSearchDropdown}/>}
+                        </form>
+                    </div>
+                    <i className="fas fa-bars fa-2x" onClick={toggleNavDropdown}></i>
+                </div>
+                { renderNavDropdown &&
+                    <div className='nav-dropdown' onClick={e => e.stopPropagation()}>
+                        <div className='dropdown-item'>
+                            <NavLink className='visualizations-link' to='/visualizations' exact={true} activeClassName='active' onClick={e => setRenderNavDropdown(false)}>
+                                Visualizations
+                            </NavLink>
+                        </div>
+                        <div className='dropdown-item'>
+                            <NavLink className='courses-link' to='/courses' exact={true} activeClassName='active' onClick={e => setRenderNavDropdown(false)}>
+                                Courses
+                            </NavLink>
+                        </div>
+                        { !authenticated &&
+                            <>
+                                <div className='dropdown-item'>
+                                    <LoginFormModal dropdown={true} setRenderNavDropdown={setRenderNavDropdown}/>
+                                </div>
+                                <div className='dropdown-item'>
+                                    <SignUpFormModal dropdown={true} setRenderNavDropdown={setRenderNavDropdown}/>
+                                </div>
+                                <div className='dropdown-item last-dropdown-item' onClick={handleDemo}>
+                                    Demo
+                                </div>
+                            </>
+                        }
+                        { authenticated &&
+                            <>
+                                <div className='dropdown-item'>
+                                    <NavLink className='profile-link' to='/profile' exact={true} activeClassName='active' onClick={e => setRenderNavDropdown(false)}>
+                                        Profile
+                                    </NavLink>
+                                </div>
+                                <div className='dropdown-item last-dropdown-item'>
+                                    <LogoutButton dropdown={true} setRenderNavDropdown={setRenderNavDropdown}/>
+                                </div>
+                            </>
+                        }
+                    </div>
+                }
+            </nav>
+        </>
     );
 }
 

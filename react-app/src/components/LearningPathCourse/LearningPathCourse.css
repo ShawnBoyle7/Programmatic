@@ -39,3 +39,17 @@
 a {
     text-decoration: none;
 }
+
+@media screen and (max-width: 800px) {
+    .learning-path-course {
+        width: 100%;
+    }
+
+    .aspirations-div {
+        overflow-x: auto;
+    }
+
+    .scroll-btn {
+        display: none;
+    }
+}

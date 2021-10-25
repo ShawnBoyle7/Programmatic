@@ -62,3 +62,19 @@ li {
     list-style-type: none;
     margin-bottom: 0.2em;
 }
+
+@media screen and (max-width: 800px) {
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-details > ul {
+        padding-left: 0px;
+    }
+
+    .edit-user {
+        left: 100px;
+        display: block;
+    }
+}
