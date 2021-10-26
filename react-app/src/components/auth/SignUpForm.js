@@ -14,6 +14,13 @@ const SignUpForm = ({setShowModal, setRenderNavDropdown}) => {
     const user = useSelector(state => state.session.user);
     const dispatch = useDispatch();
     const history = useHistory()
+    
+    const firstNameErrors = errors.filter(error => error.startsWith('first_name')).map(error => error.slice(10));
+    const lastNameErrors = errors.filter(error => error.startsWith('last_name')).map(error => error.slice(9));
+    const usernameErrors = errors.filter(error => error.startsWith('username')).map(error => error.slice(8));
+    const emailErrors = errors.filter(error => error.startsWith('email')).map(error => error.slice(5));
+    const passwordErrors = errors.filter(error => error.startsWith('password')).map(error => error.slice(8));
+    const otherErrors = errors.filter(error => error.startsWith('other')).map(error => error.slice(5));
 
     const onSignUp = async (e) => {
         e.preventDefault();
@@ -27,6 +34,8 @@ const SignUpForm = ({setShowModal, setRenderNavDropdown}) => {
                 if (setRenderNavDropdown) setRenderNavDropdown(false)
                 history.push('/visualizations/')
             }
+        } else {
+            setErrors(['other: Passwords do not match.'])
         }
     };
 
@@ -63,7 +72,7 @@ const SignUpForm = ({setShowModal, setRenderNavDropdown}) => {
             <form onSubmit={onSignUp}>
             <h3 className="form-login-header">Sign Up</h3>
             <div className="form-errors">
-                {errors.map((error, idx) => (
+                {otherErrors.map((error, idx) => (
                 <p key={idx}>
                     {error}
                 </p>
@@ -76,7 +85,15 @@ const SignUpForm = ({setShowModal, setRenderNavDropdown}) => {
                 placeholder="First Name"
                 onChange={updateFirstName}
                 value={firstName}
+                required
                 ></input>
+            </div>
+            <div className="form-errors field-errors">
+                {firstNameErrors.map((error, idx) => (
+                <p key={idx}>
+                    {error}
+                </p>
+                ))}
             </div>
             <div>
                 <input
@@ -85,7 +102,15 @@ const SignUpForm = ({setShowModal, setRenderNavDropdown}) => {
                 placeholder="Last Name"
                 onChange={updateLastName}
                 value={lastName}
+                required
                 ></input>
+            </div>
+            <div className="form-errors field-errors">
+                {lastNameErrors.map((error, idx) => (
+                <p key={idx}>
+                    {error}
+                </p>
+                ))}
             </div>
             <div>
                 <input
@@ -94,16 +119,32 @@ const SignUpForm = ({setShowModal, setRenderNavDropdown}) => {
                 placeholder="Username"
                 onChange={updateUsername}
                 value={username}
+                required
                 ></input>
+            </div>
+            <div className="form-errors field-errors">
+                {usernameErrors.map((error, idx) => (
+                <p key={idx}>
+                    {error}
+                </p>
+                ))}
             </div>
             <div>
                 <input
-                type='text'
+                type='email'
                 name='email'
                 placeholder="Email"
                 onChange={updateEmail}
                 value={email}
+                required
                 ></input>
+            </div>
+            <div className="form-errors field-errors">
+                {emailErrors.map((error, idx) => (
+                <p key={idx}>
+                    {error}
+                </p>
+                ))}
             </div>
             <div>
                 <input
@@ -113,7 +154,15 @@ const SignUpForm = ({setShowModal, setRenderNavDropdown}) => {
                 placeholder="Password"
                 onChange={updatePassword}
                 value={password}
+                required
                 ></input>
+            </div>
+            <div className="form-errors field-errors">
+                {passwordErrors.map((error, idx) => (
+                <p key={idx}>
+                    {error}
+                </p>
+                ))}
             </div>
             <div>
                 <input
