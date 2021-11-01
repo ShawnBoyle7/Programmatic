@@ -13,6 +13,7 @@
 .algo-vis-control-div {
     display: flex;
     justify-content: center;
+    max-width: 80vw;
 }
 
 .algo-button {
@@ -22,4 +23,14 @@
 
 .secret-button {
     display: none;
+}
+
+@media screen and (max-width: 630px) {
+    .algo-button {
+        margin: 0 0.5em;
+    }
+
+    .grid-container {
+        padding: 0 15%;
+    }
 }

@@ -27,20 +27,13 @@ function VisualizationsPage() {
         }
     }
 
-
-    const visualizationsObj = {
-        0: {
-            id: 0,
-            name:`Dijkstra's Search Traversal`,
-            imgUrl: 'https://i.imgur.com/EaM1bjN.png'
-        },
-    };
     const visualizations = new VisualizationsList()
+    //add visualizations here!! using the class method pls
     visualizations.addToList(1, `Dijkstra's Search Traversal`, 'https://i.imgur.com/EaM1bjN.png')
-    // const visualization = selectedVisId ? visualizations[selectedVisId] : null
+
 
     const clickHandler = (e) => {
-        setSelectedVisId(+e.target.id);
+        setSelectedVisId(+e.currentTarget.id);
         setShowModal(true);
     }
 
@@ -68,12 +61,12 @@ function VisualizationsPage() {
     useEffect(() => {
         animateDiv()
     },[]);
-    console.log(visualizations)
+
     return (
         <div className='visualization-container'>
-            {visualizations.map(visualization => {
+            {visualizations.list.map(visualization => {
                 return (
-                    <div id={visualization.id} className='visualization-div' onClick={clickHandler}>
+                    <div key={visualization.id} id={visualization.id} className='visualization-div' onClick={clickHandler}>
                         <img src={`${visualization.imgUrl}`}></img>
                         <span className='visualization-name'>{visualization.name}</span>
                     </div>

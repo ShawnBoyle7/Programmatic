@@ -1,7 +1,8 @@
 footer {
     position: fixed;
     bottom: 0px;
-    height: 16%;
+    /* height: 16%; */
+    height: 165px;
     width: 100vw;
     border-top: 1px solid black;
     text-align: center;
@@ -28,4 +29,22 @@ footer {
 
 .fab {
     margin: .2em .1em 0;
+}
+
+@media screen and (max-width: 500px) {
+    .fab {
+        font-size: 3em;
+    }
+
+    .footer-cards > div {
+        padding: 0.6em;
+    }
+
+    .footer-cards p {
+        margin-top: 0;
+    }
+
+    .footer-cards {
+        padding-top: 1em;
+    }
 }
