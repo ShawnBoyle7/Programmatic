@@ -202,7 +202,7 @@ input, textarea {
 
 @media screen and (max-width: 1280px) {
     .content {
-        padding: 3em 15% 0;
+        padding: 3em 15% 2em;
     }
 
     form {
@@ -212,7 +212,7 @@ input, textarea {
 
 @media screen and (max-width: 800px) {
     .content {
-        padding: 3em 5% 0;
+        padding: 3em 5% 2em;
     }
 
     .delete-modal, .edit-modal {
