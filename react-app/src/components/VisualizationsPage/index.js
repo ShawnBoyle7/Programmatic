@@ -7,6 +7,27 @@ function VisualizationsPage() {
     const [showModal, setShowModal] = useState(false);
     const [selectedVisId, setSelectedVisId] = useState('')
 
+
+    class Visualization {
+        constructor(id, algoName, imgUrl) {
+            this.id = id;
+            this.name = algoName;
+            this.imgUrl = imgUrl;
+        }
+    }
+
+    class VisualizationsList {
+        constructor() {
+            this.list = [];
+        }
+
+        addToList(id, algoName, imgUrl) {
+            let vis = new Visualization(id, algoName, imgUrl);
+            this.list.push(vis);
+        }
+    }
+
+
     const visualizationsObj = {
         0: {
             id: 0,
@@ -14,7 +35,8 @@ function VisualizationsPage() {
             imgUrl: 'https://i.imgur.com/EaM1bjN.png'
         },
     };
-    const visualizations = Object.values(visualizationsObj)
+    const visualizations = new VisualizationsList()
+    visualizations.addToList(1, `Dijkstra's Search Traversal`, 'https://i.imgur.com/EaM1bjN.png')
     // const visualization = selectedVisId ? visualizations[selectedVisId] : null
 
     const clickHandler = (e) => {
