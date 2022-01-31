@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import Comments from "../Comments";
 import CommentForm from "../CommentForm"
 import LessonVote from "../LessonVote";
-import AlgoVisModal from "../AlgoVisModal";
+// import AlgoVisModal from "../AlgoVisModal";
 import "./Lesson.css"
 
 function Lesson() {

@@ -67,7 +67,7 @@ function VisualizationsPage() {
             {visualizations.list.map(visualization => {
                 return (
                     <div key={visualization.id} id={visualization.id} className='visualization-div' onClick={clickHandler}>
-                        <img src={`${visualization.imgUrl}`}></img>
+                        <img src={`${visualization.imgUrl}`} alt="visualiation" ></img>
                         <span className='visualization-name'>{visualization.name}</span>
                     </div>
                 )
