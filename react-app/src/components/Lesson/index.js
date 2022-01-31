@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import Comments from "../Comments";
 import CommentForm from "../CommentForm"
 import LessonVote from "../LessonVote";
-import AlgoVisModal from "../AlgoVisModal";
+// import AlgoVisModal from "../AlgoVisModal";
 import "./Lesson.css"
 
 function Lesson() {
@@ -19,7 +19,7 @@ function Lesson() {
                     <i className="fas fa-level-up-alt fa-2x"></i>
                     <span>Back To Course</span>
                 </Link>
-                <AlgoVisModal />
+                {/* <AlgoVisModal /> */}
             </div>
             <div className='lesson-div'>
                 <h1 className='lesson-page-header'>{lesson.name}</h1>

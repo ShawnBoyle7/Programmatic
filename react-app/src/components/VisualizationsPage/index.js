@@ -28,8 +28,8 @@ function VisualizationsPage() {
     }
 
     const visualizations = new VisualizationsList()
-    //add visualizations here!! using the class method pls
-    visualizations.addToList(1, `Dijkstra's Search Traversal`, 'https://i.imgur.com/EaM1bjN.png')
+    
+    visualizations.addToList(1, `Dijkstra's Algorithm`, 'https://i.imgur.com/EaM1bjN.png')
 
 
     const clickHandler = (e) => {
@@ -67,7 +67,7 @@ function VisualizationsPage() {
             {visualizations.list.map(visualization => {
                 return (
                     <div key={visualization.id} id={visualization.id} className='visualization-div' onClick={clickHandler}>
-                        <img src={`${visualization.imgUrl}`}></img>
+                        <img src={`${visualization.imgUrl}`} alt="visualiation" ></img>
                         <span className='visualization-name'>{visualization.name}</span>
                     </div>
                 )
