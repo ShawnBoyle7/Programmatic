@@ -28,8 +28,8 @@ function VisualizationsPage() {
     }
 
     const visualizations = new VisualizationsList()
-    //add visualizations here!! using the class method pls
-    visualizations.addToList(1, `Dijkstra's Search Traversal`, 'https://i.imgur.com/EaM1bjN.png')
+    
+    visualizations.addToList(1, `Dijkstra's Algorithm`, 'https://i.imgur.com/EaM1bjN.png')
 
 
     const clickHandler = (e) => {

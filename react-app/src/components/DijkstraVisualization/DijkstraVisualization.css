@@ -1,36 +1,52 @@
 .algo-vis-div {
     height: fit-content;
-    width: fit-content
+    width: fit-content;
 }
 
-.grid-container {
+.grid-outer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-inner-container {
     display: grid;
     /* CSS Grid to display the cells visually, as opposed to the javascript grid which comes from the for loops */
     grid-template-rows: repeat(20, 2vw);
     grid-template-columns: repeat(30, 2vw);
 }
 
+.algo-page-head {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    /* max-width: 80vw; */
+}
+
+.algo-name {
+    margin: 0;
+    align-self: center;
+    margin-left: 0.5em;
+}
+
 .algo-vis-control-div {
     display: flex;
-    justify-content: center;
-    max-width: 80vw;
+    align-content: center;
 }
 
 .algo-button {
-    width: fit-content;
     margin: 0 1em;
-}
-
-.secret-button {
-    display: none;
 }
 
 @media screen and (max-width: 630px) {
     .algo-button {
-        margin: 0 0.5em;
+        margin: 0 0.3em;
     }
 
     .grid-container {
         padding: 0 15%;
+    }
+
+    .algo-name {
+        display: none
     }
 }

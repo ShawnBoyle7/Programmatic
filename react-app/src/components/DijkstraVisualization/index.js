@@ -131,42 +131,45 @@ function DijkstraVisualization() {
         })
     }
 
-    const whyDidYouClickThatButton = () => {
-        resetGraph();
-        const traversalOrderCopy = shuffle(traversalOrder.slice())
-        const dijkstraPathCopy = shuffle(dijkstraPath.slice())
+    // const whyDidYouClickThatButton = () => {
+    //     resetGraph();
+    //     const traversalOrderCopy = shuffle(traversalOrder.slice())
+    //     const dijkstraPathCopy = shuffle(dijkstraPath.slice())
 
-        window.animateTraversalInterval = setInterval(() => {
-            animateTraversal(traversalOrderCopy, dijkstraPathCopy);
-            if (!traversalOrderCopy.length) {
-                clearInterval(window.animateTraversalInterval);
-            }
-        }, 300)
-    }
+    //     window.animateTraversalInterval = setInterval(() => {
+    //         animateTraversal(traversalOrderCopy, dijkstraPathCopy);
+    //         if (!traversalOrderCopy.length) {
+    //             clearInterval(window.animateTraversalInterval);
+    //         }
+    //     }, 300)
+    // }
 
-    const shuffle = (array) => {
-        for (let i = 0; i < array.length; i++){
-            let j = Math.floor(Math.random()*array.length);
-            [array[i], array[j]] = [array[j], array[i]]
-        }
-        return array;
-    }
+    // const shuffle = (array) => {
+    //     for (let i = 0; i < array.length; i++){
+    //         let j = Math.floor(Math.random()*array.length);
+    //         [array[i], array[j]] = [array[j], array[i]]
+    //     }
+    //     return array;
+    // }
 
     return (
         // Targets entire modal
         <div className='algo-vis-div'>
-            <div className="algo-vis-control-div">
-                <button className="algo-button" onClick={playVisualization} value={500}>Visualize</button>
-                <button className="algo-button" onClick={playVisualization} value={250}>Faster</button>
-                <button className="algo-button" onClick={playVisualization} value={1000}>Slower</button>
-                <button className="algo-button" onClick={resetGraph}>Reset</button>
-                <button onClick={whyDidYouClickThatButton} className="secret-button">DON'T click this button</button>
+            <div className="algo-page-head">
+                <div className="algo-vis-control-div">
+                    <button className="algo-button" onClick={playVisualization} value={500}>Visualize</button>
+                    <button className="algo-button" onClick={playVisualization} value={250}>Faster</button>
+                    <button className="algo-button" onClick={playVisualization} value={1000}>Slower</button>
+                    <button className="algo-button" onClick={resetGraph}>Reset</button>
+                </div>
+                <h2 className="algo-name">Dijkstra's Traversal & Shortest Path</h2>
             </div>
             {/* Targets entire grid element contianing all grid cells */}
-            <div className="grid-container">
-                {createGrid()}
+            <div className='grid-outer-container'>
+                <div className="grid-inner-container">
+                    {createGrid()}
+                </div>
             </div>
-
         </div>
     )
 }

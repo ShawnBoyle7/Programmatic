@@ -19,7 +19,7 @@ function Lesson() {
                     <i className="fas fa-level-up-alt fa-2x"></i>
                     <span>Back To Course</span>
                 </Link>
-                <AlgoVisModal />
+                {/* <AlgoVisModal /> */}
             </div>
             <div className='lesson-div'>
                 <h1 className='lesson-page-header'>{lesson.name}</h1>
